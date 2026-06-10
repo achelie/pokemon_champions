@@ -16,18 +16,29 @@ describe("best team build data", () => {
     expect(resolveBestTeamFormatView(undefined).key).toBe("double");
   });
 
-  it("contains the requested Double Battle teams", () => {
-    expect(teams).toHaveLength(5);
-    expect(teams.map((team) => team.id)).toEqual([
+  it("contains the requested Single and Double Battle teams", () => {
+    const doubleTeams = teams.filter((team) => team.format === "Double");
+    const singleTeams = teams.filter((team) => team.format === "Single");
+
+    expect(teams).toHaveLength(10);
+    expect(doubleTeams).toHaveLength(5);
+    expect(singleTeams).toHaveLength(5);
+    expect(doubleTeams.map((team) => team.id)).toEqual([
       "turn-one-defense-plus-six-mega-ampharos",
       "mega-emboar-bulk-up-fortress",
       "mega-meowstic-expanding-force-tailwind",
       "special-attack-ceiling-mega-alakazam",
       "espathra-baton-pass-mega-gardevoir"
     ]);
+    expect(singleTeams.map((team) => team.id)).toEqual([
+      "mega-glimmora-adaptability-offense",
+      "mega-alakazam-special-sweeper-single",
+      "mega-lucario-adaptability-wallbreaker",
+      "mega-froslass-snow-curse-control",
+      "mega-gallade-sharpness-balance"
+    ]);
 
     for (const team of teams) {
-      expect(team.format).toBe("Double");
       expect(team.members).toHaveLength(6);
     }
   });
@@ -54,12 +65,16 @@ describe("best team build data", () => {
     for (const team of teams) {
       for (const member of team.members) {
         expect(getPokemonByName(member.pokemonId)?.image, member.pokemonId).toMatch(/^\/images\/pokemon\/[a-z0-9-]+\.(webp|png)$/);
-        expect(getItemByName(member.itemId)?.image, member.itemId).toMatch(/^\/images\/items\/[a-z0-9-]+\.(webp|png)$/);
+        if (member.itemId) {
+          expect(member.itemName, `${member.displayName} itemName`).toBeTruthy();
+          expect(getItemByName(member.itemId)?.image, member.itemId).toMatch(/^\/images\/items\/[a-z0-9-]+\.(webp|png)$/);
+        } else {
+          expect(member.itemName, `${member.displayName} itemName`).toBeUndefined();
+        }
         expect(member.displayName).toBeTruthy();
         expect(member.types.length).toBeGreaterThan(0);
         expect(member.ability).toBeTruthy();
         expect(member.nature).toBeTruthy();
-        expect(member.itemName).toBeTruthy();
         expect(member.moves).toHaveLength(4);
         expect(member.moves.every(Boolean)).toBe(true);
 

@@ -975,5 +975,974 @@ export const teams: Team[] = [
         }
       }
     ]
+  },
+  {
+    id: "mega-glimmora-adaptability-offense",
+    title: "Mega Glimmora Adaptability Offense Team",
+    format: "Single",
+    description:
+      "Mega Glimmora is the main special attacker, using its improved Speed, high Special Attack, and Adaptability-boosted Rock and Poison attacks to break common neutral targets. Skeledirge and Corviknight give the team durable defensive pivots, Meowscarada and Heliolisk add fast revenge-kill lines, and Mega Gyarados gives a second setup path with Dragon Dance. The team plays best when Glimmora or Gyarados forces progress early while the bulky partners absorb revenge attempts.",
+    members: [
+      {
+        pokemonId: "skeledirge",
+        displayName: "Skeledirge",
+        gender: "Male",
+        types: ["Fire", "Ghost"],
+        ability: "Unaware",
+        nature: "Bold",
+        moves: ["Shadow Ball", "Torch Song", "Will-O-Wisp", "Slack Off"],
+        stats: {
+          hp: 208,
+          attack: 85,
+          defense: 167,
+          specialAttack: 130,
+          specialDefense: 100,
+          speed: 86
+        },
+        evs: {
+          hp: 29,
+          attack: 0,
+          defense: 32,
+          specialAttack: 0,
+          specialDefense: 5,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "defense",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "glimmora",
+        displayName: "Glimmora",
+        gender: "Female",
+        types: ["Rock", "Poison"],
+        ability: "Toxic Debris",
+        nature: "Timid",
+        itemId: "glimmoranite",
+        itemName: "Glimmoranite",
+        moves: ["Earth Power", "Power Gem", "Dazzling Gleam", "Sludge Wave"],
+        stats: {
+          hp: 159,
+          attack: 67,
+          defense: 110,
+          specialAttack: 182,
+          specialDefense: 102,
+          speed: 151
+        },
+        evs: {
+          hp: 1,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 1,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "meowscarada",
+        displayName: "Meowscarada",
+        gender: "Male",
+        types: ["Grass", "Dark"],
+        ability: "Protean",
+        nature: "Adamant",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Knock Off", "U-turn", "Flower Trick", "Triple Axel"],
+        stats: {
+          hp: 153,
+          attack: 178,
+          defense: 90,
+          specialAttack: 90,
+          specialDefense: 90,
+          speed: 175
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "attack",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "gyarados",
+        displayName: "Gyarados",
+        gender: "Female",
+        types: ["Water", "Flying"],
+        ability: "Intimidate",
+        nature: "Jolly",
+        itemId: "gyaradosite",
+        itemName: "Gyaradosite",
+        moves: ["Waterfall", "Crunch", "Taunt", "Dragon Dance"],
+        stats: {
+          hp: 171,
+          attack: 177,
+          defense: 100,
+          specialAttack: 72,
+          specialDefense: 120,
+          speed: 146
+        },
+        evs: {
+          hp: 1,
+          attack: 32,
+          defense: 1,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "corviknight",
+        displayName: "Corviknight",
+        gender: "Male",
+        types: ["Flying", "Steel"],
+        ability: "Mirror Armor",
+        nature: "Impish",
+        itemId: "sitrus-berry",
+        itemName: "Sitrus Berry",
+        moves: ["U-turn", "Brave Bird", "Bulk Up", "Roost"],
+        stats: {
+          hp: 205,
+          attack: 108,
+          defense: 172,
+          specialAttack: 65,
+          specialDefense: 106,
+          speed: 87
+        },
+        evs: {
+          hp: 32,
+          attack: 1,
+          defense: 32,
+          specialAttack: 0,
+          specialDefense: 1,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "defense",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "heliolisk",
+        displayName: "Heliolisk",
+        gender: "Female",
+        types: ["Electric", "Normal"],
+        ability: "Dry Skin",
+        nature: "Timid",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Thunderbolt", "Glare", "Disable", "Volt Switch"],
+        stats: {
+          hp: 139,
+          attack: 67,
+          defense: 72,
+          specialAttack: 161,
+          specialDefense: 114,
+          speed: 177
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      }
+    ]
+  },
+  {
+    id: "mega-alakazam-special-sweeper-single",
+    title: "Mega Alakazam Special Sweeper Team",
+    format: "Single",
+    description:
+      "Mega Alakazam is the speed-first cleaner, relying on elite Special Attack and Speed to pressure most non-tank targets before they move. Armarouge can create Psychic Terrain pressure, Kingambit and Excadrill give physical Steel and Dark coverage, and Infernape supplies utility with Taunt, Stealth Rock, Rock Tomb, and Will-O-Wisp. The team should preserve Alakazam for the turn it can Mega Evolve safely, because priority and failed KOs are its main weaknesses.",
+    members: [
+      {
+        pokemonId: "alakazam",
+        displayName: "Alakazam",
+        gender: "Male",
+        types: ["Psychic"],
+        ability: "Inner Focus",
+        nature: "Timid",
+        itemId: "alakazite",
+        itemName: "Alakazite",
+        moves: ["Expanding Force", "Focus Blast", "Shadow Ball", "Nasty Plot"],
+        stats: {
+          hp: 133,
+          attack: 63,
+          defense: 66,
+          specialAttack: 187,
+          specialDefense: 115,
+          speed: 187
+        },
+        evs: {
+          hp: 3,
+          attack: 0,
+          defense: 1,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 30
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "kingambit",
+        displayName: "Kingambit",
+        gender: "Female",
+        types: ["Dark", "Steel"],
+        ability: "Defiant",
+        nature: "Adamant",
+        itemId: "black-glasses",
+        itemName: "Black Glasses",
+        moves: ["Iron Head", "Kowtow Cleave", "Swords Dance", "Sucker Punch"],
+        stats: {
+          hp: 177,
+          attack: 205,
+          defense: 140,
+          specialAttack: 72,
+          specialDefense: 105,
+          speed: 102
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "attack",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "armarouge",
+        displayName: "Armarouge",
+        gender: "Female",
+        types: ["Fire", "Psychic"],
+        ability: "Weak Armor",
+        nature: "Modest",
+        itemId: "focus-sash",
+        itemName: "Focus Sash",
+        moves: ["Armor Cannon", "Expanding Force", "Psychic Terrain", "Destiny Bond"],
+        stats: {
+          hp: 161,
+          attack: 72,
+          defense: 120,
+          specialAttack: 194,
+          specialDefense: 101,
+          speed: 127
+        },
+        evs: {
+          hp: 1,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 1,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "specialAttack",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "excadrill",
+        displayName: "Excadrill",
+        gender: "Female",
+        types: ["Ground", "Steel"],
+        ability: "Mold Breaker",
+        nature: "Jolly",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Iron Head", "Earthquake", "Rock Slide", "Horn Drill"],
+        stats: {
+          hp: 187,
+          attack: 187,
+          defense: 80,
+          specialAttack: 63,
+          specialDefense: 85,
+          speed: 154
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "infernape",
+        displayName: "Infernape",
+        gender: "Male",
+        types: ["Fire", "Fighting"],
+        ability: "Iron Fist",
+        nature: "Jolly",
+        itemId: "lum-berry",
+        itemName: "Lum Berry",
+        moves: ["Taunt", "Rock Tomb", "Stealth Rock", "Will-O-Wisp"],
+        stats: {
+          hp: 183,
+          attack: 124,
+          defense: 95,
+          specialAttack: 111,
+          specialDefense: 94,
+          speed: 170
+        },
+        evs: {
+          hp: 32,
+          attack: 0,
+          defense: 4,
+          specialAttack: 0,
+          specialDefense: 3,
+          speed: 27
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "corviknight",
+        displayName: "Corviknight",
+        gender: "Male",
+        types: ["Flying", "Steel"],
+        ability: "Mirror Armor",
+        nature: "Impish",
+        itemId: "sitrus-berry",
+        itemName: "Sitrus Berry",
+        moves: ["U-turn", "Brave Bird", "Bulk Up", "Roost"],
+        stats: {
+          hp: 205,
+          attack: 108,
+          defense: 172,
+          specialAttack: 65,
+          specialDefense: 106,
+          speed: 87
+        },
+        evs: {
+          hp: 32,
+          attack: 1,
+          defense: 32,
+          specialAttack: 0,
+          specialDefense: 1,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "defense",
+          decreased: "specialAttack"
+        }
+      }
+    ]
+  },
+  {
+    id: "mega-lucario-adaptability-wallbreaker",
+    title: "Mega Lucario Adaptability Wallbreaker Team",
+    format: "Single",
+    description:
+      "Mega Lucario is the primary wallbreaker, using Adaptability-boosted Fighting and Steel attacks with a major Speed jump after Mega Evolution. Bullet Punch gives priority, Swords Dance punishes passive turns, and Gyarados, Garchomp, Heliolisk, and Meowscarada keep enough speed and pivot pressure to create entry points. Skeledirge and Garchomp cover the defensive side, but the team still needs to keep Lucario away from faster Ground and Fire threats until it can safely Mega Evolve.",
+    members: [
+      {
+        pokemonId: "lucario",
+        displayName: "Lucario",
+        gender: "Female",
+        types: ["Fighting", "Steel"],
+        ability: "Inner Focus",
+        nature: "Jolly",
+        itemId: "lucarionite",
+        itemName: "Lucarionite",
+        moves: ["High Jump Kick", "Bullet Punch", "Meteor Mash", "Swords Dance"],
+        stats: {
+          hp: 147,
+          attack: 162,
+          defense: 90,
+          specialAttack: 121,
+          specialDefense: 90,
+          speed: 156
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "meowscarada",
+        displayName: "Meowscarada",
+        gender: "Male",
+        types: ["Grass", "Dark"],
+        ability: "Protean",
+        nature: "Adamant",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Knock Off", "U-turn", "Flower Trick", "Triple Axel"],
+        stats: {
+          hp: 153,
+          attack: 178,
+          defense: 90,
+          specialAttack: 90,
+          specialDefense: 90,
+          speed: 175
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "attack",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "gyarados",
+        displayName: "Gyarados",
+        gender: "Female",
+        types: ["Water", "Flying"],
+        ability: "Intimidate",
+        nature: "Jolly",
+        itemId: "gyaradosite",
+        itemName: "Gyaradosite",
+        moves: ["Waterfall", "Crunch", "Taunt", "Dragon Dance"],
+        stats: {
+          hp: 171,
+          attack: 177,
+          defense: 100,
+          specialAttack: 72,
+          specialDefense: 120,
+          speed: 146
+        },
+        evs: {
+          hp: 1,
+          attack: 32,
+          defense: 1,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "garchomp",
+        displayName: "Garchomp",
+        gender: "Male",
+        types: ["Dragon", "Ground"],
+        ability: "Rough Skin",
+        nature: "Careful",
+        itemId: "sitrus-berry",
+        itemName: "Sitrus Berry",
+        moves: ["Earthquake", "Dragon Tail", "Spikes", "Stealth Rock"],
+        stats: {
+          hp: 215,
+          attack: 150,
+          defense: 124,
+          specialAttack: 90,
+          specialDefense: 143,
+          speed: 122
+        },
+        evs: {
+          hp: 32,
+          attack: 0,
+          defense: 9,
+          specialAttack: 0,
+          specialDefense: 25,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "specialDefense",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "heliolisk",
+        displayName: "Heliolisk",
+        gender: "Female",
+        types: ["Electric", "Normal"],
+        ability: "Dry Skin",
+        nature: "Timid",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Thunderbolt", "Glare", "Disable", "Volt Switch"],
+        stats: {
+          hp: 139,
+          attack: 67,
+          defense: 72,
+          specialAttack: 161,
+          specialDefense: 114,
+          speed: 177
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "skeledirge",
+        displayName: "Skeledirge",
+        gender: "Male",
+        types: ["Fire", "Ghost"],
+        ability: "Unaware",
+        nature: "Bold",
+        moves: ["Shadow Ball", "Torch Song", "Will-O-Wisp", "Slack Off"],
+        stats: {
+          hp: 208,
+          attack: 85,
+          defense: 167,
+          specialAttack: 130,
+          specialDefense: 100,
+          speed: 86
+        },
+        evs: {
+          hp: 29,
+          attack: 0,
+          defense: 32,
+          specialAttack: 0,
+          specialDefense: 5,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "defense",
+          decreased: "attack"
+        }
+      }
+    ]
+  },
+  {
+    id: "mega-froslass-snow-curse-control",
+    title: "Mega Froslass Snow Curse Control Team",
+    format: "Single",
+    description:
+      "Mega Froslass adds more than fast Destiny Bond pressure: it can set up with Nasty Plot, pressure with Blizzard and Shadow Ball, and use Aurora Veil to give its teammates safer setup turns. Charizard Y, Glimmora, Heliolisk, Mimikyu, and Hawlucha give the team multiple speed-control and sweeping routes, so Froslass can either clean directly or create the turn that lets another attacker take over. The team is fragile if its tempo stalls, so preserving speed advantage is the priority.",
+    members: [
+      {
+        pokemonId: "froslass",
+        displayName: "Froslass",
+        gender: "Female",
+        types: ["Ice", "Ghost"],
+        ability: "Cursed Body",
+        nature: "Timid",
+        itemId: "froslassite",
+        itemName: "Froslassite",
+        moves: ["Nasty Plot", "Blizzard", "Aurora Veil", "Shadow Ball"],
+        stats: {
+          hp: 147,
+          attack: 90,
+          defense: 90,
+          specialAttack: 132,
+          specialDefense: 90,
+          speed: 178
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "charizard",
+        displayName: "Charizard",
+        gender: "Male",
+        types: ["Fire", "Flying"],
+        ability: "Blaze",
+        nature: "Timid",
+        itemId: "charizardite-y",
+        itemName: "Charizardite Y",
+        moves: ["Flamethrower", "Overheat", "Blast Burn", "Solar Beam"],
+        stats: {
+          hp: 155,
+          attack: 93,
+          defense: 98,
+          specialAttack: 161,
+          specialDefense: 105,
+          speed: 167
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "heliolisk",
+        displayName: "Heliolisk",
+        gender: "Female",
+        types: ["Electric", "Normal"],
+        ability: "Dry Skin",
+        nature: "Timid",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Thunderbolt", "Glare", "Disable", "Volt Switch"],
+        stats: {
+          hp: 139,
+          attack: 67,
+          defense: 72,
+          specialAttack: 161,
+          specialDefense: 114,
+          speed: 177
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "glimmora",
+        displayName: "Glimmora",
+        gender: "Female",
+        types: ["Rock", "Poison"],
+        ability: "Toxic Debris",
+        nature: "Timid",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Earth Power", "Power Gem", "Dazzling Gleam", "Sludge Wave"],
+        stats: {
+          hp: 159,
+          attack: 67,
+          defense: 110,
+          specialAttack: 182,
+          specialDefense: 102,
+          speed: 151
+        },
+        evs: {
+          hp: 1,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 1,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "mimikyu",
+        displayName: "Mimikyu",
+        gender: "Female",
+        types: ["Ghost", "Fairy"],
+        ability: "Disguise",
+        nature: "Jolly",
+        itemId: "bright-powder",
+        itemName: "Bright Powder",
+        moves: ["Play Rough", "Shadow Claw", "Shadow Sneak", "Swords Dance"],
+        stats: {
+          hp: 131,
+          attack: 142,
+          defense: 101,
+          specialAttack: 63,
+          specialDefense: 125,
+          speed: 162
+        },
+        evs: {
+          hp: 1,
+          attack: 32,
+          defense: 1,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "hawlucha",
+        displayName: "Hawlucha",
+        gender: "Male",
+        types: ["Fighting", "Flying"],
+        ability: "Unburden",
+        nature: "Adamant",
+        itemId: "sitrus-berry",
+        itemName: "Sitrus Berry",
+        moves: ["Close Combat", "Brave Bird", "Substitute", "Swords Dance"],
+        stats: {
+          hp: 155,
+          attack: 158,
+          defense: 95,
+          specialAttack: 84,
+          specialDefense: 83,
+          speed: 170
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "attack",
+          decreased: "specialAttack"
+        }
+      }
+    ]
+  },
+  {
+    id: "mega-gallade-sharpness-balance",
+    title: "Mega Gallade Sharpness Balance Team",
+    format: "Single",
+    description:
+      "Mega Gallade gives this team a fast physical breaker with Sharpness-boosted blade moves and Destiny Bond as a trade option when direct KOs are not enough. Skeledirge, Garchomp, and Corviknight form the defensive backbone, while Heliolisk and Charizard Y add fast special pressure and pivot utility. The team rewards aggressive positioning: Gallade should be saved for matchups where Sacred Sword, Leaf Blade, or Triple Axel can force immediate progress.",
+    members: [
+      {
+        pokemonId: "gallade",
+        displayName: "Gallade",
+        gender: "Male",
+        types: ["Psychic", "Fighting"],
+        ability: "Sharpness",
+        nature: "Jolly",
+        itemId: "galladite",
+        itemName: "Galladite",
+        moves: ["Triple Axel", "Sacred Sword", "Leaf Blade", "Destiny Bond"],
+        stats: {
+          hp: 145,
+          attack: 177,
+          defense: 85,
+          specialAttack: 76,
+          specialDefense: 135,
+          speed: 145
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "skeledirge",
+        displayName: "Skeledirge",
+        gender: "Male",
+        types: ["Fire", "Ghost"],
+        ability: "Unaware",
+        nature: "Bold",
+        moves: ["Shadow Ball", "Torch Song", "Will-O-Wisp", "Slack Off"],
+        stats: {
+          hp: 208,
+          attack: 85,
+          defense: 167,
+          specialAttack: 130,
+          specialDefense: 100,
+          speed: 86
+        },
+        evs: {
+          hp: 29,
+          attack: 0,
+          defense: 32,
+          specialAttack: 0,
+          specialDefense: 5,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "defense",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "heliolisk",
+        displayName: "Heliolisk",
+        gender: "Female",
+        types: ["Electric", "Normal"],
+        ability: "Dry Skin",
+        nature: "Timid",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Thunderbolt", "Glare", "Disable", "Volt Switch"],
+        stats: {
+          hp: 139,
+          attack: 67,
+          defense: 72,
+          specialAttack: 161,
+          specialDefense: 114,
+          speed: 177
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "excadrill",
+        displayName: "Excadrill",
+        gender: "Female",
+        types: ["Ground", "Steel"],
+        ability: "Mold Breaker",
+        nature: "Jolly",
+        itemId: "choice-scarf",
+        itemName: "Choice Scarf",
+        moves: ["Iron Head", "Earthquake", "Rock Slide", "Horn Drill"],
+        stats: {
+          hp: 187,
+          attack: 187,
+          defense: 80,
+          specialAttack: 63,
+          specialDefense: 85,
+          speed: 154
+        },
+        evs: {
+          hp: 2,
+          attack: 32,
+          defense: 0,
+          specialAttack: 0,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "specialAttack"
+        }
+      },
+      {
+        pokemonId: "charizard",
+        displayName: "Charizard",
+        gender: "Male",
+        types: ["Fire", "Flying"],
+        ability: "Blaze",
+        nature: "Timid",
+        itemId: "charizardite-y",
+        itemName: "Charizardite Y",
+        moves: ["Flamethrower", "Overheat", "Blast Burn", "Solar Beam"],
+        stats: {
+          hp: 155,
+          attack: 93,
+          defense: 98,
+          specialAttack: 161,
+          specialDefense: 105,
+          speed: 167
+        },
+        evs: {
+          hp: 2,
+          attack: 0,
+          defense: 0,
+          specialAttack: 32,
+          specialDefense: 0,
+          speed: 32
+        },
+        statModifiers: {
+          increased: "speed",
+          decreased: "attack"
+        }
+      },
+      {
+        pokemonId: "corviknight",
+        displayName: "Corviknight",
+        gender: "Male",
+        types: ["Flying", "Steel"],
+        ability: "Mirror Armor",
+        nature: "Impish",
+        itemId: "leftovers",
+        itemName: "Leftovers",
+        moves: ["U-turn", "Brave Bird", "Body Press", "Roost"],
+        stats: {
+          hp: 205,
+          attack: 108,
+          defense: 172,
+          specialAttack: 65,
+          specialDefense: 106,
+          speed: 87
+        },
+        evs: {
+          hp: 32,
+          attack: 1,
+          defense: 32,
+          specialAttack: 0,
+          specialDefense: 1,
+          speed: 0
+        },
+        statModifiers: {
+          increased: "defense",
+          decreased: "specialAttack"
+        }
+      }
+    ]
   }
 ];

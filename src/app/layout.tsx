@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -17,6 +18,11 @@ export const metadata: Metadata = {
   applicationName: site.name,
   alternates: {
     canonical: site.url
+  },
+  other: {
+    "google-adsense-account": "ca-pub-7443237558968985",
+    "geo.region": "US",
+    "geo.placename": "United States"
   }
 };
 
@@ -24,6 +30,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <Script
+          id="google-adsense"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7443237558968985"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Header />
         <main className="pb-24 md:pb-0">{children}</main>
         <Footer />

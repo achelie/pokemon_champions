@@ -72,8 +72,8 @@ export type TeamMemberBuild = {
   types: string[];
   ability: string;
   nature: string;
-  itemId: string;
-  itemName: string;
+  itemId?: string;
+  itemName?: string;
   moves: [string, string, string, string];
   stats: PokemonStats;
   evs: PokemonStats;

@@ -1,0 +1,21 @@
+# Pokemon Champions Guide
+
+> Pokemon Champions Guide is an English strategy site for Pokemon Champions PvP team building, tier lists, useful Pokemon recommendations, Pokemon HOME transfer guidance, mobile launch preparation, and Mega build references.
+
+Base URL: https://pokemetahub.com
+
+## Core Pages
+
+- https://pokemetahub.com/tier-list - Single Battle and Double Battle Pokemon Champions tier lists with local Pokemon images and concise ranking reasons.
+- https://pokemetahub.com/useful-pokemon - Mega Pokemon, utility Pokemon, and damage dealer recommendations with moves, natures, abilities, EVs, stats, and item images.
+- https://pokemetahub.com/best-teams - Battle-ready Single and Double Battle team builds with complete movesets, natures, abilities, EV spreads, stats, and local item images.
+- https://pokemetahub.com/beginner-guide - Beginner guide covering battle modes, Single vs Double Battle, first-team building, and Ranked preparation.
+- https://pokemetahub.com/pokemon-home - Pokemon HOME transfer overview with careful compatibility guidance.
+- https://pokemetahub.com/mobile-release - Pokemon Champions iOS and Android release guide for the June 17, 2026 mobile launch.
+- https://pokemetahub.com/mega-raichu - Mega Raichu X and Mega Raichu Y build overview and counters.
+
+## Editorial Notes
+
+- Content is written in English for Pokemon Champions players searching for PvP strategy.
+- Images are served from local site assets rather than third-party runtime URLs.
+- Build recommendations are launch-window guidance and should be updated as the metagame changes.

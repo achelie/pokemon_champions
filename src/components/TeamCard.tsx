@@ -38,7 +38,7 @@ function NatureNote({ member }: { member: TeamMemberBuild }) {
 
 function TeamMemberCard({ member }: { member: TeamMemberBuild }) {
   const pokemon = getPokemonByName(member.pokemonId);
-  const item = getItemByName(member.itemId);
+  const item = member.itemId ? getItemByName(member.itemId) : undefined;
 
   return (
     <article className="rounded-lg border border-line bg-white p-4 shadow-sm">
@@ -60,11 +60,15 @@ function TeamMemberCard({ member }: { member: TeamMemberBuild }) {
           </div>
           <div className="mt-3 flex items-center gap-2 rounded-md border border-line bg-slate-50 px-2 py-1.5">
             <div className="grid h-8 w-8 shrink-0 place-items-center rounded bg-white">
-              {item ? <Image src={item.image} alt={`${member.itemName} icon`} width={28} height={28} className="h-7 w-7 object-contain" /> : null}
+              {item && member.itemName ? (
+                <Image src={item.image} alt={`${member.itemName} icon`} width={28} height={28} className="h-7 w-7 object-contain" />
+              ) : (
+                <span aria-hidden="true" className="h-2 w-2 rounded-full bg-slate-300" />
+              )}
             </div>
             <div className="min-w-0">
               <p className="truncate text-xs font-black uppercase tracking-wide text-slate-500">Held Item</p>
-              <p className="truncate text-sm font-extrabold text-champion-navy">{member.itemName}</p>
+              <p className="truncate text-sm font-extrabold text-champion-navy">{member.itemName ?? "No held item"}</p>
             </div>
           </div>
         </div>

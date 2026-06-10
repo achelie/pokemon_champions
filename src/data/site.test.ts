@@ -4,8 +4,15 @@ import { faqsByPage } from "@/data/faqs";
 import { guides } from "@/data/guides";
 import { tierListsByFormat } from "@/data/tierList";
 import { teams } from "@/data/teams";
+import { absoluteUrl, site } from "@/lib/site";
 
 describe("Pokemon Champions Guide data", () => {
+  it("uses the production pokemetahub.com domain for canonical URLs", () => {
+    expect(site.domain).toBe("pokemetahub.com");
+    expect(site.url).toBe("https://pokemetahub.com");
+    expect(absoluteUrl("/tier-list")).toBe("https://pokemetahub.com/tier-list");
+  });
+
   it("defines guide routes used by homepage cards and sitemap", () => {
     expect(guides.map((guide) => guide.href)).toEqual([
       "/tier-list",
@@ -30,14 +37,25 @@ describe("Pokemon Champions Guide data", () => {
   });
 
   it("provides expanded Double Battle build teams", () => {
-    expect(teams).toHaveLength(5);
-    expect(teams.every((team) => team.format === "Double")).toBe(true);
-    expect(teams.map((team) => team.title)).toEqual([
+    const doubleTeams = teams.filter((team) => team.format === "Double");
+    const singleTeams = teams.filter((team) => team.format === "Single");
+
+    expect(teams).toHaveLength(10);
+    expect(doubleTeams).toHaveLength(5);
+    expect(singleTeams).toHaveLength(5);
+    expect(doubleTeams.map((team) => team.title)).toEqual([
       "Turn-One Defense +6! The Hardest Mega Ampharos Ever",
       "Mega Emboar Bulk Up Fortress Team",
       "Mega Meowstic Expanding Force Tailwind Team",
       "Special Attack Ceiling Mega Alakazam Team",
       "Espathra Baton Pass Mega Gardevoir Team"
+    ]);
+    expect(singleTeams.map((team) => team.title)).toEqual([
+      "Mega Glimmora Adaptability Offense Team",
+      "Mega Alakazam Special Sweeper Team",
+      "Mega Lucario Adaptability Wallbreaker Team",
+      "Mega Froslass Snow Curse Control Team",
+      "Mega Gallade Sharpness Balance Team"
     ]);
 
     for (const team of teams) {
