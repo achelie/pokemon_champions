@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
 import "./globals.css";
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main className="pb-24 md:pb-0">{children}</main>
         <Footer />
         <MobileBottomNav />
+        <Analytics />
       </body>
     </html>
   );
