@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { headerNavItems } from "@/data/navigation";
@@ -8,9 +9,13 @@ export function Header() {
     <header className="sticky top-0 z-30 border-b border-line/80 bg-white/95 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:px-6 sm:py-3" aria-label="Main navigation">
         <Link href="/" className="flex min-w-0 items-center gap-2 font-black text-champion-navy">
-          <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full border-2 border-champion-navy bg-champion-yellow text-xs sm:h-8 sm:w-8 sm:text-sm">
-            PC
-          </span>
+          <Image
+            src="/logo.png"
+            alt={site.name}
+            width={32}
+            height={32}
+            className="h-7 w-7 rounded-full object-cover sm:h-8 sm:w-8"
+          />
           <span className="truncate text-sm leading-tight sm:hidden">Pokemon Champions</span>
           <span className="hidden leading-tight sm:inline">{site.name}</span>
         </Link>
