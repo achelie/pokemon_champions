@@ -66,14 +66,7 @@ export default function TierListPage({ searchParams }: TierListPageProps) {
         </div>
       </nav>
 
-      <section aria-labelledby="active-tier-list-format" className="mt-10">
-        <h2 id="active-tier-list-format" className="text-3xl font-black text-champion-navy">
-          {activeView.title}
-        </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">{activeView.description}</p>
-      </section>
-
-      <div className="mt-6 grid gap-8">
+      <div className="mt-10 grid gap-8">
         {ranks.map((rank) => (
           <section key={rank} aria-labelledby={`${activeView.key}-${rank}-tier-heading`}>
             <h2 id={`${activeView.key}-${rank}-tier-heading`} className="mb-4 text-2xl font-black text-champion-navy">
