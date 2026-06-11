@@ -68,7 +68,7 @@ export default function PokemonListPage({ searchParams }: PokemonListPageProps) 
               <th className="w-8 px-3 py-3 text-center text-xs font-black uppercase tracking-wide text-slate-500">#</th>
               <th className="px-4 py-3 text-xs font-black uppercase tracking-wide text-slate-500">Pokémon</th>
               <th className="px-4 py-3 text-xs font-black uppercase tracking-wide text-slate-500">Type</th>
-              <th className="hidden px-3 py-3 text-center text-xs font-black uppercase tracking-wide text-slate-500 sm:table-cell">
+              <th className="px-3 py-3 text-center text-xs font-black uppercase tracking-wide text-slate-500">
                 Usage
               </th>
               {statLabels.map((s) => (
@@ -106,10 +106,10 @@ export default function PokemonListPage({ searchParams }: PokemonListPageProps) 
                     <span className="text-xs text-slate-400">—</span>
                   )}
                 </td>
-                <td className="hidden px-3 py-3 text-center sm:table-cell">
+                <td className="px-3 py-3 text-center">
                   {meta?.usage !== undefined ? (
-                    <div className="flex items-center gap-2">
-                      <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
+                    <div className="flex items-center justify-center gap-2">
+                      <div className="hidden h-1.5 w-16 overflow-hidden rounded-full bg-slate-100 sm:block">
                         <div
                           className="h-full rounded-full bg-champion-blue"
                           style={{ width: `${Math.min(meta.usage, 100)}%` }}
