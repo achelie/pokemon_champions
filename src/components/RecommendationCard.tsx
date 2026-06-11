@@ -13,10 +13,8 @@ type RecommendationCardProps = {
 const statRows: Array<{ key: keyof PokemonStats; label: string }> = [
   { key: "hp", label: "HP" },
   { key: "attack", label: "Atk" },
-  { key: "defense", label: "Def" },
-  { key: "specialAttack", label: "Sp. Atk" },
-  { key: "specialDefense", label: "Sp. Def" },
-  { key: "speed", label: "Speed" }
+  { key: "specialAttack", label: "SpA" },
+  { key: "speed", label: "Spe" }
 ];
 
 function MergedStats({
@@ -28,6 +26,8 @@ function MergedStats({
   megaBaseStats?: PokemonStats;
   evs: PokemonStats;
 }) {
+  const evTotal = evs.hp + evs.attack + evs.defense + evs.specialAttack + evs.specialDefense + evs.speed;
+
   return (
     <div className="mt-4">
       <h4 className="text-xs font-black uppercase tracking-wide text-slate-500">Stats and EVs</h4>
@@ -41,10 +41,10 @@ function MergedStats({
                 {megaBaseStats ? <span className="text-champion-blue"> → {megaBaseStats[row.key]}</span> : null}
               </span>
             </div>
-            <div className="mt-1 text-xs font-bold text-slate-500">EV {evs[row.key]}</div>
           </div>
         ))}
       </div>
+      <p className="mt-2 text-xs font-bold text-slate-500">EVs: {evTotal}</p>
     </div>
   );
 }
