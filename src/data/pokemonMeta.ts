@@ -39,7 +39,7 @@ const byId: Record<string, PokemonMeta> = {
   araquanid: { types: ["Water", "Bug"], baseStats: s(68, 70, 92, 50, 132, 42) , usage: 0.33},
   arbok: { types: ["Poison"], baseStats: s(60, 95, 69, 65, 79, 80) },
   arcanine: { types: ["Fire"], baseStats: s(90, 110, 80, 100, 80, 95) , usage: 0.33},
-  "arcanine-hisui": { types: ["Fire", "Rock"], baseStats: s(95, 115, 80, 95, 80, 90) , usage: 2.54, usage: 2.54}
+  "arcanine-hisui": { types: ["Fire", "Rock"], baseStats: s(95, 115, 80, 95, 80, 90) , usage: 2.54},
   archaludon: { types: ["Steel", "Dragon"], baseStats: s(90, 105, 130, 125, 65, 85) },
   ariados: { types: ["Bug", "Poison"], baseStats: s(70, 90, 70, 60, 70, 40) },
   armarouge: { types: ["Fire", "Psychic"], baseStats: s(85, 60, 100, 125, 80, 75) , usage: 0},
@@ -122,7 +122,7 @@ const byId: Record<string, PokemonMeta> = {
   flareon: { types: ["Fire"], baseStats: s(65, 130, 60, 95, 110, 65) },
   floette: { types: ["Fairy"], baseStats: s(54, 45, 47, 75, 98, 52) },
   "floette-blue": { types: ["Fairy"], baseStats: s(54, 45, 47, 75, 98, 52) },
-  "floette-eternal": { types: ["Fairy"], baseStats: s(74, 65, 67, 125, 128, 92) , usage: 42.66, usage: 42.66}
+  "floette-eternal": { types: ["Fairy"], baseStats: s(74, 65, 67, 125, 128, 92) , usage: 42.66},
   "floette-orange": { types: ["Fairy"], baseStats: s(54, 45, 47, 75, 98, 52) },
   "floette-white": { types: ["Fairy"], baseStats: s(54, 45, 47, 75, 98, 52) },
   "floette-yellow": { types: ["Fairy"], baseStats: s(54, 45, 47, 75, 98, 52) },
@@ -202,7 +202,7 @@ const byId: Record<string, PokemonMeta> = {
   kingambit: { types: ["Dark", "Steel"], baseStats: s(100, 135, 120, 60, 85, 50) , usage: 56.21},
   kleavor: { types: ["Bug", "Rock"], baseStats: s(70, 135, 95, 45, 70, 85) },
   klefki: { types: ["Steel", "Fairy"], baseStats: s(57, 80, 91, 80, 87, 75) },
-  "kommo-o": { types: ["Dragon", "Fighting"], baseStats: s(75, 110, 125, 100, 105, 85) , usage: 4.74, usage: 4.74}
+  "kommo-o": { types: ["Dragon", "Fighting"], baseStats: s(75, 110, 125, 100, 105, 85) , usage: 4.74},
   krookodile: { types: ["Ground", "Dark"], baseStats: s(95, 117, 80, 65, 70, 92) },
 
   // ===== L =====
@@ -214,7 +214,7 @@ const byId: Record<string, PokemonMeta> = {
   "lucario-mega": { types: ["Fighting", "Steel"], baseStats: s(70, 145, 88, 140, 70, 112) },
   luxray: { types: ["Electric"], baseStats: s(80, 120, 79, 95, 79, 70) },
   lycanroc: { types: ["Rock"], baseStats: s(75, 115, 65, 55, 65, 112) },
-  "lycanroc-dusk": { types: ["Rock"], baseStats: s(75, 117, 65, 55, 65, 110) , usage: 3.07, usage: 3.07}
+  "lycanroc-dusk": { types: ["Rock"], baseStats: s(75, 117, 65, 55, 65, 110) , usage: 3.07},
   "lycanroc-midnight": { types: ["Rock"], baseStats: s(85, 115, 75, 55, 75, 82) },
 
   // ===== M =====
@@ -242,7 +242,7 @@ const byId: Record<string, PokemonMeta> = {
 
   // ===== N =====
   ninetales: { types: ["Fire"], baseStats: s(73, 76, 75, 81, 100, 100) },
-  "ninetales-alola": { types: ["Ice", "Fairy"], baseStats: s(73, 67, 75, 81, 100, 109) , usage: 2.54, usage: 2.54}
+  "ninetales-alola": { types: ["Ice", "Fairy"], baseStats: s(73, 67, 75, 81, 100, 109) , usage: 2.54},
   noivern: { types: ["Flying", "Dragon"], baseStats: s(85, 70, 80, 97, 80, 123) },
 
   // ===== O =====
@@ -278,9 +278,9 @@ const byId: Record<string, PokemonMeta> = {
   rotom: { types: ["Electric", "Ghost"], baseStats: s(50, 50, 77, 95, 77, 91) },
   "rotom-fan": { types: ["Electric", "Flying"], baseStats: s(50, 65, 107, 105, 107, 86) },
   "rotom-frost": { types: ["Electric", "Ice"], baseStats: s(50, 65, 107, 105, 107, 86) },
-  "rotom-heat": { types: ["Electric", "Fire"], baseStats: s(50, 65, 107, 105, 107, 86) , usage: 0.13, usage: 0.13}
-  "rotom-mow": { types: ["Electric", "Grass"], baseStats: s(50, 65, 107, 105, 107, 86) , usage: 0.13}
-  "rotom-wash": { types: ["Electric", "Water"], baseStats: s(50, 65, 107, 105, 107, 86) , usage: 5.61}
+  "rotom-heat": { types: ["Electric", "Fire"], baseStats: s(50, 65, 107, 105, 107, 86) , usage: 0.13},
+  "rotom-mow": { types: ["Electric", "Grass"], baseStats: s(50, 65, 107, 105, 107, 86) , usage: 0.13},
+  "rotom-wash": { types: ["Electric", "Water"], baseStats: s(50, 65, 107, 105, 107, 86) , usage: 5.61},
   runerigus: { types: ["Ground", "Ghost"], baseStats: s(58, 95, 145, 50, 105, 30) },
 
   // ===== S =====
@@ -288,7 +288,7 @@ const byId: Record<string, PokemonMeta> = {
   "sableye-mega": { types: ["Dark", "Ghost"], baseStats: s(50, 85, 125, 85, 115, 20) },
   salazzle: { types: ["Poison", "Fire"], baseStats: s(68, 64, 60, 111, 60, 117) },
   samurott: { types: ["Water"], baseStats: s(95, 100, 85, 108, 70, 70) },
-  "samurott-hisui": { types: ["Water", "Dark"], baseStats: s(90, 108, 80, 100, 65, 85) , usage: 0.33, usage: 0.33}
+  "samurott-hisui": { types: ["Water", "Dark"], baseStats: s(90, 108, 80, 100, 65, 85) , usage: 0.33},
   sandaconda: { types: ["Ground"], baseStats: s(72, 107, 125, 65, 70, 71) },
   scizor: { types: ["Bug", "Steel"], baseStats: s(70, 130, 100, 55, 80, 65) , usage: 2.74},
   "scizor-mega": { types: ["Bug", "Steel"], baseStats: s(70, 150, 140, 65, 100, 75) },
