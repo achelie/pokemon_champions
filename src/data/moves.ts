@@ -373,6 +373,8 @@ const MOVES: MoveMeta[] = [
   { name: "Blood Moon", type: "Normal" },
 ];
 
+export const allMoves = MOVES;
+
 const moveByName = new Map(MOVES.map((m) => [m.name.toLowerCase(), m]));
 
 export function getMoveType(moveName: string): PokemonTypeName | undefined {
