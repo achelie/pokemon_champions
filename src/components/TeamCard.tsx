@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { getItemByName } from "@/data/items";
 import { getPokemonByName } from "@/data/pokemon";
+import { MoveBadge } from "@/components/MoveBadge";
 import { TypeBadgeList } from "@/components/TypeBadge";
 import type { PokemonStats, Team, TeamMemberBuild } from "@/types/content";
 
@@ -91,7 +92,7 @@ function TeamMemberCard({ member }: { member: TeamMemberBuild }) {
         <ul className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2">
           {member.moves.map((move) => (
             <li key={move} className="rounded-md border border-line bg-white px-3 py-2 text-sm font-bold text-slate-700">
-              {move}
+              <MoveBadge move={move} />
             </li>
           ))}
         </ul>

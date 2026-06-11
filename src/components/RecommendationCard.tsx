@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { MoveBadge } from "@/components/MoveBadge";
 import { TypeBadgeList } from "@/components/TypeBadge";
 import { getItemByName } from "@/data/items";
 import { getPokemonByName } from "@/data/pokemon";
@@ -76,7 +77,7 @@ export function RecommendationCard({ recommendation }: RecommendationCardProps) 
           <ul className="mt-2 grid grid-cols-2 gap-1.5 text-sm font-bold text-slate-700">
             {recommendation.moves.map((move) => (
               <li key={move} className="rounded-md bg-mist px-2 py-1">
-                {move}
+                <MoveBadge move={move} />
               </li>
             ))}
           </ul>
