@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
-import { PageHeader } from "@/components/PageHeader";
+
 import { PokemonCard } from "@/components/PokemonCard";
 import { faqsByPage } from "@/data/faqs";
 import { tierListsByFormat } from "@/data/tierList";
@@ -39,12 +39,7 @@ export default function TierListPage({ searchParams }: TierListPageProps) {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd(page)} />
-      <PageHeader
-        title="Pokemon Champions Tier List"
-        description="Browse format-specific Pokemon Champions rankings for Double Battle and Single Battle, with local Pokemon images and clean English reasons for each placement."
-      />
-
-      <nav aria-label="Tier List formats" className="mt-8">
+      <nav aria-label="Tier List formats">
         <div className="grid grid-cols-2 gap-2">
           {tierListViews.map((view) => {
             const isActive = view.key === activeView.key;
