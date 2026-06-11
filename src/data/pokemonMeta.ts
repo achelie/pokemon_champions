@@ -383,6 +383,21 @@ const byId: Record<string, PokemonMeta> = {
   // ===== Z =====
   zoroark: { types: ["Dark"], baseStats: s(60, 105, 60, 120, 60, 105) },
   "zoroark-hisui": { types: ["Normal", "Ghost"], baseStats: s(55, 100, 60, 125, 60, 110) },
+  amoonguss: { types: ["Grass","Poison"], baseStats: s(114, 85, 70, 85, 80, 30) },
+  "blaziken-mega": { types: ["Fire","Fighting"], baseStats: s(80, 160, 80, 130, 80, 100) },
+  cloyster: { types: ["Water","Ice"], baseStats: s(50, 95, 180, 85, 45, 70) },
+  dondozo: { types: ["Water"], baseStats: s(150, 100, 115, 65, 65, 35) },
+  escavalier: { types: ["Bug","Steel"], baseStats: s(70, 135, 105, 60, 105, 20) },
+  grimmsnarl: { types: ["Dark","Fairy"], baseStats: s(95, 120, 65, 95, 75, 60) },
+  indeedee: { types: ["Psychic","Normal"], baseStats: s(60, 65, 55, 105, 95, 95) },
+  "iron-valiant": { types: ["Fairy","Fighting"], baseStats: s(74, 130, 90, 120, 60, 116) },
+  "mawile-mega": { types: ["Steel","Fairy"], baseStats: s(50, 105, 125, 55, 95, 50) },
+  "metagross-mega": { types: ["Steel","Psychic"], baseStats: s(80, 145, 150, 105, 110, 110) },
+  rillaboom: { types: ["Grass"], baseStats: s(100, 125, 90, 60, 70, 85) },
+  "salamence-mega": { types: ["Dragon","Flying"], baseStats: s(95, 145, 130, 120, 90, 120) },
+  "swampert-mega": { types: ["Water","Ground"], baseStats: s(100, 150, 110, 95, 110, 70) },
+  tatsugiri: { types: ["Dragon","Water"], baseStats: s(68, 50, 60, 120, 95, 82) },
+  ursaluna: { types: ["Ground","Normal"], baseStats: s(130, 140, 105, 45, 80, 50) },
 };
 
 const byName = new Map<string, PokemonMeta>();
