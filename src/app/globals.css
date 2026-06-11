@@ -4,8 +4,8 @@
 
 :root {
   color-scheme: light;
-  background: #f5f7fb;
-  color: #111827;
+  background: #ffffff;
+  color: #3f3f46;
 }
 
 * {
@@ -18,11 +18,10 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(180deg, rgba(245, 183, 0, 0.08), transparent 280px),
-    #f5f7fb;
-  color: #111827;
+  background: #ffffff;
+  color: #3f3f46;
   font-family:
+    Geist,
     ui-sans-serif,
     system-ui,
     -apple-system,

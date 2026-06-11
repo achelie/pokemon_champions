@@ -3,194 +3,221 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { JsonLd } from "@/components/JsonLd";
-import { TypeBadgeList } from "@/components/TypeBadge";
-import { pokemonAssets } from "@/data/pokemon";
-import { getPokemonMeta } from "@/data/pokemonMeta";
+import {
+  PokebasePageShell,
+  PokebasePagination,
+  PokebaseResultBar,
+  PokebaseTableWrap,
+  pokebaseTdClass,
+  pokebaseThClass
+} from "@/components/PokebaseTable";
+import {
+  filterPokebasePokemon,
+  pokebaseAbilityOptions,
+  pokebaseGenerationOptions,
+  pokebaseMoveOptions,
+  pokebasePokemon,
+  pokebaseRegulationSets,
+  type PokebaseMegaFilter,
+  type PokebasePokemonFilters
+} from "@/data/pokebasePokemon";
 import { articleJsonLd, createPageMetadata } from "@/lib/seo";
-import type { PokemonStats } from "@/types/content";
 
-const PAGE_SIZE = 50;
+const PAGE_SIZE = 100;
 
 const pageMeta = {
   title: "Pokémon Champions Pokémon List",
-  description: "Complete list of all Pokémon available in Pokémon Champions with types, base stats, and tournament usage rates.",
+  description: "List of currently available Pokémon in Pokémon Champions with usage and base stats.",
   path: "/pokemon",
-  keywords: ["Pokémon Champions Pokémon List", "Pokémon Champions All Pokémon", "Pokémon Champions Stats", "Pokémon Champions Usage"]
+  keywords: ["Pokémon Champions Pokémon List", "Pokémon Champions All Pokémon", "Pokémon Champions Usage"]
 };
 
 export const metadata: Metadata = createPageMetadata(pageMeta);
 
-const statLabels: Array<{ key: keyof PokemonStats; label: string }> = [
-  { key: "hp", label: "HP" },
-  { key: "attack", label: "ATK" },
-  { key: "defense", label: "DEF" },
-  { key: "specialAttack", label: "SpA" },
-  { key: "specialDefense", label: "SpD" },
-  { key: "speed", label: "SPD" }
-];
-
 type PokemonListPageProps = {
   searchParams?: {
     page?: string | string[];
+    regulation?: string | string[];
+    move?: string | string[];
+    ability?: string | string[];
+    generation?: string | string[];
+    mega?: string | string[];
   };
 };
 
-export default function PokemonListPage({ searchParams }: PokemonListPageProps) {
-  const allEntries = pokemonAssets
-    .map((asset) => {
-      const meta = getPokemonMeta(asset.id);
-      return { asset, meta };
-    })
-    .sort((a, b) => {
-      const aUsage = a.meta?.usage ?? -1;
-      const bUsage = b.meta?.usage ?? -1;
-      if (bUsage !== aUsage) return bUsage - aUsage;
-      return a.asset.name.localeCompare(b.asset.name);
-    });
+const statColumns = [
+  { key: "hp", label: "HP" },
+  { key: "attack", label: "ATK" },
+  { key: "defense", label: "DEF" },
+  { key: "specialAttack", label: "Sp. ATK" },
+  { key: "specialDefense", label: "Sp. DEF" },
+  { key: "speed", label: "SPD" }
+] as const;
 
-  const totalPages = Math.ceil(allEntries.length / PAGE_SIZE);
-  const raw = Array.isArray(searchParams?.page) ? searchParams.page[0] : searchParams?.page;
-  const currentPage = Math.min(Math.max(parseInt(raw ?? "1", 10) || 1, 1), totalPages);
+function scalarParam(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
+}
+
+function pageNumber(value: string | string[] | undefined, totalPages: number) {
+  const parsed = Number.parseInt(scalarParam(value) ?? "1", 10);
+  return Math.min(Math.max(Number.isFinite(parsed) ? parsed : 1, 1), totalPages);
+}
+
+function selectedFilters(searchParams: PokemonListPageProps["searchParams"]): PokebasePokemonFilters {
+  const mega = scalarParam(searchParams?.mega);
+  return {
+    regulation: scalarParam(searchParams?.regulation) || pokebaseRegulationSets[0],
+    move: scalarParam(searchParams?.move) || undefined,
+    ability: scalarParam(searchParams?.ability) || undefined,
+    generation: scalarParam(searchParams?.generation) || undefined,
+    mega: mega === "mega" || mega === "base" ? (mega as PokebaseMegaFilter) : "all"
+  };
+}
+
+export default function PokemonListPage({ searchParams }: PokemonListPageProps) {
+  const filters = selectedFilters(searchParams);
+  const filteredEntries = filterPokebasePokemon(pokebasePokemon, filters);
+  const totalPages = Math.max(1, Math.ceil(filteredEntries.length / PAGE_SIZE));
+  const currentPage = pageNumber(searchParams?.page, totalPages);
   const startIdx = (currentPage - 1) * PAGE_SIZE;
-  const entries = allEntries.slice(startIdx, startIdx + PAGE_SIZE);
+  const entries = filteredEntries.slice(startIdx, startIdx + PAGE_SIZE);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <PokebasePageShell
+      title="Pokémon List"
+      description="Usage-ranked Pokémon Champions data aligned with PokéBase's current M-A regulation list."
+    >
       <JsonLd data={articleJsonLd(pageMeta)} />
+      <PokemonFilters filters={filters} />
 
-      {/* Pagination top */}
-      <Pagination currentPage={currentPage} totalPages={totalPages} />
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+        <PokebaseResultBar currentPage={currentPage} totalPages={totalPages} totalResults={filteredEntries.length} />
+        <PokebasePagination basePath="/pokemon" currentPage={currentPage} totalPages={totalPages} searchParams={searchParams} />
+      </div>
 
-      <div className="mt-4 overflow-x-auto rounded-lg border border-line bg-white shadow-sm">
-        <table className="w-full text-sm">
+      <PokebaseTableWrap>
+        <table className="w-full min-w-[760px] border-separate border-spacing-0" aria-label="Pokémon Champions Pokémon usage table">
           <thead>
-            <tr className="border-b border-line bg-mist/60 text-left">
-              <th className="w-8 px-3 py-3 text-center text-xs font-black uppercase tracking-wide text-slate-500">#</th>
-              <th className="px-4 py-3 text-xs font-black uppercase tracking-wide text-slate-500">Pokémon</th>
-              <th className="px-4 py-3 text-xs font-black uppercase tracking-wide text-slate-500">Type</th>
-              <th className="px-3 py-3 text-center text-xs font-black uppercase tracking-wide text-slate-500">
-                Usage
-              </th>
-              {statLabels.map((s) => (
-                <th
-                  key={s.key}
-                  className="hidden px-3 py-3 text-center text-xs font-black uppercase tracking-wide text-slate-500 md:table-cell"
-                >
-                  {s.label}
+            <tr className="bg-white">
+              <th className={`${pokebaseThClass} min-w-60`}>Pokemon</th>
+              <th className={`${pokebaseThClass} text-right`}>Usage</th>
+              {statColumns.map((column) => (
+                <th key={column.key} className={`${pokebaseThClass} text-right`}>
+                  {column.label}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody className="divide-y divide-line">
-            {entries.map(({ asset, meta }, i) => (
-              <tr key={asset.id} className="transition-colors hover:bg-mist/30">
-                <td className="px-3 py-3 text-center text-xs font-bold text-slate-400">{startIdx + i + 1}</td>
-                <td className="px-4 py-3">
-                  <div className="flex items-center gap-3">
-                    <div className="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-mist">
-                      <Image
-                        src={asset.image}
-                        alt={asset.name}
-                        width={44}
-                        height={44}
-                        className="h-10 w-10 object-contain"
-                      />
-                    </div>
-                    <span className="text-sm font-extrabold text-champion-navy">{asset.name}</span>
-                  </div>
+          <tbody>
+            {entries.map((pokemon) => (
+              <tr key={pokemon.slug} className="odd:bg-zinc-50">
+                <td className={pokebaseTdClass}>
+                  <a href={pokemon.sourceUrl} className="group flex min-w-60 items-center gap-3">
+                    <Image
+                      src={pokemon.image}
+                      alt={pokemon.name}
+                      width={36}
+                      height={36}
+                      className="h-9 w-9 object-contain"
+                    />
+                    <span className="font-semibold text-zinc-800 group-hover:underline">{pokemon.name}</span>
+                  </a>
                 </td>
-                <td className="px-4 py-3">
-                  {meta ? (
-                    <TypeBadgeList type={meta.types.join(" / ")} />
-                  ) : (
-                    <span className="text-xs text-slate-400">—</span>
-                  )}
-                </td>
-                <td className="px-3 py-3 text-center">
-                  {meta?.usage !== undefined ? (
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="hidden h-1.5 w-16 overflow-hidden rounded-full bg-slate-100 sm:block">
-                        <div
-                          className="h-full rounded-full bg-champion-blue"
-                          style={{ width: `${Math.min(meta.usage, 100)}%` }}
-                        />
-                      </div>
-                      <span className="text-xs font-bold text-slate-600">{meta.usage.toFixed(1)}%</span>
-                    </div>
-                  ) : (
-                    <span className="text-xs text-slate-300">—</span>
-                  )}
-                </td>
-                {statLabels.map((s) => (
-                  <td key={s.key} className="hidden px-3 py-3 text-center text-sm font-bold text-slate-700 md:table-cell">
-                    {meta?.baseStats[s.key] ?? <span className="text-slate-300">—</span>}
+                <td className={`${pokebaseTdClass} text-right tabular-nums`}>{pokemon.usage}%</td>
+                {statColumns.map((column) => (
+                  <td key={column.key} className={`${pokebaseTdClass} text-right tabular-nums`}>
+                    {pokemon.baseStats[column.key]}
                   </td>
                 ))}
               </tr>
             ))}
           </tbody>
         </table>
-      </div>
+      </PokebaseTableWrap>
 
-      {/* Pagination bottom */}
-      <div className="mt-6">
-        <Pagination currentPage={currentPage} totalPages={totalPages} />
+      <div className="mt-5 flex justify-end">
+        <PokebasePagination basePath="/pokemon" currentPage={currentPage} totalPages={totalPages} searchParams={searchParams} />
       </div>
-    </div>
+    </PokebasePageShell>
   );
 }
 
-function Pagination({ currentPage, totalPages }: { currentPage: number; totalPages: number }) {
-  const pages: (number | "...")[] = [];
-  for (let i = 1; i <= totalPages; i++) {
-    if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
-      pages.push(i);
-    } else if (pages[pages.length - 1] !== "...") {
-      pages.push("...");
-    }
-  }
+function PokemonFilters({ filters }: { filters: PokebasePokemonFilters }) {
+  const selectClass =
+    "h-10 rounded-xl border border-zinc-200 bg-white px-3 text-sm text-zinc-700 shadow-sm shadow-zinc-100 outline-offset-2 focus:outline-2 focus:outline-blue-400";
+  const labelClass = "flex min-w-0 flex-col gap-1 text-xs font-medium text-zinc-500";
 
   return (
-    <nav aria-label="Pokémon list pagination" className="flex items-center justify-center gap-1">
-      {currentPage > 1 ? (
-        <Link
-          href={`/pokemon?page=${currentPage - 1}`}
-          className="rounded-full px-3 py-2 text-xs font-black text-champion-navy hover:bg-mist transition"
-        >
-          ← Prev
-        </Link>
-      ) : (
-        <span className="rounded-full px-3 py-2 text-xs font-black text-slate-300">← Prev</span>
-      )}
+    <form action="/pokemon" className="rounded-xl border border-zinc-200 bg-white p-3 shadow-sm shadow-zinc-100">
+      <div className="grid gap-3 md:grid-cols-5">
+        <label className={labelClass}>
+          Filter by regulation set
+          <select name="regulation" defaultValue={filters.regulation} className={selectClass}>
+            {pokebaseRegulationSets.map((regulation) => (
+              <option key={regulation} value={regulation}>
+                {regulation}
+              </option>
+            ))}
+          </select>
+        </label>
 
-      {pages.map((p, i) =>
-        p === "..." ? (
-          <span key={`dots-${i}`} className="px-1 text-xs text-slate-400">…</span>
-        ) : (
-          <Link
-            key={p}
-            href={`/pokemon?page=${p}`}
-            className={`grid h-8 w-8 place-items-center rounded-full text-xs font-black transition ${
-              p === currentPage
-                ? "bg-champion-blue text-white"
-                : "text-champion-navy hover:bg-mist"
-            }`}
-          >
-            {p}
-          </Link>
-        )
-      )}
+        <label className={labelClass}>
+          Filter by move
+          <select name="move" defaultValue={filters.move ?? ""} className={selectClass}>
+            <option value="">Any move</option>
+            {pokebaseMoveOptions.map((move) => (
+              <option key={move} value={move}>
+                {move}
+              </option>
+            ))}
+          </select>
+        </label>
 
-      {currentPage < totalPages ? (
-        <Link
-          href={`/pokemon?page=${currentPage + 1}`}
-          className="rounded-full px-3 py-2 text-xs font-black text-champion-navy hover:bg-mist transition"
+        <label className={labelClass}>
+          Filter by ability
+          <select name="ability" defaultValue={filters.ability ?? ""} className={selectClass}>
+            <option value="">Any ability</option>
+            {pokebaseAbilityOptions.map((ability) => (
+              <option key={ability} value={ability}>
+                {ability}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className={labelClass}>
+          Filter by generation
+          <select name="generation" defaultValue={filters.generation ?? ""} className={selectClass}>
+            <option value="">Any generation</option>
+            {pokebaseGenerationOptions.map((generation) => (
+              <option key={generation} value={generation}>
+                {generation}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className={labelClass}>
+          Mega Evolution
+          <select name="mega" defaultValue={filters.mega ?? "all"} className={selectClass}>
+            <option value="all">All Pokémon</option>
+            <option value="mega">Mega only</option>
+            <option value="base">No Mega</option>
+          </select>
+        </label>
+      </div>
+
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <button
+          type="submit"
+          className="rounded-xl border border-orange-100 bg-orange-50 px-4 py-2 text-sm font-semibold text-zinc-800 shadow-sm shadow-orange-100/60 transition hover:border-orange-200 hover:bg-orange-100"
         >
-          Next →
+          Apply filters
+        </button>
+        <Link href="/pokemon" className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-blue-200 hover:text-blue-600">
+          Clear
         </Link>
-      ) : (
-        <span className="rounded-full px-3 py-2 text-xs font-black text-slate-300">Next →</span>
-      )}
-    </nav>
+      </div>
+    </form>
   );
 }
