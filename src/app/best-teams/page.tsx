@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
-import { PageHeader } from "@/components/PageHeader";
 import { TeamCard } from "@/components/TeamCard";
 import { faqsByPage } from "@/data/faqs";
 import { bestTeamFormatViews, resolveBestTeamFormatView } from "@/data/teamViews";
@@ -37,13 +36,7 @@ export default function BestTeamsPage({ searchParams }: BestTeamsPageProps) {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd(page)} />
-      <PageHeader
-        eyebrow="Team Guide"
-        title="Pokemon Champions Best Teams"
-        description="Browse battle-ready Pokemon Champions team builds by format, with local Pokemon images, item icons, moves, natures, abilities, stats, and EV spreads."
-      />
-
-      <nav aria-label="Best Teams formats" className="mt-8">
+      <nav aria-label="Best Teams formats">
         <div className="grid grid-cols-2 gap-2">
           {bestTeamFormatViews.map((view) => {
             const isActive = view.key === activeView.key;
@@ -65,14 +58,7 @@ export default function BestTeamsPage({ searchParams }: BestTeamsPageProps) {
         </div>
       </nav>
 
-      <section aria-labelledby="active-best-team-format" className="mt-10">
-        <h2 id="active-best-team-format" className="text-3xl font-black text-champion-navy">
-          {activeView.title}
-        </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">{activeView.description}</p>
-      </section>
-
-      <div className="mt-6 grid gap-5">
+      <div className="mt-10 grid gap-5">
         {activeTeams.map((team) => (
           <TeamCard key={team.id} team={team} />
         ))}

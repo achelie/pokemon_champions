@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { JsonLd } from "@/components/JsonLd";
-import { PageHeader } from "@/components/PageHeader";
 import { RecommendationCard } from "@/components/RecommendationCard";
 import { resolveUsefulPokemonView, usefulPokemonViews } from "@/data/usefulPokemonViews";
 import { tierRecommendationGroups } from "@/data/tierRecommendations";
@@ -35,12 +34,7 @@ export default function UsefulPokemonPage({ searchParams }: UsefulPokemonPagePro
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd(page)} />
-      <PageHeader
-        title="Pokemon Champions Useful Pokemon"
-        description="Browse practical Pokemon Champions build cards by team role: Mega Pokemon, utility picks, and other damage dealers."
-      />
-
-      <nav aria-label="Useful Pokemon categories" className="mt-8">
+      <nav aria-label="Useful Pokemon categories">
         <div className="grid grid-cols-3 gap-2">
           {usefulPokemonViews.map((view) => {
             const isActive = view.key === activeView.key;
@@ -63,15 +57,8 @@ export default function UsefulPokemonPage({ searchParams }: UsefulPokemonPagePro
         </div>
       </nav>
 
-      <section aria-labelledby="active-useful-pokemon-view" className="mt-10">
-        <h2 id="active-useful-pokemon-view" className="text-3xl font-black text-champion-navy">
-          {activeView.title}
-        </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">{activeView.description}</p>
-      </section>
-
       {activeRecommendationGroup ? (
-        <section aria-label={`${activeRecommendationGroup.title} build cards`} className="mt-6 grid gap-4 lg:grid-cols-2">
+        <section aria-label={`${activeRecommendationGroup.title} build cards`} className="mt-10 grid gap-4 lg:grid-cols-2">
           {activeRecommendationGroup.entries.map((recommendation) => (
             <RecommendationCard key={recommendation.id} recommendation={recommendation} />
           ))}
