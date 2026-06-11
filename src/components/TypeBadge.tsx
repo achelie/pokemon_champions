@@ -17,7 +17,7 @@ export function TypeBadge({ type }: TypeBadgeProps) {
       style={{ backgroundColor: meta.color }}
       title={`${meta.name} type`}
     >
-      <span className="grid h-4 w-4 place-items-center rounded-full bg-white/25 text-[10px] leading-none">{meta.glyph}</span>
+      <img src={meta.icon} alt={meta.name} className="h-4 w-4" />
       <span>{meta.name}</span>
     </span>
   );
