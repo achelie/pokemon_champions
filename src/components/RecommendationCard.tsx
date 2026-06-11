@@ -19,16 +19,27 @@ const statRows: Array<{ key: keyof PokemonStats; label: string }> = [
   { key: "speed", label: "Speed" }
 ];
 
-function StatBlock({ label, stats, evs }: { label: string; stats: PokemonStats; evs: PokemonStats }) {
+function MergedStats({
+  baseStats,
+  megaBaseStats,
+  evs
+}: {
+  baseStats: PokemonStats;
+  megaBaseStats?: PokemonStats;
+  evs: PokemonStats;
+}) {
   return (
     <div className="mt-4">
-      <h4 className="text-xs font-black uppercase tracking-wide text-slate-500">{label}</h4>
+      <h4 className="text-xs font-black uppercase tracking-wide text-slate-500">Stats and EVs</h4>
       <div className="mt-2 grid grid-cols-2 gap-2">
         {statRows.map((row) => (
           <div key={row.key} className="rounded-md bg-slate-50 px-3 py-2">
             <div className="flex items-center justify-between gap-2">
               <span className="text-xs font-black text-slate-500">{row.label}</span>
-              <span className="text-sm font-black text-champion-navy">{stats[row.key]}</span>
+              <span className="text-sm font-black text-champion-navy">
+                {baseStats[row.key]}
+                {megaBaseStats ? <span className="text-champion-blue"> → {megaBaseStats[row.key]}</span> : null}
+              </span>
             </div>
             <div className="mt-1 text-xs font-bold text-slate-500">EV {evs[row.key]}</div>
           </div>
@@ -109,10 +120,11 @@ export function RecommendationCard({ recommendation }: RecommendationCardProps) 
         </ul>
       </div>
 
-      <StatBlock label="Stats and EVs" stats={recommendation.baseStats} evs={recommendation.evs} />
-      {recommendation.megaBaseStats && recommendation.megaEvs ? (
-        <StatBlock label="Mega Stats and EVs" stats={recommendation.megaBaseStats} evs={recommendation.megaEvs} />
-      ) : null}
+      <MergedStats
+        baseStats={recommendation.baseStats}
+        megaBaseStats={recommendation.megaBaseStats}
+        evs={recommendation.evs}
+      />
 
       <p className="mt-4 text-sm leading-6 text-slate-600">{recommendation.explanation}</p>
     </article>
