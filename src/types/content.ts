@@ -93,13 +93,17 @@ export type Build = {
 };
 
 export type PokemonAsset = {
-  id: string;
   slug: string;
   name: string;
-  aliases: string[];
   image: string;
   sourceUrl: string;
   sourceImageUrl: string;
+  usage: number;
+  baseStats: PokemonStats;
+  generation: string;
+  isMega: boolean;
+  moves: string[];
+  abilities: string[];
 };
 
 export type PokemonStats = {
@@ -112,10 +116,10 @@ export type PokemonStats = {
 };
 
 export type ItemAsset = {
-  id: string;
   slug: string;
   name: string;
-  aliases: string[];
+  category: string;
+  description: string;
   image: string;
   sourceUrl: string;
   sourceImageUrl: string;

@@ -14,7 +14,7 @@ export function Header() {
             alt={site.name}
             width={32}
             height={32}
-            className="h-7 w-7 rounded-full object-cover sm:h-8 sm:w-8"
+            className="h-7 w-7 object-contain sm:h-8 sm:w-8"
           />
           <span className="truncate text-sm leading-tight sm:hidden">Pokemon Champions</span>
           <span className="hidden leading-tight sm:inline">{site.name}</span>

@@ -46,7 +46,14 @@ function TeamMemberCard({ member }: { member: TeamMemberBuild }) {
       <div className="flex gap-3">
         <div className="grid h-24 w-24 shrink-0 place-items-center rounded-lg bg-mist">
           {pokemon ? (
-            <Image src={pokemon.image} alt={`${member.displayName} artwork`} width={88} height={88} className="h-22 w-22 object-contain" />
+            <Image
+              src={pokemon.image}
+              alt={`${member.displayName} artwork`}
+              width={88}
+              height={88}
+              unoptimized
+              className="h-22 w-22 object-contain"
+            />
           ) : (
             <span className="text-sm font-black text-champion-navy">{member.displayName.slice(0, 2).toUpperCase()}</span>
           )}
@@ -62,7 +69,14 @@ function TeamMemberCard({ member }: { member: TeamMemberBuild }) {
           <div className="mt-3 flex items-center gap-2 rounded-md border border-line bg-slate-50 px-2 py-1.5">
             <div className="grid h-8 w-8 shrink-0 place-items-center rounded bg-white">
               {item && member.itemName ? (
-                <Image src={item.image} alt={`${member.itemName} icon`} width={28} height={28} className="h-7 w-7 object-contain" />
+                <Image
+                  src={item.image}
+                  alt={`${member.itemName} icon`}
+                  width={28}
+                  height={28}
+                  unoptimized
+                  className="h-7 w-7 object-contain"
+                />
               ) : (
                 <span aria-hidden="true" className="h-2 w-2 rounded-full bg-slate-300" />
               )}

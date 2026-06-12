@@ -3,24 +3,42 @@ import type { ReactNode } from "react";
 
 type SearchParams = Record<string, string | string[] | undefined>;
 
+const databaseTabs = [
+  { href: "/pokemon", label: "Pokemon" },
+  { href: "/moves", label: "Moves" },
+  { href: "/abilities", label: "Abilities" },
+  { href: "/items", label: "Items" }
+] as const;
+
 export function PokebasePageShell({
   title,
   description,
   children
 }: {
   title: string;
-  description: string;
+  description?: string;
   children: ReactNode;
 }) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 font-geist text-zinc-700 sm:px-6">
       <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">Pokémon Champions</p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">Pokemon Champions</p>
           <h1 className="mt-1 text-2xl font-semibold tracking-normal text-zinc-900">{title}</h1>
-          <p className="mt-1 max-w-2xl text-sm leading-6 text-zinc-600">{description}</p>
+          {description ? <p className="mt-1 max-w-2xl text-sm leading-6 text-zinc-600">{description}</p> : null}
         </div>
       </div>
+      <nav aria-label="Pokemon Champions database" className="mb-5 flex flex-wrap gap-2">
+        {databaseTabs.map((tab) => (
+          <Link
+            key={tab.href}
+            href={tab.href}
+            className="rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-sm font-semibold text-zinc-700 shadow-sm shadow-zinc-100 transition hover:border-blue-200 hover:text-blue-600"
+          >
+            {tab.label}
+          </Link>
+        ))}
+      </nav>
       {children}
     </div>
   );

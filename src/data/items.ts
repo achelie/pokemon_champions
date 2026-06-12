@@ -2,1680 +2,1075 @@ import type { ItemAsset } from "@/types/content";
 
 export const itemAssets = [
   {
-    "id": "abomasite",
     "slug": "abomasite",
     "name": "Abomasite",
-    "aliases": [
-      "暴雪王進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Abomasnow holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/abomasite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/93/Bag_%E6%9A%B4%E9%9B%AA%E7%8E%8B%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%9A%B4%E9%9B%AA%E7%8E%8B%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/IU0uEoAq8ZjQUbgRUYLLo.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/abomasite"
   },
   {
-    "id": "absolite",
     "slug": "absolite",
     "name": "Absolite",
-    "aliases": [
-      "阿勃梭魯進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Absol holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/absolite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/99/Bag_%E9%98%BF%E5%8B%83%E6%A2%AD%E9%B2%81%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%98%BF%E5%8B%83%E6%A2%AD%E9%B2%81%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/rZS1vbhO6JhimmiYXjuRF.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/absolite"
   },
   {
-    "id": "aerodactylite",
     "slug": "aerodactylite",
     "name": "Aerodactylite",
-    "aliases": [
-      "化石翼龍進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Aerodactyl holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/aerodactylite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/5e/Bag_%E5%8C%96%E7%9F%B3%E7%BF%BC%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%8C%96%E7%9F%B3%E7%BF%BC%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/alXIfsqLb7mheAX0qEjlz.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/aerodactylite"
   },
   {
-    "id": "aggronite",
     "slug": "aggronite",
     "name": "Aggronite",
-    "aliases": [
-      "波士可多拉進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Aggron holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/aggronite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/5c/Bag_%E6%B3%A2%E5%A3%AB%E5%8F%AF%E5%A4%9A%E6%8B%89%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%B3%A2%E5%A3%AB%E5%8F%AF%E5%A4%9A%E6%8B%89%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/G7258c0KPBmeFyDBipIqE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/aggronite"
   },
   {
-    "id": "alakazite",
     "slug": "alakazite",
     "name": "Alakazite",
-    "aliases": [
-      "胡地進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Alakazam holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/alakazite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/f9/Bag_%E8%83%A1%E5%9C%B0%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%83%A1%E5%9C%B0%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/sH1YMssWcvCKUgpc5kMt_.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/alakazite"
   },
   {
-    "id": "altarianite",
     "slug": "altarianite",
     "name": "Altarianite",
-    "aliases": [
-      "七夕青鳥進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Altaria holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/altarianite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/4a/Bag_%E4%B8%83%E5%A4%95%E9%9D%92%E9%B8%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E4%B8%83%E5%A4%95%E9%9D%92%E9%B8%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/aGMj9Xd29YKGj5hv0bcrc.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/altarianite"
   },
   {
-    "id": "ampharosite",
     "slug": "ampharosite",
     "name": "Ampharosite",
-    "aliases": [
-      "電龍進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Ampharos holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/ampharosite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/d/db/Bag_%E7%94%B5%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%94%B5%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/ZnSr-GoxRNVFnSnzVXG0x.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/ampharosite"
   },
   {
-    "id": "aspear-berry",
     "slug": "aspear-berry",
     "name": "Aspear Berry",
-    "aliases": [
-      "利木果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from being frozen on its own in battle.",
     "image": "/images/items/aspear-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/c/ce/Bag_%E5%88%A9%E6%9C%A8%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/DDzvCBb_DBaK-azhjujZ7.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/aspear-berry"
   },
   {
-    "id": "audinite",
     "slug": "audinite",
     "name": "Audinite",
-    "aliases": [
-      "差不多娃娃進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Audino holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/audinite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/9d/Bag_%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%A8%83%E5%A8%83%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%A8%83%E5%A8%83%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/F8LHP5lBxDU7hJL7xt0pC.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/audinite"
   },
   {
-    "id": "babiri-berry",
     "slug": "babiri-berry",
     "name": "Babiri Berry",
-    "aliases": [
-      "霹霹果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Steel-type attack.",
     "image": "/images/items/babiri-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/4/45/Bag_%E9%9C%B9%E9%9C%B9%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/GjnzhcASoECuJVGykvUsF.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/babiri-berry"
   },
   {
-    "id": "banettite",
     "slug": "banettite",
     "name": "Banettite",
-    "aliases": [
-      "詛咒娃娃進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Banette holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/banettite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/6/68/Bag_%E8%AF%85%E5%92%92%E5%A8%83%E5%A8%83%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%AF%85%E5%92%92%E5%A8%83%E5%A8%83%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/UhEz4oMiN0W8e-4hPhZVD.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/banettite"
   },
   {
-    "id": "beedrillite",
     "slug": "beedrillite",
     "name": "Beedrillite",
-    "aliases": [
-      "大針蜂進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Beedrill holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/beedrillite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/4d/Bag_%E5%A4%A7%E9%92%88%E8%9C%82%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A4%A7%E9%92%88%E8%9C%82%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/LOD3ENL2TuXryuK_RKBGB.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/beedrillite"
   },
   {
-    "id": "black-belt",
     "slug": "black-belt",
     "name": "Black Belt",
-    "aliases": [
-      "黑帶"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This belt helps the wearer to focus and boosts the power of Fighting-type moves.",
     "image": "/images/items/black-belt.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/0/08/Bag_%E9%BB%91%E5%B8%A6_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/_kA5JDuW0_ORfFMzLKnzW.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/black-belt"
   },
   {
-    "id": "black-glasses",
     "slug": "black-glasses",
     "name": "Black Glasses",
-    "aliases": [
-      "黑色眼鏡"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a pair of shady-looking glasses that boost the power of Dark-type moves.",
     "image": "/images/items/black-glasses.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/b/bc/Bag_%E9%BB%91%E8%89%B2%E7%9C%BC%E9%95%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/jKvpHOY-0O16GAeIYQvkD.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/black-glasses"
   },
   {
-    "id": "blastoisinite",
     "slug": "blastoisinite",
     "name": "Blastoisinite",
-    "aliases": [
-      "水箭龜進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Blastoise holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/blastoisinite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/93/Bag_%E6%B0%B4%E7%AE%AD%E9%BE%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%B0%B4%E7%AE%AD%E9%BE%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Nt5kdVP-icY7C-OKwZk7w.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/blastoisinite"
   },
   {
-    "id": "bright-powder",
     "slug": "bright-powder",
     "name": "Bright Powder",
-    "aliases": [
-      "光粉"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It casts a tricky glare that lowers the opposing Pokémon’s accuracy.",
     "image": "/images/items/bright-powder.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/9/91/Bag_%E5%85%89%E7%B2%89_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/ihn9c_g4VPwGCHQWyPbxl.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/bright-powder"
   },
   {
-    "id": "bug-type-affinity-ticket",
-    "slug": "bug-type-affinity-ticket",
-    "name": "Bug-Type Affinity Ticket",
-    "aliases": [
-      "蟲屬性介紹券"
-    ],
-    "image": "/images/items/bug-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/5b/Bag_%E8%99%AB%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%99%AB%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "cameruptite",
     "slug": "cameruptite",
     "name": "Cameruptite",
-    "aliases": [
-      "噴火駝進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Camerupt holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/cameruptite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/7/72/Bag_%E5%96%B7%E7%81%AB%E9%A9%BC%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%96%B7%E7%81%AB%E9%A9%BC%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/MOUtdZOakuJ7wHiRH1l1X.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/cameruptite"
   },
   {
-    "id": "chandelurite",
     "slug": "chandelurite",
     "name": "Chandelurite",
-    "aliases": [
-      "水晶燈火靈進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Chandelure holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/chandelurite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/07/Bag_%E6%B0%B4%E6%99%B6%E7%81%AF%E7%81%AB%E7%81%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%B0%B4%E6%99%B6%E7%81%AF%E7%81%AB%E7%81%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/_sYYBGO8tg3GUfLdaiYUf.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/chandelurite"
   },
   {
-    "id": "charcoal",
     "slug": "charcoal",
     "name": "Charcoal",
-    "aliases": [
-      "木炭"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a combustible fuel that boosts the power of Fire-type moves.",
     "image": "/images/items/charcoal.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/b/b2/Bag_%E6%9C%A8%E7%82%AD_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/riZRqhhp6xj-eogF47DwX.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/charcoal"
   },
   {
-    "id": "charizardite-x",
     "slug": "charizardite-x",
     "name": "Charizardite X",
-    "aliases": [
-      "噴火龍進化石Ｘ",
-      "Charizardite-X"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Charizard holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/charizardite-x.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/5d/Bag_%E5%96%B7%E7%81%AB%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3%EF%BC%B8_Champions_Sprite.png/60px-Bag_%E5%96%B7%E7%81%AB%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3%EF%BC%B8_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/h_c_fbKkIxl4tN8_58YSD.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/charizardite-x"
   },
   {
-    "id": "charizardite-y",
     "slug": "charizardite-y",
     "name": "Charizardite Y",
-    "aliases": [
-      "噴火龍進化石Ｙ",
-      "Charizardite-Y"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Charizard holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/charizardite-y.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/a/a2/Bag_%E5%96%B7%E7%81%AB%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3%EF%BC%B9_Champions_Sprite.png/60px-Bag_%E5%96%B7%E7%81%AB%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3%EF%BC%B9_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/JZQenaKvNs5FUZerbYqvc.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/charizardite-y"
   },
   {
-    "id": "charti-berry",
     "slug": "charti-berry",
     "name": "Charti Berry",
-    "aliases": [
-      "草蠶果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Rock-type attack.",
     "image": "/images/items/charti-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/1/14/Bag_%E8%8D%89%E8%9A%95%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/jrEP0ADV8YLuipA_rxNqH.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/charti-berry"
   },
   {
-    "id": "cheri-berry",
     "slug": "cheri-berry",
     "name": "Cheri Berry",
-    "aliases": [
-      "櫻子果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from paralysis on its own in battle.",
     "image": "/images/items/cheri-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/8/8e/Bag_%E6%A8%B1%E5%AD%90%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/U0x7VCMPrccrUrp0kI1Rj.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/cheri-berry"
   },
   {
-    "id": "chesnaughtite",
     "slug": "chesnaughtite",
     "name": "Chesnaughtite",
-    "aliases": [
-      "布里卡隆進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Chesnaught holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/chesnaughtite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/4a/Bag_%E5%B8%83%E9%87%8C%E5%8D%A1%E9%9A%86%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%B8%83%E9%87%8C%E5%8D%A1%E9%9A%86%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/VqjXSDJqDfjLkHegRxMMz.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/chesnaughtite"
   },
   {
-    "id": "chesto-berry",
     "slug": "chesto-berry",
     "name": "Chesto Berry",
-    "aliases": [
-      "零餘果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from sleep on its own in battle.",
     "image": "/images/items/chesto-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/8/86/Bag_%E9%9B%B6%E4%BD%99%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/GZr-gK4-wkPthO6nNc1eC.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/chesto-berry"
   },
   {
-    "id": "chilan-berry",
     "slug": "chilan-berry",
     "name": "Chilan Berry",
-    "aliases": [
-      "燈漿果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one Normal-type attack.",
     "image": "/images/items/chilan-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/2/23/Bag_%E7%81%AF%E6%B5%86%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/rV2EE-uWWnfnCW6ZfwV53.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/chilan-berry"
   },
   {
-    "id": "chimechite",
     "slug": "chimechite",
     "name": "Chimechite",
-    "aliases": [
-      "風鈴鈴進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Chimecho holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/chimechite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/7/70/Bag_%E9%A3%8E%E9%93%83%E9%93%83%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%A3%8E%E9%93%83%E9%93%83%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/hTXZd1CfK3ZJ8ku34yy2g.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/chimechite"
   },
   {
-    "id": "choice-scarf",
     "slug": "choice-scarf",
     "name": "Choice Scarf",
-    "aliases": [
-      "講究圍巾"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This curious scarf boosts Speed but only allows the use of one move.",
     "image": "/images/items/choice-scarf.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/1/19/Bag_%E8%AE%B2%E7%A9%B6%E5%9B%B4%E5%B7%BE_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/TtV-9T3hWkm5Mpl_K8Jay.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/choice-scarf"
   },
   {
-    "id": "chople-berry",
     "slug": "chople-berry",
     "name": "Chople Berry",
-    "aliases": [
-      "蓮蒲果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Fighting-type attack.",
     "image": "/images/items/chople-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/9/9a/Bag_%E8%8E%B2%E8%92%B2%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/NLm51HmIuV_mEgbV8MuAn.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/chople-berry"
   },
   {
-    "id": "clefablite",
     "slug": "clefablite",
     "name": "Clefablite",
-    "aliases": [
-      "皮可西進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Clefable holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/clefablite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/8/8b/Bag_%E7%9A%AE%E5%8F%AF%E8%A5%BF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%9A%AE%E5%8F%AF%E8%A5%BF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/0WTNWWCPsgGy22tdH9Qt7.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/clefablite"
   },
   {
-    "id": "coba-berry",
     "slug": "coba-berry",
     "name": "Coba Berry",
-    "aliases": [
-      "棱瓜果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Flying-type attack.",
     "image": "/images/items/coba-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/1/11/Bag_%E6%A3%B1%E7%93%9C%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/yJGXOTtML6PLZhiKhy47X.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/coba-berry"
   },
   {
-    "id": "colbur-berry",
     "slug": "colbur-berry",
     "name": "Colbur Berry",
-    "aliases": [
-      "刺耳果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Dark-type attack.",
     "image": "/images/items/colbur-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/a8/Bag_%E5%88%BA%E8%80%B3%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/yZoD99er-EERMAzgJ6cEi.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/colbur-berry"
   },
   {
-    "id": "crabominite",
     "slug": "crabominite",
     "name": "Crabominite",
-    "aliases": [
-      "好勝毛蟹進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Crabominable holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/crabominite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/d/d6/Bag_%E5%A5%BD%E8%83%9C%E6%AF%9B%E8%9F%B9%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A5%BD%E8%83%9C%E6%AF%9B%E8%9F%B9%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/7pxksvTIc9Gwz-WH6nDuS.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/crabominite"
   },
   {
-    "id": "dark-type-affinity-ticket",
-    "slug": "dark-type-affinity-ticket",
-    "name": "Dark-Type Affinity Ticket",
-    "aliases": [
-      "惡屬性介紹券"
-    ],
-    "image": "/images/items/dark-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/c/cb/Bag_%E6%81%B6%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%81%B6%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "delphoxite",
     "slug": "delphoxite",
     "name": "Delphoxite",
-    "aliases": [
-      "妖火紅狐進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Delphox holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/delphoxite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/8/80/Bag_%E5%A6%96%E7%81%AB%E7%BA%A2%E7%8B%90%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A6%96%E7%81%AB%E7%BA%A2%E7%8B%90%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/1lk7pXPm5Sbadw_UOzVH5.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/delphoxite"
   },
   {
-    "id": "dive-ball-guaranteed-ticket",
-    "slug": "dive-ball-guaranteed-ticket",
-    "name": "Dive Ball Guaranteed Ticket",
-    "aliases": [
-      "潛水球保證券"
-    ],
-    "image": "/images/items/dive-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/48/Bag_%E6%BD%9C%E6%B0%B4%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%BD%9C%E6%B0%B4%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "dragon-fang",
     "slug": "dragon-fang",
     "name": "Dragon Fang",
-    "aliases": [
-      "龍之牙"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This hard and sharp fang boosts the power of Dragon-type moves.",
     "image": "/images/items/dragon-fang.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/0/0a/Bag_%E9%BE%99%E4%B9%8B%E7%89%99_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/qS6BRjO8ZmBzzufdXzQas.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/dragon-fang"
   },
   {
-    "id": "dragon-type-affinity-ticket",
-    "slug": "dragon-type-affinity-ticket",
-    "name": "Dragon-Type Affinity Ticket",
-    "aliases": [
-      "龍屬性介紹券"
-    ],
-    "image": "/images/items/dragon-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/53/Bag_%E9%BE%99%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E9%BE%99%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "dragoninite",
     "slug": "dragoninite",
     "name": "Dragoninite",
-    "aliases": [
-      "快龍進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Dragonite holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/dragoninite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/ee/Bag_%E5%BF%AB%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%BF%AB%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/UP1p0Vur2n_c0m0aLY0vk.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/dragoninite"
   },
   {
-    "id": "drampanite",
     "slug": "drampanite",
     "name": "Drampanite",
-    "aliases": [
-      "老翁龍進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Drampa holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/drampanite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/f1/Bag_%E8%80%81%E7%BF%81%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%80%81%E7%BF%81%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/r3LlDIMvHOK-McZqWWimc.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/drampanite"
   },
   {
-    "id": "dusk-ball-guaranteed-ticket",
-    "slug": "dusk-ball-guaranteed-ticket",
-    "name": "Dusk Ball Guaranteed Ticket",
-    "aliases": [
-      "黑暗球保證券"
-    ],
-    "image": "/images/items/dusk-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/2/2e/Bag_%E9%BB%91%E6%9A%97%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E9%BB%91%E6%9A%97%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "electric-type-affinity-ticket",
-    "slug": "electric-type-affinity-ticket",
-    "name": "Electric-Type Affinity Ticket",
-    "aliases": [
-      "電屬性介紹券"
-    ],
-    "image": "/images/items/electric-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/a/af/Bag_%E7%94%B5%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E7%94%B5%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "emboarite",
     "slug": "emboarite",
     "name": "Emboarite",
-    "aliases": [
-      "炎武王進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Emboar holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/emboarite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/b/b5/Bag_%E7%82%8E%E6%AD%A6%E7%8E%8B%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%82%8E%E6%AD%A6%E7%8E%8B%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/bK_ygK8Zk9srcFbQgyilp.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/emboarite"
   },
   {
-    "id": "excadrite",
     "slug": "excadrite",
     "name": "Excadrite",
-    "aliases": [
-      "龍頭地鼠進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. An Excadrill holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/excadrite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/45/Bag_%E9%BE%99%E5%A4%B4%E5%9C%B0%E9%BC%A0%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%BE%99%E5%A4%B4%E5%9C%B0%E9%BC%A0%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/2r1CDnWwnI_8xu_ou0eTM.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/excadrite"
   },
   {
-    "id": "fairy-feather",
     "slug": "fairy-feather",
     "name": "Fairy Feather",
-    "aliases": [
-      "妖精之羽"
-    ],
+    "category": "Held Item",
+    "description": "-",
     "image": "/images/items/fairy-feather.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/3/3e/Bag_%E5%A6%96%E7%B2%BE%E4%B9%8B%E7%BE%BD_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/x2NwRdU_fjkvWAx0bctWJ.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/fairy-feather"
   },
   {
-    "id": "fairy-type-affinity-ticket",
-    "slug": "fairy-type-affinity-ticket",
-    "name": "Fairy-Type Affinity Ticket",
-    "aliases": [
-      "妖精屬性介紹券"
-    ],
-    "image": "/images/items/fairy-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/8/84/Bag_%E5%A6%96%E7%B2%BE%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%A6%96%E7%B2%BE%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "feraligite",
     "slug": "feraligite",
     "name": "Feraligite",
-    "aliases": [
-      "大力鱷進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Feraligatr holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/feraligite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/1/1e/Bag_%E5%A4%A7%E5%8A%9B%E9%B3%84%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A4%A7%E5%8A%9B%E9%B3%84%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/HO_LGu18RFgGZwnmhGRww.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/feraligite"
   },
   {
-    "id": "fighting-type-affinity-ticket",
-    "slug": "fighting-type-affinity-ticket",
-    "name": "Fighting-Type Affinity Ticket",
-    "aliases": [
-      "格鬥屬性介紹券"
-    ],
-    "image": "/images/items/fighting-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/3/30/Bag_%E6%A0%BC%E6%96%97%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%A0%BC%E6%96%97%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "fire-type-affinity-ticket",
-    "slug": "fire-type-affinity-ticket",
-    "name": "Fire-Type Affinity Ticket",
-    "aliases": [
-      "火屬性介紹券"
-    ],
-    "image": "/images/items/fire-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/c/ca/Bag_%E7%81%AB%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E7%81%AB%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "floettite",
     "slug": "floettite",
     "name": "Floettite",
-    "aliases": [
-      "花葉蒂進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A special Floette holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/floettite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/90/Bag_%E8%8A%B1%E5%8F%B6%E8%92%82%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%8A%B1%E5%8F%B6%E8%92%82%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/DPmFJBuJ0cwx-Vty_9xM7.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/floettite"
   },
   {
-    "id": "flying-type-affinity-ticket",
-    "slug": "flying-type-affinity-ticket",
-    "name": "Flying-Type Affinity Ticket",
-    "aliases": [
-      "飛行屬性介紹券"
-    ],
-    "image": "/images/items/flying-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/c/ca/Bag_%E9%A3%9E%E8%A1%8C%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E9%A3%9E%E8%A1%8C%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "focus-band",
     "slug": "focus-band",
     "name": "Focus Band",
-    "aliases": [
-      "氣勢頭帶"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP.",
     "image": "/images/items/focus-band.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/aa/Bag_%E6%B0%94%E5%8A%BF%E5%A4%B4%E5%B8%A6_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/VbWTTjYILXsnhKOcOqLnE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/focus-band"
   },
   {
-    "id": "focus-sash",
     "slug": "focus-sash",
     "name": "Focus Sash",
-    "aliases": [
-      "氣勢披帶",
-      "Focus-Sash"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. If the holder has full HP, it will endure a potential KO attack with 1 HP. The item then disappears.",
     "image": "/images/items/focus-sash.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/5/54/Bag_%E6%B0%94%E5%8A%BF%E6%8A%AB%E5%B8%A6_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Oq1-A9_VSx8rfSz-Y5GWa.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/focus-sash"
   },
   {
-    "id": "froslassite",
     "slug": "froslassite",
     "name": "Froslassite",
-    "aliases": [
-      "雪妖女進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Froslass holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/froslassite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/f7/Bag_%E9%9B%AA%E5%A6%96%E5%A5%B3%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%9B%AA%E5%A6%96%E5%A5%B3%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/khT6zigoeP9xKq8skA6an.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/froslassite"
   },
   {
-    "id": "galladite",
     "slug": "galladite",
     "name": "Galladite",
-    "aliases": [
-      "艾路雷朵進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Gallade holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/galladite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/6/60/Bag_%E8%89%BE%E8%B7%AF%E9%9B%B7%E6%9C%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%89%BE%E8%B7%AF%E9%9B%B7%E6%9C%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/gViOdqO1r5XuFuZwJ-Asw.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/galladite"
   },
   {
-    "id": "garchompite",
     "slug": "garchompite",
     "name": "Garchompite",
-    "aliases": [
-      "烈咬陸鯊進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Garchomp holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/garchompite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/6/63/Bag_%E7%83%88%E5%92%AC%E9%99%86%E9%B2%A8%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%83%88%E5%92%AC%E9%99%86%E9%B2%A8%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/3dDoUKrEV7RxZYNNxOe3e.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/garchompite"
   },
   {
-    "id": "gardevoirite",
     "slug": "gardevoirite",
     "name": "Gardevoirite",
-    "aliases": [
-      "沙奈朵進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Gardevoir holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/gardevoirite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/e3/Bag_%E6%B2%99%E5%A5%88%E6%9C%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%B2%99%E5%A5%88%E6%9C%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/kifa04DERoLoxUfx_WGTR.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/gardevoirite"
   },
   {
-    "id": "gengarite",
     "slug": "gengarite",
     "name": "Gengarite",
-    "aliases": [
-      "耿鬼進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Gengar holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/gengarite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/09/Bag_%E8%80%BF%E9%AC%BC%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%80%BF%E9%AC%BC%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/c73DjsAEZ_kaoVQ1MYMaj.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/gengarite"
   },
   {
-    "id": "ghost-type-affinity-ticket",
-    "slug": "ghost-type-affinity-ticket",
-    "name": "Ghost-Type Affinity Ticket",
-    "aliases": [
-      "幽靈屬性介紹券"
-    ],
-    "image": "/images/items/ghost-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/6/64/Bag_%E5%B9%BD%E7%81%B5%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%B9%BD%E7%81%B5%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "glalitite",
     "slug": "glalitite",
     "name": "Glalitite",
-    "aliases": [
-      "冰鬼護進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Glalie holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/glalitite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/2/2e/Bag_%E5%86%B0%E9%AC%BC%E6%8A%A4%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%86%B0%E9%AC%BC%E6%8A%A4%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/bFka8RELrTdljeGxMTXo_.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/glalitite"
   },
   {
-    "id": "glimmoranite",
     "slug": "glimmoranite",
     "name": "Glimmoranite",
-    "aliases": [
-      "晶光花進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Glimmora holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/glimmoranite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/4f/Bag_%E6%99%B6%E5%85%89%E8%8A%B1%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%99%B6%E5%85%89%E8%8A%B1%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/iqVAdHwJmwbJQSnL1ZDHI.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/glimmoranite"
   },
   {
-    "id": "golurkite",
     "slug": "golurkite",
     "name": "Golurkite",
-    "aliases": [
-      "泥偶巨人進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Golurk holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/golurkite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/0a/Bag_%E6%B3%A5%E5%81%B6%E5%B7%A8%E4%BA%BA%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%B3%A5%E5%81%B6%E5%B7%A8%E4%BA%BA%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/h9Hk18_YS-1g9wb4LgAmb.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/golurkite"
   },
   {
-    "id": "grass-type-affinity-ticket",
-    "slug": "grass-type-affinity-ticket",
-    "name": "Grass-Type Affinity Ticket",
-    "aliases": [
-      "草屬性介紹券"
-    ],
-    "image": "/images/items/grass-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/d/d8/Bag_%E8%8D%89%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%8D%89%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "great-ball-guaranteed-ticket",
-    "slug": "great-ball-guaranteed-ticket",
-    "name": "Great Ball Guaranteed Ticket",
-    "aliases": [
-      "超級球保證券"
-    ],
-    "image": "/images/items/great-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/5b/Bag_%E8%B6%85%E7%BA%A7%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%B6%85%E7%BA%A7%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "greninjite",
     "slug": "greninjite",
     "name": "Greninjite",
-    "aliases": [
-      "甲賀忍蛙進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Greninja holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/greninjite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/41/Bag_%E7%94%B2%E8%B4%BA%E5%BF%8D%E8%9B%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%94%B2%E8%B4%BA%E5%BF%8D%E8%9B%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/1dgaNWc_0X7Da5KHmLJqE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/greninjite"
   },
   {
-    "id": "ground-type-affinity-ticket",
-    "slug": "ground-type-affinity-ticket",
-    "name": "Ground-Type Affinity Ticket",
-    "aliases": [
-      "地面屬性介紹券"
-    ],
-    "image": "/images/items/ground-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/f3/Bag_%E5%9C%B0%E9%9D%A2%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%9C%B0%E9%9D%A2%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "gyaradosite",
     "slug": "gyaradosite",
     "name": "Gyaradosite",
-    "aliases": [
-      "暴鯉龍進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Gyarados holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/gyaradosite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/b/ba/Bag_%E6%9A%B4%E9%B2%A4%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%9A%B4%E9%B2%A4%E9%BE%99%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/SXmkaqzKfkDnLGYDnuR7b.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/gyaradosite"
   },
   {
-    "id": "haban-berry",
     "slug": "haban-berry",
     "name": "Haban Berry",
-    "aliases": [
-      "莓榴果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Dragon-type attack.",
     "image": "/images/items/haban-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/b/b1/Bag_%E8%8E%93%E6%A6%B4%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/qkU8-AByMY9o_OuQY0V9Q.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/haban-berry"
   },
   {
-    "id": "hard-stone",
     "slug": "hard-stone",
     "name": "Hard Stone",
-    "aliases": [
-      "硬石頭"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a durable stone that boosts the power of Rock-type moves.",
     "image": "/images/items/hard-stone.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/5/54/Bag_%E7%A1%AC%E7%9F%B3%E5%A4%B4_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/9j1RuWK_57k2OToWuQpcE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/hard-stone"
   },
   {
-    "id": "hawluchanite",
     "slug": "hawluchanite",
     "name": "Hawluchanite",
-    "aliases": [
-      "摔角鷹人進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Hawlucha holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/hawluchanite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/7/71/Bag_%E6%91%94%E8%A7%92%E9%B9%B0%E4%BA%BA%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%91%94%E8%A7%92%E9%B9%B0%E4%BA%BA%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/VjzuHu1tnLVrHcLMcGvf1.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/hawluchanite"
   },
   {
-    "id": "heal-ball-guaranteed-ticket",
-    "slug": "heal-ball-guaranteed-ticket",
-    "name": "Heal Ball Guaranteed Ticket",
-    "aliases": [
-      "治癒球保證券"
-    ],
-    "image": "/images/items/heal-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/58/Bag_%E6%B2%BB%E6%84%88%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%B2%BB%E6%84%88%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "heracronite",
     "slug": "heracronite",
     "name": "Heracronite",
-    "aliases": [
-      "赫拉克羅斯進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Heracross holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/heracronite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/e7/Bag_%E8%B5%AB%E6%8B%89%E5%85%8B%E7%BD%97%E6%96%AF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%B5%AB%E6%8B%89%E5%85%8B%E7%BD%97%E6%96%AF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/T71AGvaz_59kfOh4pUWWz.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/heracronite"
   },
   {
-    "id": "houndoominite",
     "slug": "houndoominite",
     "name": "Houndoominite",
-    "aliases": [
-      "黑魯加進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Houndoom holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/houndoominite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/5b/Bag_%E9%BB%91%E9%B2%81%E5%8A%A0%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%BB%91%E9%B2%81%E5%8A%A0%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/FItucT0aIANiOodQQzwry.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/houndoominite"
   },
   {
-    "id": "ice-type-affinity-ticket",
-    "slug": "ice-type-affinity-ticket",
-    "name": "Ice-Type Affinity Ticket",
-    "aliases": [
-      "冰屬性介紹券"
-    ],
-    "image": "/images/items/ice-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/3/34/Bag_%E5%86%B0%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%86%B0%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "kangaskhanite",
     "slug": "kangaskhanite",
     "name": "Kangaskhanite",
-    "aliases": [
-      "袋獸進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Kangaskhan holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/kangaskhanite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/0a/Bag_%E8%A2%8B%E5%85%BD%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%A2%8B%E5%85%BD%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/yPlFY3jetNpgCoXR1QN06.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/kangaskhanite"
   },
   {
-    "id": "kasib-berry",
     "slug": "kasib-berry",
     "name": "Kasib Berry",
-    "aliases": [
-      "佛柑果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Ghost-type attack.",
     "image": "/images/items/kasib-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/3/3f/Bag_%E4%BD%9B%E6%9F%91%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/rwfWRDsWKwsBUhoixl7hL.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/kasib-berry"
   },
   {
-    "id": "kebia-berry",
     "slug": "kebia-berry",
     "name": "Kebia Berry",
-    "aliases": [
-      "通通果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Poison-type attack.",
     "image": "/images/items/kebia-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/2/22/Bag_%E9%80%9A%E9%80%9A%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Go8VK_2o8Gzut_JFNJtr-.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/kebia-berry"
   },
   {
-    "id": "king-s-rock",
-    "slug": "king-s-rock",
+    "slug": "kings-rock",
     "name": "King’s Rock",
-    "aliases": [
-      "王者之證"
-    ],
-    "image": "/images/items/king-s-rock.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/8/87/Bag_%E7%8E%8B%E8%80%85%E4%B9%8B%E8%AF%81_Champions_Sprite.png"
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. When the holder successfully inflicts damage, the target may also flinch.",
+    "image": "/images/items/kings-rock.png",
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/na1pobRX9zccpVdPmr4Tu.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/kings-rock"
   },
   {
-    "id": "leftovers",
     "slug": "leftovers",
     "name": "Leftovers",
-    "aliases": [
-      "吃剩的東西"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. The holder’s HP is slowly but steadily restored throughout every battle.",
     "image": "/images/items/leftovers.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/9/9a/Bag_%E5%90%83%E5%89%A9%E7%9A%84%E4%B8%9C%E8%A5%BF_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/jDYS-THAqHkZq7F7EEr1Y.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/leftovers"
   },
   {
-    "id": "leppa-berry",
     "slug": "leppa-berry",
     "name": "Leppa Berry",
-    "aliases": [
-      "蘋野果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can restore 10 PP to a depleted move during battle.",
     "image": "/images/items/leppa-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/5/5b/Bag_%E8%8B%B9%E9%87%8E%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/alCQhsgoEv3-pXR6w61AN.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/leppa-berry"
   },
   {
-    "id": "light-ball",
     "slug": "light-ball",
     "name": "Light Ball",
-    "aliases": [
-      "電氣球"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by Pikachu. It’s a puzzling orb that boosts its Attack and Sp. Atk stats.",
     "image": "/images/items/light-ball.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/ac/Bag_%E7%94%B5%E6%B0%94%E7%90%83_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/w4PqJ_DC0lIWn0fyYfaDz.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/light-ball"
   },
   {
-    "id": "lopunnite",
     "slug": "lopunnite",
     "name": "Lopunnite",
-    "aliases": [
-      "長耳兔進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Lopunny holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/lopunnite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/e8/Bag_%E9%95%BF%E8%80%B3%E5%85%94%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%95%BF%E8%80%B3%E5%85%94%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/cb-DdQUu_jDg7aaVOZzfT.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/lopunnite"
   },
   {
-    "id": "lucarionite",
     "slug": "lucarionite",
     "name": "Lucarionite",
-    "aliases": [
-      "路卡利歐進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Lucario holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/lucarionite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/58/Bag_%E8%B7%AF%E5%8D%A1%E5%88%A9%E6%AC%A7%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%B7%AF%E5%8D%A1%E5%88%A9%E6%AC%A7%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Qfp7DZ9g0_uADZdj_d7lL.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/lucarionite"
   },
   {
-    "id": "lum-berry",
     "slug": "lum-berry",
     "name": "Lum Berry",
-    "aliases": [
-      "木子果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from any status condition during battle.",
     "image": "/images/items/lum-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/1/15/Bag_%E6%9C%A8%E5%AD%90%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/llhxuhYf0iJqFy7LEUpyx.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/lum-berry"
   },
   {
-    "id": "luxury-ball-guaranteed-ticket",
-    "slug": "luxury-ball-guaranteed-ticket",
-    "name": "Luxury Ball Guaranteed Ticket",
-    "aliases": [
-      "豪華球保證券"
-    ],
-    "image": "/images/items/luxury-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/a/a6/Bag_%E8%B1%AA%E5%8D%8E%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%B1%AA%E5%8D%8E%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "magnet",
     "slug": "magnet",
     "name": "Magnet",
-    "aliases": [
-      "磁鐵"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a powerful magnet that boosts the power of Electric-type moves.",
     "image": "/images/items/magnet.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/9/91/Bag_%E7%A3%81%E9%93%81_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/0olVYZxGaRcwLHPTA-OYQ.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/magnet"
   },
   {
-    "id": "manectite",
     "slug": "manectite",
     "name": "Manectite",
-    "aliases": [
-      "雷電獸進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Manectric holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/manectite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/8/8d/Bag_%E9%9B%B7%E7%94%B5%E5%85%BD%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E9%9B%B7%E7%94%B5%E5%85%BD%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/cn76l3mqYn2hv07dgh-hE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/manectite"
   },
   {
-    "id": "medichamite",
     "slug": "medichamite",
     "name": "Medichamite",
-    "aliases": [
-      "恰雷姆進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Medicham holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/medichamite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/57/Bag_%E6%81%B0%E9%9B%B7%E5%A7%86%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E6%81%B0%E9%9B%B7%E5%A7%86%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/KAN7EQx-OFjlmEi_dK41C.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/medichamite"
   },
   {
-    "id": "meganiumite",
     "slug": "meganiumite",
     "name": "Meganiumite",
-    "aliases": [
-      "大竺葵進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Meganium holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/meganiumite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/e1/Bag_%E5%A4%A7%E7%AB%BA%E8%91%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A4%A7%E7%AB%BA%E8%91%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/e2va4wDdwwz2XanLvVIGp.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/meganiumite"
   },
   {
-    "id": "mental-herb",
     "slug": "mental-herb",
     "name": "Mental Herb",
-    "aliases": [
-      "心靈香草"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. The holder shakes off move-binding effects to move freely. It can be used only once.",
     "image": "/images/items/mental-herb.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/a7/Bag_%E5%BF%83%E7%81%B5%E9%A6%99%E8%8D%89_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/H-afonJsWEVD10OPcapJx.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/mental-herb"
   },
   {
-    "id": "meowsticite",
     "slug": "meowsticite",
     "name": "Meowsticite",
-    "aliases": [
-      "超能妙喵進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Meowstic holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/meowsticite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/d/d7/Bag_%E8%B6%85%E8%83%BD%E5%A6%99%E5%96%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E8%B6%85%E8%83%BD%E5%A6%99%E5%96%B5%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/WGU3ng7H0D3iDFmzFc_1L.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/meowsticite"
   },
   {
-    "id": "metal-coat",
     "slug": "metal-coat",
     "name": "Metal Coat",
-    "aliases": [
-      "金屬膜"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a special metallic film that can boost the power of Steel-type moves.",
     "image": "/images/items/metal-coat.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/3/3d/Bag_%E9%87%91%E5%B1%9E%E8%86%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/8AN4QZsahRp1uym9Xp2Vd.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/metal-coat"
   },
   {
-    "id": "miracle-seed",
     "slug": "miracle-seed",
     "name": "Miracle Seed",
-    "aliases": [
-      "奇跡種子"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a seed imbued with life-force that boosts the power of Grass-type moves.",
     "image": "/images/items/miracle-seed.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/2/21/Bag_%E5%A5%87%E8%BF%B9%E7%A7%8D%E5%AD%90_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/nDAULgTrzrfMze74MWfFs.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/miracle-seed"
   },
   {
-    "id": "mystic-water",
     "slug": "mystic-water",
     "name": "Mystic Water",
-    "aliases": [
-      "神秘水滴"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This teardrop-shaped gem boosts the power of Water-type moves.",
     "image": "/images/items/mystic-water.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/2/21/Bag_%E7%A5%9E%E7%A7%98%E6%B0%B4%E6%BB%B4_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/9zZmAVxO9hR1pd12r3Mm-.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/mystic-water"
   },
   {
-    "id": "nest-ball-guaranteed-ticket",
-    "slug": "nest-ball-guaranteed-ticket",
-    "name": "Nest Ball Guaranteed Ticket",
-    "aliases": [
-      "巢穴球保證券"
-    ],
-    "image": "/images/items/nest-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/4f/Bag_%E5%B7%A2%E7%A9%B4%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%B7%A2%E7%A9%B4%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "net-ball-guaranteed-ticket",
-    "slug": "net-ball-guaranteed-ticket",
-    "name": "Net Ball Guaranteed Ticket",
-    "aliases": [
-      "捕網球保證券"
-    ],
-    "image": "/images/items/net-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/0d/Bag_%E6%8D%95%E7%BD%91%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%8D%95%E7%BD%91%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "never-melt-ice",
     "slug": "never-melt-ice",
     "name": "Never-Melt Ice",
-    "aliases": [
-      "不融冰"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a heat- repelling piece of ice that boosts the power of Ice-type moves.",
     "image": "/images/items/never-melt-ice.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/e/ea/Bag_%E4%B8%8D%E8%9E%8D%E5%86%B0_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/dBDj4YISwiv3quT6Cs7Q-.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/never-melt-ice"
   },
   {
-    "id": "normal-type-affinity-ticket",
-    "slug": "normal-type-affinity-ticket",
-    "name": "Normal-Type Affinity Ticket",
-    "aliases": [
-      "一般屬性介紹券"
-    ],
-    "image": "/images/items/normal-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/4/49/Bag_%E4%B8%80%E8%88%AC%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E4%B8%80%E8%88%AC%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "occa-berry",
     "slug": "occa-berry",
     "name": "Occa Berry",
-    "aliases": [
-      "巧可果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Fire-type attack.",
     "image": "/images/items/occa-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/4/4b/Bag_%E5%B7%A7%E5%8F%AF%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/NXgGW39qxfVGdvlx9ejLj.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/occa-berry"
   },
   {
-    "id": "oran-berry",
     "slug": "oran-berry",
     "name": "Oran Berry",
-    "aliases": [
-      "橙橙果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can restore its own HP by 10 points during battle.",
     "image": "/images/items/oran-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/6/6e/Bag_%E6%A9%99%E6%A9%99%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/vqm2ldn_Mdh29wfBmNXM2.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/oran-berry"
   },
   {
-    "id": "passho-berry",
     "slug": "passho-berry",
     "name": "Passho Berry",
-    "aliases": [
-      "千香果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Water-type attack.",
     "image": "/images/items/passho-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/7/74/Bag_%E5%8D%83%E9%A6%99%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/48sxDULIhS_9EJ1YWITQt.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/passho-berry"
   },
   {
-    "id": "payapa-berry",
     "slug": "payapa-berry",
     "name": "Payapa Berry",
-    "aliases": [
-      "福祿果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Psychic-type attack.",
     "image": "/images/items/payapa-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/9/94/Bag_%E7%A6%8F%E7%A6%84%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Y5krB6jXjPKqk_G1gu6hE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/payapa-berry"
   },
   {
-    "id": "pecha-berry",
     "slug": "pecha-berry",
     "name": "Pecha Berry",
-    "aliases": [
-      "桃桃果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from poisoning on its own in battle.",
     "image": "/images/items/pecha-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/5/54/Bag_%E6%A1%83%E6%A1%83%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/V7dWJOZ4jf-A6CGX-5wA5.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/pecha-berry"
   },
   {
-    "id": "persim-berry",
     "slug": "persim-berry",
     "name": "Persim Berry",
-    "aliases": [
-      "柿仔果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from confusion on its own in battle.",
     "image": "/images/items/persim-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/e/e7/Bag_%E6%9F%BF%E4%BB%94%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/RucXq67zHbbu11LT046Wm.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/persim-berry"
   },
   {
-    "id": "pidgeotite",
     "slug": "pidgeotite",
     "name": "Pidgeotite",
-    "aliases": [
-      "大比鳥進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Pidgeot holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/pidgeotite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/f4/Bag_%E5%A4%A7%E6%AF%94%E9%B8%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A4%A7%E6%AF%94%E9%B8%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/tHJ2SwtTmr09O9RMK9lBY.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/pidgeotite"
   },
   {
-    "id": "pinsirite",
     "slug": "pinsirite",
     "name": "Pinsirite",
-    "aliases": [
-      "凱羅斯進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Pinsir holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/pinsirite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/59/Bag_%E5%87%AF%E7%BD%97%E6%96%AF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%87%AF%E7%BD%97%E6%96%AF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/8216Sn0RAIC4Vt37Jjqfn.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/pinsirite"
   },
   {
-    "id": "poison-barb",
     "slug": "poison-barb",
     "name": "Poison Barb",
-    "aliases": [
-      "毒針"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This small, poisonous barb boosts the power of Poison-type moves.",
     "image": "/images/items/poison-barb.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/c/c6/Bag_%E6%AF%92%E9%92%88_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/5QQucStpfSLtFLW32p-4J.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/poison-barb"
   },
   {
-    "id": "poison-type-affinity-ticket",
-    "slug": "poison-type-affinity-ticket",
-    "name": "Poison-Type Affinity Ticket",
-    "aliases": [
-      "毒屬性介紹券"
-    ],
-    "image": "/images/items/poison-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/8/8b/Bag_%E6%AF%92%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%AF%92%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "poke-ball-guaranteed-ticket",
-    "slug": "poke-ball-guaranteed-ticket",
-    "name": "Poké Ball Guaranteed Ticket",
-    "aliases": [
-      "精靈球保證券"
-    ],
-    "image": "/images/items/poke-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/d/d5/Bag_%E7%B2%BE%E7%81%B5%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E7%B2%BE%E7%81%B5%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "premier-ball-guaranteed-ticket",
-    "slug": "premier-ball-guaranteed-ticket",
-    "name": "Premier Ball Guaranteed Ticket",
-    "aliases": [
-      "紀念球保證券"
-    ],
-    "image": "/images/items/premier-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/99/Bag_%E7%BA%AA%E5%BF%B5%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E7%BA%AA%E5%BF%B5%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "psychic-type-affinity-ticket",
-    "slug": "psychic-type-affinity-ticket",
-    "name": "Psychic-Type Affinity Ticket",
-    "aliases": [
-      "超能力屬性介紹券"
-    ],
-    "image": "/images/items/psychic-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/fa/Bag_%E8%B6%85%E8%83%BD%E5%8A%9B%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%B6%85%E8%83%BD%E5%8A%9B%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "quick-ball-guaranteed-ticket",
-    "slug": "quick-ball-guaranteed-ticket",
-    "name": "Quick Ball Guaranteed Ticket",
-    "aliases": [
-      "先機球保證券"
-    ],
-    "image": "/images/items/quick-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/a/a4/Bag_%E5%85%88%E6%9C%BA%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%85%88%E6%9C%BA%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "quick-claw",
     "slug": "quick-claw",
     "name": "Quick Claw",
-    "aliases": [
-      "先制之爪"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This light, sharp claw lets the bearer move first occasionally.",
     "image": "/images/items/quick-claw.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/4/47/Bag_%E5%85%88%E5%88%B6%E4%B9%8B%E7%88%AA_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/aAOJxg-HcRxPSktJpJUVE.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/quick-claw"
   },
   {
-    "id": "quick-coupon",
-    "slug": "quick-coupon",
-    "name": "Quick Coupon",
-    "aliases": [
-      "加速優惠券"
-    ],
-    "image": "/images/items/quick-coupon.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/8/8f/Bag_%E5%8A%A0%E9%80%9F%E4%BC%98%E6%83%A0%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%8A%A0%E9%80%9F%E4%BC%98%E6%83%A0%E5%88%B8_Champions_Sprite.png"
+    "slug": "raichunite-x",
+    "name": "Raichunite X",
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Raichu holding this stone will be able to Mega Evolve during battle.",
+    "image": "/images/items/raichunite-x.png",
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/9Wa1jATqM367hsgWL0Acx.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/raichunite-x"
   },
   {
-    "id": "rare-poke-ball-guaranteed-ticket",
-    "slug": "rare-poke-ball-guaranteed-ticket",
-    "name": "Rare Poké Ball Guaranteed Ticket",
-    "aliases": [
-      "稀有精靈球保證券"
-    ],
-    "image": "/images/items/rare-poke-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/1/12/Bag_%E7%A8%80%E6%9C%89%E7%B2%BE%E7%81%B5%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E7%A8%80%E6%9C%89%E7%B2%BE%E7%81%B5%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
+    "slug": "raichunite",
+    "name": "Raichunite Y",
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Raichu holding this stone will be able to Mega Evolve during battle.",
+    "image": "/images/items/raichunite.png",
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Jj8sr642siWQNgwUQTilR.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/raichunite"
   },
   {
-    "id": "rawst-berry",
     "slug": "rawst-berry",
     "name": "Rawst Berry",
-    "aliases": [
-      "莓莓果"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can recover from a burn on its own in battle.",
     "image": "/images/items/rawst-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/8/8f/Bag_%E8%8E%93%E8%8E%93%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/vnvfERC72UsjO0zUYy620.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/rawst-berry"
   },
   {
-    "id": "repeat-ball-guaranteed-ticket",
-    "slug": "repeat-ball-guaranteed-ticket",
-    "name": "Repeat Ball Guaranteed Ticket",
-    "aliases": [
-      "重複球保證券"
-    ],
-    "image": "/images/items/repeat-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/a/aa/Bag_%E9%87%8D%E5%A4%8D%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E9%87%8D%E5%A4%8D%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "rindo-berry",
     "slug": "rindo-berry",
     "name": "Rindo Berry",
-    "aliases": [
-      "羅子果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Grass-type attack.",
     "image": "/images/items/rindo-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/ae/Bag_%E7%BD%97%E5%AD%90%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/eLVmyy1mQBp-8IO4-JgSc.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/rindo-berry"
   },
   {
-    "id": "rock-type-affinity-ticket",
-    "slug": "rock-type-affinity-ticket",
-    "name": "Rock-Type Affinity Ticket",
-    "aliases": [
-      "岩石屬性介紹券"
-    ],
-    "image": "/images/items/rock-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/a/a7/Bag_%E5%B2%A9%E7%9F%B3%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E5%B2%A9%E7%9F%B3%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "roseli-berry",
     "slug": "roseli-berry",
     "name": "Roseli Berry",
-    "aliases": [
-      "洛玫果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Fairy-type attack.",
     "image": "/images/items/roseli-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/7/7c/Bag_%E6%B4%9B%E7%8E%AB%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/E8CV3UQmWBTDjLzC4pI7R.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/roseli-berry"
   },
   {
-    "id": "sablenite",
     "slug": "sablenite",
     "name": "Sablenite",
-    "aliases": [
-      "勾魂眼進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Sableye holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/sablenite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/0d/Bag_%E5%8B%BE%E9%AD%82%E7%9C%BC%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%8B%BE%E9%AD%82%E7%9C%BC%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/pqUGVxQ3boIdLpZEbNkXz.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/sablenite"
   },
   {
-    "id": "scizorite",
     "slug": "scizorite",
     "name": "Scizorite",
-    "aliases": [
-      "巨鉗螳螂進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Scizor holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/scizorite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/1/12/Bag_%E5%B7%A8%E9%92%B3%E8%9E%B3%E8%9E%82%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%B7%A8%E9%92%B3%E8%9E%B3%E8%9E%82%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/eO7m1NCHhF6IkBMV7ypzJ.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/scizorite"
   },
   {
-    "id": "scope-lens",
     "slug": "scope-lens",
     "name": "Scope Lens",
-    "aliases": [
-      "焦點鏡"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a lens for scoping out weak points. It boosts the holder’s critical-hit ratio.",
     "image": "/images/items/scope-lens.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/a0/Bag_%E7%84%A6%E7%82%B9%E9%95%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/GZhSA3WSTsUQfCT_UqChd.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/scope-lens"
   },
   {
-    "id": "scovillainite",
     "slug": "scovillainite",
     "name": "Scovillainite",
-    "aliases": [
-      "狠辣椒進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Scovillain holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/scovillainite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/b/ba/Bag_%E7%8B%A0%E8%BE%A3%E6%A4%92%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%8B%A0%E8%BE%A3%E6%A4%92%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/T--qjJdMpvt--_hC6zlRS.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/scovillainite"
   },
   {
-    "id": "sharp-beak",
     "slug": "sharp-beak",
     "name": "Sharp Beak",
-    "aliases": [
-      "銳利鳥嘴"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a long, sharp beak that boosts the power of Flying-type moves.",
     "image": "/images/items/sharp-beak.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/0/0a/Bag_%E9%94%90%E5%88%A9%E9%B8%9F%E5%98%B4_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/f3uKicgeEVk81Z4SAFqk0.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/sharp-beak"
   },
   {
-    "id": "sharpedonite",
     "slug": "sharpedonite",
     "name": "Sharpedonite",
-    "aliases": [
-      "巨牙鯊進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Sharpedo holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/sharpedonite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/3/38/Bag_%E5%B7%A8%E7%89%99%E9%B2%A8%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%B7%A8%E7%89%99%E9%B2%A8%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/oVlDDeoEa2WHHPkxjidBd.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/sharpedonite"
   },
   {
-    "id": "shell-bell",
     "slug": "shell-bell",
     "name": "Shell Bell",
-    "aliases": [
-      "貝殼之鈴"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. The holder restores a little HP every time it inflicts damage on others.",
     "image": "/images/items/shell-bell.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/b/b8/Bag_%E8%B4%9D%E5%A3%B3%E4%B9%8B%E9%93%83_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/ccCGX1Q89p2KWQ3oTxEMn.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/shell-bell"
   },
   {
-    "id": "shuca-berry",
     "slug": "shuca-berry",
     "name": "Shuca Berry",
-    "aliases": [
-      "腰木果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Ground-type attack.",
     "image": "/images/items/shuca-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/9/96/Bag_%E8%85%B0%E6%9C%A8%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/bbzu8aIH40Fp6Tu6usXB6.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/shuca-berry"
   },
   {
-    "id": "silk-scarf",
     "slug": "silk-scarf",
     "name": "Silk Scarf",
-    "aliases": [
-      "絲綢圍巾"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a sumptuous scarf that boosts the power of Normal-type moves.",
     "image": "/images/items/silk-scarf.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/b/b3/Bag_%E4%B8%9D%E7%BB%B8%E5%9B%B4%E5%B7%BE_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/3Guyh8n93_BSxYWhP1qwg.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/silk-scarf"
   },
   {
-    "id": "silver-powder",
     "slug": "silver-powder",
     "name": "Silver Powder",
-    "aliases": [
-      "銀粉"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a shiny silver powder that will boost the power of Bug-type moves.",
     "image": "/images/items/silver-powder.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/8/80/Bag_%E9%93%B6%E7%B2%89_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/xxcl_XA-qbZ2MxO5rPvy0.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/silver-powder"
   },
   {
-    "id": "sitrus-berry",
     "slug": "sitrus-berry",
     "name": "Sitrus Berry",
-    "aliases": [
-      "文柚果",
-      "Sitrus"
-    ],
+    "category": "Berry",
+    "description": "A Berry to be consumed by Pokémon. If a Pokémon holds one, it can restore its own HP by a small amount during battle.",
     "image": "/images/items/sitrus-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/a6/Bag_%E6%96%87%E6%9F%9A%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/xOhNwz4angOyH3iQ17Cv-.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/sitrus-berry"
   },
   {
-    "id": "skarmorite",
     "slug": "skarmorite",
     "name": "Skarmorite",
-    "aliases": [
-      "盔甲鳥進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Skarmory holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/skarmorite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/7/73/Bag_%E7%9B%94%E7%94%B2%E9%B8%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%9B%94%E7%94%B2%E9%B8%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/s6GdulTsO_C3iZvheUIjw.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/skarmorite"
   },
   {
-    "id": "slowbronite",
     "slug": "slowbronite",
     "name": "Slowbronite",
-    "aliases": [
-      "呆殼獸進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Slowbro holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/slowbronite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/7/7d/Bag_%E5%91%86%E5%A3%B3%E5%85%BD%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%91%86%E5%A3%B3%E5%85%BD%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/sDEJN5drrUHqXCSINcX5k.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/slowbronite"
   },
   {
-    "id": "soft-sand",
     "slug": "soft-sand",
     "name": "Soft Sand",
-    "aliases": [
-      "柔軟沙子"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a loose, silky sand that boosts the power of Ground-type moves.",
     "image": "/images/items/soft-sand.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/3/3f/Bag_%E6%9F%94%E8%BD%AF%E6%B2%99%E5%AD%90_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/yvPQpebtJgYtF2nmc88cg.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/soft-sand"
   },
   {
-    "id": "spell-tag",
     "slug": "spell-tag",
     "name": "Spell Tag",
-    "aliases": [
-      "詛咒之符"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It’s a sinister, eerie tag that boosts the power of Ghost-type moves.",
     "image": "/images/items/spell-tag.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/a/ad/Bag_%E5%92%92%E6%9C%AF%E4%B9%8B%E7%AC%A6_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/LHUk9QrW3a-aOsjy9G4dF.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/spell-tag"
   },
   {
-    "id": "starminite",
     "slug": "starminite",
     "name": "Starminite",
-    "aliases": [
-      "寶石海星進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Starmie holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/starminite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/9f/Bag_%E5%AE%9D%E7%9F%B3%E6%B5%B7%E6%98%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%AE%9D%E7%9F%B3%E6%B5%B7%E6%98%9F%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/eqdTtGFXxklv7pthbfHvu.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/starminite"
   },
   {
-    "id": "steel-type-affinity-ticket",
-    "slug": "steel-type-affinity-ticket",
-    "name": "Steel-Type Affinity Ticket",
-    "aliases": [
-      "鋼屬性介紹券"
-    ],
-    "image": "/images/items/steel-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/90/Bag_%E9%92%A2%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E9%92%A2%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "steelixite",
     "slug": "steelixite",
     "name": "Steelixite",
-    "aliases": [
-      "大鋼蛇進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Steelix holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/steelixite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/f/f0/Bag_%E5%A4%A7%E9%92%A2%E8%9B%87%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A4%A7%E9%92%A2%E8%9B%87%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/wwwIxC77aGAFWAq2U7XOi.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/steelixite"
   },
   {
-    "id": "tanga-berry",
     "slug": "tanga-berry",
     "name": "Tanga Berry",
-    "aliases": [
-      "扁櫻果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Bug-type attack.",
     "image": "/images/items/tanga-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/7/7a/Bag_%E6%89%81%E6%A8%B1%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/gzod2Fe5RAlD0buszhTYB.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/tanga-berry"
   },
   {
-    "id": "teammate-ticket",
-    "slug": "teammate-ticket",
-    "name": "Teammate Ticket",
-    "aliases": [
-      "正式錄用券"
-    ],
-    "image": "/images/items/teammate-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/5/52/Bag_%E6%AD%A3%E5%BC%8F%E5%BD%95%E7%94%A8%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%AD%A3%E5%BC%8F%E5%BD%95%E7%94%A8%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "timer-ball-guaranteed-ticket",
-    "slug": "timer-ball-guaranteed-ticket",
-    "name": "Timer Ball Guaranteed Ticket",
-    "aliases": [
-      "計時球保證券"
-    ],
-    "image": "/images/items/timer-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/0/0e/Bag_%E8%AE%A1%E6%97%B6%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%AE%A1%E6%97%B6%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "training-ticket",
-    "slug": "training-ticket",
-    "name": "Training Ticket",
-    "aliases": [
-      "訓練券"
-    ],
-    "image": "/images/items/training-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/3/30/Bag_%E8%AE%AD%E7%BB%83%E5%88%B8_Champions_Sprite.png/60px-Bag_%E8%AE%AD%E7%BB%83%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "twisted-spoon",
     "slug": "twisted-spoon",
     "name": "Twisted Spoon",
-    "aliases": [
-      "彎曲的湯匙"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. This spoon is imbued with telekinetic power and boosts Psychic-type moves.",
     "image": "/images/items/twisted-spoon.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/f/fa/Bag_%E5%BC%AF%E6%9B%B2%E7%9A%84%E6%B1%A4%E5%8C%99_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/2fxucz95DicwkDET25dVH.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/twisted-spoon"
   },
   {
-    "id": "tyranitarite",
     "slug": "tyranitarite",
     "name": "Tyranitarite",
-    "aliases": [
-      "班基拉斯進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Tyranitar holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/tyranitarite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/3/31/Bag_%E7%8F%AD%E5%9F%BA%E6%8B%89%E6%96%AF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E7%8F%AD%E5%9F%BA%E6%8B%89%E6%96%AF%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/BpkT107iSBlktf62qH8_B.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/tyranitarite"
   },
   {
-    "id": "ultra-ball-guaranteed-ticket",
-    "slug": "ultra-ball-guaranteed-ticket",
-    "name": "Ultra Ball Guaranteed Ticket",
-    "aliases": [
-      "高級球保證券"
-    ],
-    "image": "/images/items/ultra-ball-guaranteed-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/e0/Bag_%E9%AB%98%E7%BA%A7%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png/60px-Bag_%E9%AB%98%E7%BA%A7%E7%90%83%E4%BF%9D%E8%AF%81%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "venusaurite",
     "slug": "venusaurite",
     "name": "Venusaurite",
-    "aliases": [
-      "妙蛙花進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Venusaur holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/venusaurite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/9/94/Bag_%E5%A6%99%E8%9B%99%E8%8A%B1%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A6%99%E8%9B%99%E8%8A%B1%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Xs8lNI_oFspm1WfOeXigy.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/venusaurite"
   },
   {
-    "id": "victreebelite",
     "slug": "victreebelite",
     "name": "Victreebelite",
-    "aliases": [
-      "大食花進化石"
-    ],
+    "category": "Mega Evolution",
+    "description": "One of a variety of mysterious Mega Stones. A Victreebel holding this stone will be able to Mega Evolve during battle.",
     "image": "/images/items/victreebelite.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/e/ec/Bag_%E5%A4%A7%E9%A3%9F%E8%8A%B1%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png/60px-Bag_%E5%A4%A7%E9%A3%9F%E8%8A%B1%E8%BF%9B%E5%8C%96%E7%9F%B3_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/Fo_5YiIP6kEZmhCb6VS2d.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/victreebelite"
   },
   {
-    "id": "wacan-berry",
     "slug": "wacan-berry",
     "name": "Wacan Berry",
-    "aliases": [
-      "燭木果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Electric-type attack.",
     "image": "/images/items/wacan-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/5/58/Bag_%E7%83%9B%E6%9C%A8%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/rX-k8lgaPaFv208Og8AOT.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/wacan-berry"
   },
   {
-    "id": "water-type-affinity-ticket",
-    "slug": "water-type-affinity-ticket",
-    "name": "Water-Type Affinity Ticket",
-    "aliases": [
-      "水屬性介紹券"
-    ],
-    "image": "/images/items/water-type-affinity-ticket.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/thumb/c/c2/Bag_%E6%B0%B4%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png/60px-Bag_%E6%B0%B4%E5%B1%9E%E6%80%A7%E4%BB%8B%E7%BB%8D%E5%88%B8_Champions_Sprite.png"
-  },
-  {
-    "id": "white-herb",
     "slug": "white-herb",
     "name": "White Herb",
-    "aliases": [
-      "白色香草"
-    ],
+    "category": "Held Item",
+    "description": "An item to be held by a Pokémon. It will restore any lowered stat in battle. It can be used only once.",
     "image": "/images/items/white-herb.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/1/1c/Bag_%E7%99%BD%E8%89%B2%E9%A6%99%E8%8D%89_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/9t7p9ViyW7ou9KaNdy_Pp.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/white-herb"
   },
   {
-    "id": "yache-berry",
     "slug": "yache-berry",
     "name": "Yache Berry",
-    "aliases": [
-      "番荔果"
-    ],
+    "category": "Berry",
+    "description": "If held by a Pokémon, this Berry will lessen the damage taken from one supereffective Ice-type attack.",
     "image": "/images/items/yache-berry.png",
-    "sourceUrl": "https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Champions%EF%BC%89",
-    "sourceImageUrl": "https://media.52poke.com/wiki/7/75/Bag_%E7%95%AA%E8%8D%94%E6%9E%9C_Champions_Sprite.png"
+    "sourceImageUrl": "https://i.pokebase.app/pokemon-champions/0nE_eowYj33e-8QgL8bDP.png",
+    "sourceUrl": "https://pokebase.app/pokemon-champions/items/yache-berry"
   }
 ] satisfies ItemAsset[];
 
@@ -1684,6 +1079,7 @@ function normalizeItemKey(value: string) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
+    .replace(/pok[eé]mon champion/g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim()
     .replace(/\s+/g, "-");
@@ -1692,11 +1088,13 @@ function normalizeItemKey(value: string) {
 const itemByKey = new Map<string, ItemAsset>();
 
 for (const item of itemAssets) {
-  const keys = [item.id, item.slug, item.name, ...item.aliases];
-  for (const key of keys) {
-    itemByKey.set(normalizeItemKey(key), item);
-  }
+  itemByKey.set(normalizeItemKey(item.slug), item);
+  itemByKey.set(normalizeItemKey(item.name), item);
 }
+
+export const itemCategoryOptions = Array.from(new Set(itemAssets.map((item) => item.category))).sort((a, b) =>
+  a.localeCompare(b)
+);
 
 export function getItemByName(name: string) {
   return itemByKey.get(normalizeItemKey(name));
@@ -1704,4 +1102,8 @@ export function getItemByName(name: string) {
 
 export function getItemImageByName(name: string) {
   return getItemByName(name)?.image;
+}
+
+export function filterItems(category?: string) {
+  return category ? itemAssets.filter((item) => item.category === category) : itemAssets;
 }

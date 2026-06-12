@@ -1,0 +1,23 @@
+import { describe, expect, it } from "vitest";
+
+import { pokemonAssets } from "@/data/pokemon";
+
+import sitemap from "./sitemap";
+
+describe("sitemap", () => {
+  it("includes guide routes, database routes, and Pokemon detail routes on pokemetahub.com", () => {
+    const entries = sitemap();
+    const urls = entries.map((entry) => entry.url);
+
+    expect(urls).toContain("https://pokemetahub.com/");
+    expect(urls).toContain("https://pokemetahub.com/tier-list");
+    expect(urls).toContain("https://pokemetahub.com/pokemon");
+    expect(urls).toContain("https://pokemetahub.com/moves");
+    expect(urls).toContain("https://pokemetahub.com/abilities");
+    expect(urls).toContain("https://pokemetahub.com/items");
+    expect(urls).toContain("https://pokemetahub.com/pokemon/basculegion");
+    expect(urls).toContain("https://pokemetahub.com/pokemon/blastoise-mega");
+    expect(entries).toHaveLength(1 + 7 + 4 + pokemonAssets.length);
+    expect(urls.every((url) => url.startsWith("https://pokemetahub.com"))).toBe(true);
+  });
+});

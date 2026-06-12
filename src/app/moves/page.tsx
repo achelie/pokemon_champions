@@ -10,13 +10,13 @@ import {
   pokebaseThClass
 } from "@/components/PokebaseTable";
 import { allMoves, formatMoveAccuracy, formatMoveNumber } from "@/data/moves";
-import { articleJsonLd, createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, databasePageJsonLd } from "@/lib/seo";
 
 const pageMeta = {
-  title: "Pokémon Champions Moves List",
-  description: "Complete list of all moves in Pokémon Champions with usage, descriptions, power, accuracy, and PP.",
+  title: "Pokemon Champions Moves List",
+  description: "Complete list of all moves in Pokemon Champions with usage, descriptions, power, accuracy, and PP.",
   path: "/moves",
-  keywords: ["Pokémon Champions Moves List", "Pokémon Champions All Moves", "Pokémon Champions Move Usage"]
+  keywords: ["Pokemon Champions Moves List", "Pokemon Champions All Moves", "Pokemon Champions Move Usage"]
 };
 
 export const metadata: Metadata = createPageMetadata(pageMeta);
@@ -45,9 +45,9 @@ export default function MovesListPage({ searchParams }: MovesPageProps) {
   return (
     <PokebasePageShell
       title="Moves List"
-      description="Usage-ranked Pokémon Champions move data aligned with PokéBase's current M-A regulation list."
+      description="Usage-ranked Pokemon Champions move data aligned with Pokebase's current M-A regulation list."
     >
-      <JsonLd data={articleJsonLd(pageMeta)} />
+      <JsonLd data={databasePageJsonLd({ ...pageMeta, itemCount: allMoves.length })} />
 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <PokebaseResultBar currentPage={currentPage} totalPages={totalPages} totalResults={allMoves.length} />
@@ -55,7 +55,7 @@ export default function MovesListPage({ searchParams }: MovesPageProps) {
       </div>
 
       <PokebaseTableWrap>
-        <table className="w-full min-w-[820px] border-separate border-spacing-0" aria-label="Pokémon Champions moves usage table">
+        <table className="w-full min-w-[820px] border-separate border-spacing-0" aria-label="Pokemon Champions moves usage table">
           <thead>
             <tr className="bg-white">
               <th className={`${pokebaseThClass} min-w-52`}>Move</th>
@@ -70,12 +70,7 @@ export default function MovesListPage({ searchParams }: MovesPageProps) {
             {entries.map((move) => (
               <tr key={move.slug} className="odd:bg-zinc-50">
                 <td className={pokebaseTdClass}>
-                  <a
-                    href={`https://pokebase.app/pokemon-champions/moves/${move.slug}`}
-                    className="font-semibold text-zinc-800 hover:text-blue-600 hover:underline"
-                  >
-                    {move.name}
-                  </a>
+                  <span className="font-semibold text-zinc-800">{move.name}</span>
                 </td>
                 <td className={`${pokebaseTdClass} text-right text-xs tabular-nums`}>{move.usage}%</td>
                 <td className={`${pokebaseTdClass} max-w-xl whitespace-pre-wrap leading-6`}>{move.description}</td>

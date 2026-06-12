@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
-    "import:pokemon": "node scripts/import-pokechamps-pokemon.mjs",
-    "import:items": "node scripts/import-52poke-champions-items.mjs",
-    "import:pokebase": "node scripts/import-pokebase-champions-data.mjs"
+    "import:pokebase": "node scripts/import-pokebase-champions-data.mjs",
+    "import:missing-pokeapi": "node scripts/import-missing-pokeapi-pokemon.mjs",
+    "generate:favicon": "node scripts/generate-favicon.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

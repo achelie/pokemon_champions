@@ -20,16 +20,16 @@ import {
   pokebaseRegulationSets,
   type PokebaseMegaFilter,
   type PokebasePokemonFilters
-} from "@/data/pokebasePokemon";
-import { articleJsonLd, createPageMetadata } from "@/lib/seo";
+} from "@/data/pokemon";
+import { createPageMetadata, databasePageJsonLd } from "@/lib/seo";
 
 const PAGE_SIZE = 100;
 
 const pageMeta = {
-  title: "Pokémon Champions Pokémon List",
-  description: "List of currently available Pokémon in Pokémon Champions with usage and base stats.",
+  title: "Pokemon Champions Pokemon List",
+  description: "List of currently available Pokemon in Pokemon Champions with usage and base stats.",
   path: "/pokemon",
-  keywords: ["Pokémon Champions Pokémon List", "Pokémon Champions All Pokémon", "Pokémon Champions Usage"]
+  keywords: ["Pokemon Champions Pokemon List", "Pokemon Champions All Pokemon", "Pokemon Champions Usage"]
 };
 
 export const metadata: Metadata = createPageMetadata(pageMeta);
@@ -84,10 +84,10 @@ export default function PokemonListPage({ searchParams }: PokemonListPageProps) 
 
   return (
     <PokebasePageShell
-      title="Pokémon List"
-      description="Usage-ranked Pokémon Champions data aligned with PokéBase's current M-A regulation list."
+      title="Pokemon List"
+      description="Usage-ranked Pokemon Champions data aligned with Pokebase's current M-A regulation list."
     >
-      <JsonLd data={articleJsonLd(pageMeta)} />
+      <JsonLd data={databasePageJsonLd({ ...pageMeta, itemCount: pokebasePokemon.length })} />
       <PokemonFilters filters={filters} />
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
@@ -96,7 +96,7 @@ export default function PokemonListPage({ searchParams }: PokemonListPageProps) 
       </div>
 
       <PokebaseTableWrap>
-        <table className="w-full min-w-[760px] border-separate border-spacing-0" aria-label="Pokémon Champions Pokémon usage table">
+        <table className="w-full min-w-[760px] border-separate border-spacing-0" aria-label="Pokemon Champions Pokemon usage table">
           <thead>
             <tr className="bg-white">
               <th className={`${pokebaseThClass} min-w-60`}>Pokemon</th>
@@ -112,16 +112,17 @@ export default function PokemonListPage({ searchParams }: PokemonListPageProps) 
             {entries.map((pokemon) => (
               <tr key={pokemon.slug} className="odd:bg-zinc-50">
                 <td className={pokebaseTdClass}>
-                  <a href={pokemon.sourceUrl} className="group flex min-w-60 items-center gap-3">
+                  <Link href={`/pokemon/${pokemon.slug}`} className="group flex min-w-60 items-center gap-3">
                     <Image
                       src={pokemon.image}
                       alt={pokemon.name}
                       width={36}
                       height={36}
+                      unoptimized
                       className="h-9 w-9 object-contain"
                     />
                     <span className="font-semibold text-zinc-800 group-hover:underline">{pokemon.name}</span>
-                  </a>
+                  </Link>
                 </td>
                 <td className={`${pokebaseTdClass} text-right tabular-nums`}>{pokemon.usage}%</td>
                 {statColumns.map((column) => (
@@ -200,7 +201,7 @@ function PokemonFilters({ filters }: { filters: PokebasePokemonFilters }) {
         <label className={labelClass}>
           Mega Evolution
           <select name="mega" defaultValue={filters.mega ?? "all"} className={selectClass}>
-            <option value="all">All Pokémon</option>
+            <option value="all">All Pokemon</option>
             <option value="mega">Mega only</option>
             <option value="base">No Mega</option>
           </select>
@@ -214,7 +215,10 @@ function PokemonFilters({ filters }: { filters: PokebasePokemonFilters }) {
         >
           Apply filters
         </button>
-        <Link href="/pokemon" className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-blue-200 hover:text-blue-600">
+        <Link
+          href="/pokemon"
+          className="rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-blue-200 hover:text-blue-600"
+        >
           Clear
         </Link>
       </div>

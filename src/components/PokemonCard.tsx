@@ -23,7 +23,14 @@ export function PokemonCard({ pokemon, rank }: PokemonCardProps) {
       <div className="flex items-start gap-3">
         <div className="grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-md border border-line bg-mist">
           {asset ? (
-            <Image src={asset.image} alt={`${pokemon.name} artwork`} width={64} height={64} className="h-14 w-14 object-contain" />
+            <Image
+              src={asset.image}
+              alt={`${pokemon.name} artwork`}
+              width={64}
+              height={64}
+              unoptimized
+              className="h-14 w-14 object-contain"
+            />
           ) : (
             <span className="text-sm font-black text-champion-navy">{pokemon.name.slice(0, 2).toUpperCase()}</span>
           )}
