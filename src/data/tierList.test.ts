@@ -19,7 +19,7 @@ describe("format-specific tier lists", () => {
     expect(Object.keys(tierListsByFormat.single)).toEqual(["SS", "S", "A"]);
   });
 
-  it("keeps every tier entry complete and backed by a local Pokemon image", () => {
+  it("keeps every tier entry complete and resolved through the asset library", () => {
     for (const [formatKey, tierList] of Object.entries(tierListsByFormat)) {
       for (const [rank, entries] of Object.entries(tierList)) {
         expect(entries.length, `${formatKey} ${rank}`).toBeGreaterThan(0);
@@ -33,7 +33,9 @@ describe("format-specific tier lists", () => {
           expect(entry.reason).toBeTruthy();
           expect(entry.reason).not.toMatch(/Early meta placeholder/i);
           expect(entry.reason).not.toMatch(/video|screenshot|source/i);
-          expect(getPokemonByName(entry.pokemonId)?.image, entry.name).toMatch(/^\/images\/pokemon\/[a-z0-9-]+\.(webp|png)$/);
+          const pokemon = getPokemonByName(entry.pokemonId);
+          expect(pokemon, entry.name).toBeDefined();
+          expect(pokemon?.image, entry.name).toMatch(/^\/images\/pokemon\/[a-z0-9-]+\.(webp|png)$/);
         }
       }
     }

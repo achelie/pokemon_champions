@@ -10,6 +10,19 @@ type MetadataInput = {
   keywords?: string[];
 };
 
+type DatabasePageJsonLdInput = Pick<MetadataInput, "title" | "description" | "path"> & {
+  itemCount: number;
+};
+
+type PokemonDetailJsonLdInput = {
+  slug: string;
+  name: string;
+  image: string;
+  usage: number;
+  generation: string;
+  abilities: string[];
+};
+
 export function createPageMetadata({ title, description, path, keywords = [] }: MetadataInput): Metadata {
   const url = absoluteUrl(path);
 
@@ -67,6 +80,65 @@ export function articleJsonLd({ title, description, path }: MetadataInput) {
     mainEntityOfPage: absoluteUrl(path),
     datePublished: "2026-06-09",
     dateModified: "2026-06-09"
+  };
+}
+
+export function databasePageJsonLd({ title, description, path, itemCount }: DatabasePageJsonLdInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: title,
+    description,
+    url: absoluteUrl(path),
+    isPartOf: {
+      "@type": "WebSite",
+      name: site.name,
+      url: site.url
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      name: title,
+      numberOfItems: itemCount
+    }
+  };
+}
+
+export function pokemonDetailJsonLd(pokemon: PokemonDetailJsonLdInput) {
+  const url = absoluteUrl(`/pokemon/${pokemon.slug}`);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `${pokemon.name} Pokemon Champions Data`,
+    url,
+    isPartOf: {
+      "@type": "WebSite",
+      name: site.name,
+      url: site.url
+    },
+    mainEntity: {
+      "@type": "Thing",
+      name: pokemon.name,
+      image: absoluteUrl(pokemon.image),
+      url,
+      additionalProperty: [
+        {
+          "@type": "PropertyValue",
+          name: "Usage",
+          value: `${pokemon.usage}%`
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Generation",
+          value: pokemon.generation
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Abilities",
+          value: pokemon.abilities.join(", ")
+        }
+      ]
+    }
   };
 }
 

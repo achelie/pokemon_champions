@@ -36,7 +36,7 @@ describe("tier recommendation build data", () => {
     expect(tierRecommendationGroups.map((group) => group.entries.length)).toEqual([27, 12, 24]);
   });
 
-  it("keeps each build complete and backed by local Pokemon and item assets", () => {
+  it("keeps each build complete and resolved through the asset library", () => {
     for (const group of tierRecommendationGroups) {
       for (const entry of group.entries) {
         expect(entry.id).toBeTruthy();
@@ -54,7 +54,7 @@ describe("tier recommendation build data", () => {
         expect(entry.sourceImages.length).toBeGreaterThanOrEqual(1);
 
         const pokemon = getPokemonByName(entry.pokemonId);
-        expect(pokemon, `${entry.name} should resolve through pokemonId ${entry.pokemonId}`).toBeDefined();
+        expect(pokemon, entry.name).toBeDefined();
         expect(pokemon?.image).toMatch(/^\/images\/pokemon\/[a-z0-9-]+\.(webp|png)$/);
 
         const item = getItemByName(entry.itemId);

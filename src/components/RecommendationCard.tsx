@@ -38,7 +38,7 @@ function MergedStats({
               <span className="text-xs font-black text-slate-500">{row.label}</span>
               <span className="text-sm font-black text-champion-navy">
                 {baseStats[row.key]}
-                {megaBaseStats ? <span className="text-champion-blue"> → {megaBaseStats[row.key]}</span> : null}
+                {megaBaseStats ? <span className="text-champion-blue"> -&gt; {megaBaseStats[row.key]}</span> : null}
               </span>
             </div>
             <div className="mt-1 text-xs font-bold text-slate-500">EV {evs[row.key]}</div>
@@ -53,9 +53,6 @@ export function RecommendationCard({ recommendation }: RecommendationCardProps) 
   const pokemon = getPokemonByName(recommendation.pokemonId);
   const item = getItemByName(recommendation.itemId);
 
-  if (!pokemon) {
-    throw new Error(`Missing Pokemon asset for recommendation: ${recommendation.pokemonId}`);
-  }
   if (!item) {
     throw new Error(`Missing item asset for recommendation: ${recommendation.itemId}`);
   }
@@ -64,13 +61,18 @@ export function RecommendationCard({ recommendation }: RecommendationCardProps) 
     <article className="rounded-lg border border-line bg-white p-4 shadow-sm">
       <div className="flex gap-3">
         <div className="grid h-24 w-24 shrink-0 place-items-center rounded-lg bg-mist">
-          <Image
-            src={pokemon.image}
-            alt={`${recommendation.name} artwork`}
-            width={88}
-            height={88}
-            className="h-22 w-22 object-contain"
-          />
+          {pokemon ? (
+            <Image
+              src={pokemon.image}
+              alt={`${recommendation.name} artwork`}
+              width={88}
+              height={88}
+              unoptimized
+              className="h-22 w-22 object-contain"
+            />
+          ) : (
+            <span className="text-sm font-black text-champion-navy">{recommendation.name.slice(0, 2).toUpperCase()}</span>
+          )}
         </div>
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-start gap-2">
@@ -82,7 +84,14 @@ export function RecommendationCard({ recommendation }: RecommendationCardProps) 
           </div>
           <div className="mt-3 flex items-center gap-2 rounded-md border border-line bg-slate-50 px-2 py-1.5">
             <div className="grid h-8 w-8 shrink-0 place-items-center rounded bg-white">
-              <Image src={item.image} alt={`${recommendation.itemName} icon`} width={28} height={28} className="h-7 w-7 object-contain" />
+              <Image
+                src={item.image}
+                alt={`${recommendation.itemName} icon`}
+                width={28}
+                height={28}
+                unoptimized
+                className="h-7 w-7 object-contain"
+              />
             </div>
             <div className="min-w-0">
               <p className="truncate text-xs font-black uppercase tracking-wide text-slate-500">Held Item</p>
