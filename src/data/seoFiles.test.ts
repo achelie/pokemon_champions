@@ -12,10 +12,11 @@ describe("SEO and advertising static files", () => {
     expect(adsTxt).toBe("google.com, pub-7443237558968985, DIRECT, f08c47fec0942fa0");
   });
 
-  it("publishes an LLM-friendly site summary for pokemetahub.com", () => {
+  it("publishes an LLM-friendly site summary for www.pokemetahub.com", () => {
     const llmsTxt = readFileSync(join(root, "public", "llms.txt"), "utf8");
 
-    expect(llmsTxt).toContain("https://pokemetahub.com");
+    expect(llmsTxt).toContain("https://www.pokemetahub.com");
+    expect(llmsTxt).not.toContain("https://pokemetahub.com");
     expect(llmsTxt).toContain("/tier-list");
     expect(llmsTxt).toContain("/best-teams");
     expect(llmsTxt).not.toContain("pokemonchampionsguide.com");

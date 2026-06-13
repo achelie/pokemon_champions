@@ -19,7 +19,7 @@ describe("/pokemon/[slug] page", () => {
     expect(html).not.toContain("Source");
     expect(html).not.toContain('href="https://pokebase.app/pokemon-champions/pokemon/blastoise-mega"');
     expect(html).toContain('"@type":"WebPage"');
-    expect(html).toContain('"url":"https://pokemetahub.com/pokemon/blastoise-mega"');
+    expect(html).toContain('"url":"https://www.pokemetahub.com/pokemon/blastoise-mega"');
     expect(html).toContain('"name":"Mega Blastoise"');
   });
 
@@ -27,7 +27,7 @@ describe("/pokemon/[slug] page", () => {
     const metadata = generateMetadata({ params: { slug: "blastoise-mega" } });
 
     expect(metadata.alternates).toMatchObject({
-      canonical: "https://pokemetahub.com/pokemon/blastoise-mega"
+      canonical: "https://www.pokemetahub.com/pokemon/blastoise-mega"
     });
   });
 });

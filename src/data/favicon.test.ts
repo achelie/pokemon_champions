@@ -12,6 +12,8 @@ const expectedIconSizes = [
   ["favicon-48x48.png", 48],
   ["favicon-96x96.png", 96],
   ["apple-touch-icon.png", 180],
+  ["icon-192.png", 192],
+  ["icon-512.png", 512],
   ["icon-192x192.png", 192],
   ["icon-512x512.png", 512]
 ] as const;
@@ -67,8 +69,12 @@ describe("favicon artwork", () => {
   it("declares the generated icon files in the root layout head", () => {
     const layout = readFileSync(path.join(process.cwd(), "src", "app", "layout.tsx"), "utf8");
 
-    expect(layout).toContain("/favicon.ico?v=3");
-    expect(layout).toContain('/favicon-48x48.png?v=3"');
-    expect(layout).toContain('/favicon-96x96.png?v=3"');
+    expect(layout).toContain('<link rel="icon" href="/favicon.ico" />');
+    expect(layout).toContain('<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />');
+    expect(layout).toContain('<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />');
+    expect(layout).toContain('<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />');
+    expect(layout).toContain('<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />');
+    expect(layout).toContain('<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />');
+    expect(layout).not.toContain("?v=");
   });
 });

@@ -7,10 +7,10 @@ import { teams } from "@/data/teams";
 import { absoluteUrl, site } from "@/lib/site";
 
 describe("Pokemon Champions Guide data", () => {
-  it("uses the production pokemetahub.com domain for canonical URLs", () => {
-    expect(site.domain).toBe("pokemetahub.com");
-    expect(site.url).toBe("https://pokemetahub.com");
-    expect(absoluteUrl("/tier-list")).toBe("https://pokemetahub.com/tier-list");
+  it("uses the production www.pokemetahub.com domain for canonical URLs", () => {
+    expect(site.domain).toBe("www.pokemetahub.com");
+    expect(site.url).toBe("https://www.pokemetahub.com");
+    expect(absoluteUrl("/tier-list")).toBe("https://www.pokemetahub.com/tier-list");
   });
 
   it("defines guide routes used by homepage cards and sitemap", () => {

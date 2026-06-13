@@ -24,7 +24,7 @@ describe("SEO structured data helpers", () => {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Pokemon Champions Pokemon List",
-      url: "https://pokemetahub.com/pokemon",
+      url: "https://www.pokemetahub.com/pokemon",
       mainEntity: {
         "@type": "ItemList",
         numberOfItems: 287
@@ -37,11 +37,11 @@ describe("SEO structured data helpers", () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Basculegion Pokemon Champions Data",
-      url: "https://pokemetahub.com/pokemon/basculegion",
+      url: "https://www.pokemetahub.com/pokemon/basculegion",
       mainEntity: {
         "@type": "Thing",
         name: "Basculegion",
-        image: "https://pokemetahub.com/images/pokemon/basculegion.png"
+        image: "https://www.pokemetahub.com/images/pokemon/basculegion.png"
       }
     });
   });
