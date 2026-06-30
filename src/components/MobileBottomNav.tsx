@@ -5,13 +5,14 @@ import { usePathname } from "next/navigation";
 
 import { mobileBottomNavItems } from "@/data/navigation";
 
-const navMeta: Record<string, { label: string; icon: "list" | "spark" | "team" }> = {
+const navMeta: Record<string, { label: string; icon: "list" | "spark" | "team" | "guides" }> = {
   "/tier-list": { label: "Tier", icon: "list" },
   "/useful-pokemon": { label: "Useful", icon: "spark" },
-  "/best-teams": { label: "Teams", icon: "team" }
+  "/best-teams": { label: "Teams", icon: "team" },
+  "/guides": { label: "Guides", icon: "guides" }
 };
 
-function NavIcon({ icon }: { icon: "list" | "spark" | "team" }) {
+function NavIcon({ icon }: { icon: "list" | "spark" | "team" | "guides" }) {
   if (icon === "list") {
     return (
       <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2">
@@ -35,6 +36,17 @@ function NavIcon({ icon }: { icon: "list" | "spark" | "team" }) {
     );
   }
 
+  if (icon === "guides") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2">
+        <path d="M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 1 5 16V4.5z" strokeLinejoin="round" />
+        <path d="M8 8h7" strokeLinecap="round" />
+        <path d="M8 12h7" strokeLinecap="round" />
+        <path d="M8.5 19.5A3.5 3.5 0 0 1 5 16" strokeLinecap="round" />
+      </svg>
+    );
+  }
+
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2">
       <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -53,7 +65,7 @@ export function MobileBottomNav() {
       aria-label="Primary mobile navigation"
       className="fixed inset-x-0 bottom-0 z-40 border-t-2 border-[#cfe4f2]/90 bg-[#eafaff]/95 px-2 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] pt-2 shadow-[0_-10px_30px_rgba(23,32,51,0.12)] backdrop-blur-xl md:hidden"
     >
-      <div className="mx-auto grid max-w-md grid-cols-3 gap-2">
+      <div className="mx-auto grid max-w-md grid-cols-4 gap-2">
         {mobileBottomNavItems.map((item) => {
           const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
           const meta = navMeta[item.href] ?? { label: item.title, icon: "list" as const };

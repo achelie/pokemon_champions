@@ -15,6 +15,7 @@ describe("Pokemon Champions Guide data", () => {
 
   it("defines guide routes used by homepage cards and sitemap", () => {
     expect(guides.map((guide) => guide.href)).toEqual([
+      "/regulation-set-mb-mega-analysis",
       "/tier-list",
       "/useful-pokemon",
       "/best-teams",
@@ -23,6 +24,14 @@ describe("Pokemon Champions Guide data", () => {
       "/mobile-release",
       "/mega-raichu"
     ]);
+  });
+
+  it("provides publication dates and index images for every guide article", () => {
+    for (const guide of guides) {
+      expect(guide.publishedAt).toMatch(/^2026-06-(09|30)$/);
+      expect(guide.image.src).toMatch(/^\/(?:images\/pokemon\/|images\/guides\/|logo\.png|icon-192x192\.png)/);
+      expect(guide.image.alt).toContain(guide.title);
+    }
   });
 
   it("keeps separate Single and Double tier lists without placeholder reasons", () => {

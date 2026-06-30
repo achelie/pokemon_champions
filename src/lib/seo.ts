@@ -8,6 +8,12 @@ type MetadataInput = {
   description: string;
   path: string;
   keywords?: string[];
+  image?: string;
+};
+
+type ArticleJsonLdInput = MetadataInput & {
+  datePublished?: string;
+  dateModified?: string;
 };
 
 type DatabasePageJsonLdInput = Pick<MetadataInput, "title" | "description" | "path"> & {
@@ -23,8 +29,9 @@ type PokemonDetailJsonLdInput = {
   abilities: string[];
 };
 
-export function createPageMetadata({ title, description, path, keywords = [] }: MetadataInput): Metadata {
+export function createPageMetadata({ title, description, path, keywords = [], image }: MetadataInput): Metadata {
   const url = absoluteUrl(path);
+  const imageUrl = image ? absoluteUrl(image) : undefined;
 
   return {
     title,
@@ -38,12 +45,14 @@ export function createPageMetadata({ title, description, path, keywords = [] }: 
       description,
       url,
       siteName: site.name,
-      type: "article"
+      type: "article",
+      ...(imageUrl ? { images: [imageUrl] } : {})
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description
+      description,
+      ...(imageUrl ? { images: [imageUrl] } : {})
     }
   };
 }
@@ -62,13 +71,21 @@ export function websiteJsonLd() {
   };
 }
 
-export function articleJsonLd({ title, description, path }: MetadataInput) {
+export function articleJsonLd({
+  title,
+  description,
+  path,
+  image,
+  datePublished = "2026-06-09",
+  dateModified = datePublished
+}: ArticleJsonLdInput) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
     url: absoluteUrl(path),
+    ...(image ? { image: absoluteUrl(image) } : {}),
     author: {
       "@type": "Organization",
       name: site.name
@@ -78,8 +95,8 @@ export function articleJsonLd({ title, description, path }: MetadataInput) {
       name: site.name
     },
     mainEntityOfPage: absoluteUrl(path),
-    datePublished: "2026-06-09",
-    dateModified: "2026-06-09"
+    datePublished,
+    dateModified
   };
 }
 
