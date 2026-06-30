@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 1
     },
+    {
+      url: absoluteUrl("/guides"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9
+    },
     ...guides.map((guide) => ({
       url: absoluteUrl(guide.href),
       lastModified: now,

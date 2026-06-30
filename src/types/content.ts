@@ -6,6 +6,11 @@ export type Guide = {
   title: string;
   href: string;
   description: string;
+  publishedAt: string;
+  image: {
+    src: string;
+    alt: string;
+  };
   keywords: string[];
 };
 

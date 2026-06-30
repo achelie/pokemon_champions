@@ -1,7 +1,8 @@
 export const headerNavItems = [
   { title: "Tier List", href: "/tier-list" },
   { title: "Useful Pokemon", href: "/useful-pokemon" },
-  { title: "Best Teams", href: "/best-teams" }
+  { title: "Best Teams", href: "/best-teams" },
+  { title: "Guides", href: "/guides" }
 ] as const;
 
 export const mobileBottomNavItems = headerNavItems;
