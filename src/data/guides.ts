@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Mega Raichu Y Build Guide - No Guard Zap Cannon",
+    href: "/mega-raichu-y-zap-cannon-build",
+    description:
+      "Complete Mega Raichu Y build guide for Pokemon Champions, explaining No Guard Zap Cannon, bulk EVs, Steam Eruption, Grass Knot, partners, counters, and ranked usage.",
+    publishedAt: "2026-07-01",
+    image: {
+      src: "/images/guides/mega-raichu-y-zap-cannon-build/cover.png",
+      alt: "Pokemon Champions Mega Raichu Y Build Guide - No Guard Zap Cannon cover image"
+    },
+    keywords: [
+      "Pokemon Champions Mega Raichu Y Build",
+      "Mega Raichu Y Zap Cannon",
+      "Pokemon Champions No Guard Raichu",
+      "Pokemon Champions Raichu Y EVs",
+      "Pokemon Champions Mega Raichu Y Guide"
+    ]
+  },
+  {
     title: "Pokemon Champions Regulation Set M-B Mega Analysis",
     href: "/regulation-set-mb-mega-analysis",
     description:

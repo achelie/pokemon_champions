@@ -18,6 +18,7 @@ describe("/guides page", () => {
     expect(html).toContain('aria-label="Pokemon Champions guide articles"');
     expect(html).toContain(">Jun 9, 2026</time>");
     expect(html).toContain(">Jun 30, 2026</time>");
+    expect(html).toContain(">Jul 1, 2026</time>");
 
     for (const guide of guides) {
       expect(html).toMatch(new RegExp(`<a[^>]+href="${escapeRegExp(guide.href)}"[\\s\\S]*?${escapeRegExp(guide.title)}[\\s\\S]*?</a>`));
