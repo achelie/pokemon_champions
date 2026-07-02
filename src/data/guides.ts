@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Garchomp Build Guide - Life Orb Ranked Moveset",
+    href: "/garchomp-build-guide",
+    description:
+      "Complete Pokemon Champions Garchomp build guide for Regulation Set M-B, covering Life Orb, Rough Skin, Dragon Claw, Earthquake, Rock Slide, EVs, damage benchmarks, teammates, and why Mega Garchomp is usually worse.",
+    publishedAt: "2026-07-02",
+    image: {
+      src: "/images/guides/garchomp-build-guide/cover.png",
+      alt: "Pokemon Champions Garchomp Build Guide - Life Orb Ranked Moveset cover image"
+    },
+    keywords: [
+      "Pokemon Champions Garchomp Build",
+      "Pokemon Champions Garchomp Guide",
+      "Garchomp Life Orb Moveset",
+      "Pokemon Champions Regulation Set M-B Garchomp",
+      "Pokemon Champions Garchomp EVs"
+    ]
+  },
+  {
     title: "Pokemon Champions Mega Raichu Y Build Guide - No Guard Zap Cannon",
     href: "/mega-raichu-y-zap-cannon-build",
     description:
