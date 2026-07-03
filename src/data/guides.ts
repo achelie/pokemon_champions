@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Mega Staraptor Build Guide - Contrary Close Combat",
+    href: "/mega-staraptor-build-guide",
+    description:
+      "Complete Pokemon Champions Mega Staraptor build guide for Regulation Set M-B, covering Contrary Close Combat, Brave Bird, Dual Wingbeat, Choice Scarf Final Gambit, EVs, teammates, counters, and ranked usage.",
+    publishedAt: "2026-07-03",
+    image: {
+      src: "/images/guides/mega-staraptor-build-guide/cover.png",
+      alt: "Pokemon Champions Mega Staraptor Build Guide - Contrary Close Combat cover image"
+    },
+    keywords: [
+      "Pokemon Champions Mega Staraptor Build",
+      "Pokemon Champions Mega Staraptor Guide",
+      "Mega Staraptor Contrary Close Combat",
+      "Pokemon Champions Staraptor Final Gambit",
+      "Pokemon Champions Regulation Set M-B Staraptor"
+    ]
+  },
+  {
     title: "Pokemon Champions Garchomp Build Guide - Life Orb Ranked Moveset",
     href: "/garchomp-build-guide",
     description:

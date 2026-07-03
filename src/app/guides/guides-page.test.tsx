@@ -20,6 +20,7 @@ describe("/guides page", () => {
     expect(html).toContain(">Jun 30, 2026</time>");
     expect(html).toContain(">Jul 1, 2026</time>");
     expect(html).toContain(">Jul 2, 2026</time>");
+    expect(html).toContain(">Jul 3, 2026</time>");
 
     for (const guide of guides) {
       expect(html).toMatch(new RegExp(`<a[^>]+href="${escapeRegExp(guide.href)}"[\\s\\S]*?${escapeRegExp(guide.title)}[\\s\\S]*?</a>`));
