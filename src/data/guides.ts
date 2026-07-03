@@ -2,6 +2,60 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Mega Staraptor Build Guide - Contrary Close Combat",
+    href: "/mega-staraptor-build-guide",
+    description:
+      "Complete Pokemon Champions Mega Staraptor build guide for Regulation Set M-B, covering Contrary Close Combat, Brave Bird, Dual Wingbeat, Choice Scarf Final Gambit, EVs, teammates, counters, and ranked usage.",
+    publishedAt: "2026-07-03",
+    image: {
+      src: "/images/guides/mega-staraptor-build-guide/cover.png",
+      alt: "Pokemon Champions Mega Staraptor Build Guide - Contrary Close Combat cover image"
+    },
+    keywords: [
+      "Pokemon Champions Mega Staraptor Build",
+      "Pokemon Champions Mega Staraptor Guide",
+      "Mega Staraptor Contrary Close Combat",
+      "Pokemon Champions Staraptor Final Gambit",
+      "Pokemon Champions Regulation Set M-B Staraptor"
+    ]
+  },
+  {
+    title: "Pokemon Champions Garchomp Build Guide - Life Orb Ranked Moveset",
+    href: "/garchomp-build-guide",
+    description:
+      "Complete Pokemon Champions Garchomp build guide for Regulation Set M-B, covering Life Orb, Rough Skin, Dragon Claw, Earthquake, Rock Slide, EVs, damage benchmarks, teammates, and why Mega Garchomp is usually worse.",
+    publishedAt: "2026-07-02",
+    image: {
+      src: "/images/guides/garchomp-build-guide/cover.png",
+      alt: "Pokemon Champions Garchomp Build Guide - Life Orb Ranked Moveset cover image"
+    },
+    keywords: [
+      "Pokemon Champions Garchomp Build",
+      "Pokemon Champions Garchomp Guide",
+      "Garchomp Life Orb Moveset",
+      "Pokemon Champions Regulation Set M-B Garchomp",
+      "Pokemon Champions Garchomp EVs"
+    ]
+  },
+  {
+    title: "Pokemon Champions Mega Raichu Y Build Guide - No Guard Zap Cannon",
+    href: "/mega-raichu-y-zap-cannon-build",
+    description:
+      "Complete Mega Raichu Y build guide for Pokemon Champions, explaining No Guard Zap Cannon, bulk EVs, Steam Eruption, Grass Knot, partners, counters, and ranked usage.",
+    publishedAt: "2026-07-01",
+    image: {
+      src: "/images/guides/mega-raichu-y-zap-cannon-build/cover.png",
+      alt: "Pokemon Champions Mega Raichu Y Build Guide - No Guard Zap Cannon cover image"
+    },
+    keywords: [
+      "Pokemon Champions Mega Raichu Y Build",
+      "Mega Raichu Y Zap Cannon",
+      "Pokemon Champions No Guard Raichu",
+      "Pokemon Champions Raichu Y EVs",
+      "Pokemon Champions Mega Raichu Y Guide"
+    ]
+  },
+  {
     title: "Pokemon Champions Regulation Set M-B Mega Analysis",
     href: "/regulation-set-mb-mega-analysis",
     description:
