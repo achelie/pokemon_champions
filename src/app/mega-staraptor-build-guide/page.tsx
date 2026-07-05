@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import { GuideArticleLayout, type GuideTableOfContentsItem } from "@/components/GuideArticleLayout";
 import { JsonLd } from "@/components/JsonLd";
 import { articleJsonLd, createPageMetadata } from "@/lib/seo";
 
@@ -70,6 +71,18 @@ const figures: Figure[] = [
   }
 ];
 
+const tableOfContents: GuideTableOfContentsItem[] = [
+  { id: "why-mega-staraptor", title: "Why Mega Staraptor is everywhere" },
+  { id: "regular-staraptor", title: "Regular Staraptor role" },
+  { id: "recommended-moveset", title: "Recommended moveset" },
+  { id: "contrary-close-combat", title: "Contrary Close Combat" },
+  { id: "ev-direction", title: "EV direction" },
+  { id: "damage-benchmarks", title: "Damage benchmarks" },
+  { id: "counterplay", title: "What threatens Mega Staraptor" },
+  { id: "best-partners", title: "Best partners" },
+  { id: "final-verdict", title: "Final verdict" }
+];
+
 export const metadata: Metadata = createPageMetadata(page);
 
 function formatDate(value: string) {
@@ -111,7 +124,7 @@ export default function MegaStaraptorBuildGuidePage() {
   return (
     <article className="bg-mist">
       <JsonLd data={articleJsonLd({ ...page, datePublished: publishedAt, dateModified: publishedAt })} />
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <GuideArticleLayout currentHref={page.path} tableOfContents={tableOfContents}>
         <header className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-champion-red">Mega Staraptor Guide</p>
@@ -157,7 +170,7 @@ export default function MegaStaraptorBuildGuidePage() {
         </section>
 
         <div className="prose-guide mt-10">
-          <h2>Why Mega Staraptor is suddenly everywhere</h2>
+          <h2 id="why-mega-staraptor">Why Mega Staraptor is suddenly everywhere</h2>
           <p>
             Staraptor used to be a narrow pick. Regular Staraptor was mostly a Choice Scarf Final Gambit Pokemon: Intimidate
             the field, trade its large HP total into one target, then let a teammate set Trick Room or start an offensive
@@ -174,7 +187,7 @@ export default function MegaStaraptorBuildGuidePage() {
         <ArticleFigure figure={figures[0]} priority />
 
         <div className="prose-guide">
-          <h2>Regular Staraptor still has a real job</h2>
+          <h2 id="regular-staraptor">Regular Staraptor still has a real job</h2>
           <p>
             Before covering the Mega build, it is important to separate the two Staraptor roles. Regular Staraptor can still
             run Choice Scarf Final Gambit with Intimidate. With full HP investment, it reaches 192 HP, which lets Final
@@ -191,7 +204,7 @@ export default function MegaStaraptorBuildGuidePage() {
         <ArticleFigure figure={figures[1]} />
 
         <div className="prose-guide">
-          <h2>Recommended Mega Staraptor moveset</h2>
+          <h2 id="recommended-moveset">Recommended Mega Staraptor moveset</h2>
           <p>
             The standard Mega Staraptor moveset starts with Protect, Close Combat, and a Flying STAB move. Close Combat is
             mandatory because Contrary flips the defense drops into boosts. Protect is mandatory because Staraptor draws
@@ -211,7 +224,7 @@ export default function MegaStaraptorBuildGuidePage() {
         <ArticleFigure figure={figures[2]} />
 
         <div className="prose-guide">
-          <h2>How Contrary turns Close Combat into a win condition</h2>
+          <h2 id="contrary-close-combat">How Contrary turns Close Combat into a win condition</h2>
           <p>
             Contrary is the entire reason Mega Staraptor works. Close Combat normally lowers Defense and Special Defense.
             On Mega Staraptor, each use raises both defenses. That means the first attack is not just damage. It is also
@@ -229,7 +242,7 @@ export default function MegaStaraptorBuildGuidePage() {
         <ArticleFigure figure={figures[5]} />
 
         <div className="prose-guide">
-          <h2>EV direction: Speed first, then HP or Attack</h2>
+          <h2 id="ev-direction">EV direction: Speed first, then HP or Attack</h2>
           <p>
             Mega Staraptor should usually start with Jolly and heavy Speed investment. The SRT source is clear on this point:
             a slow Mega Staraptor that waits to attack loses much of the value of Contrary. Acting first means Close Combat
@@ -247,7 +260,7 @@ export default function MegaStaraptorBuildGuidePage() {
         <ArticleFigure figure={figures[3]} />
 
         <div className="prose-guide">
-          <h2>Damage benchmarks and Flying move choice</h2>
+          <h2 id="damage-benchmarks">Damage benchmarks and Flying move choice</h2>
           <p>
             Unboosted Mega Staraptor is not as strong as the hype can make it sound. With minimal Attack investment, it can
             miss clean KOs on bulky Incineroar-style targets, Poltchageist-style bulky pivots, and other defensive Pokemon.
@@ -263,7 +276,7 @@ export default function MegaStaraptorBuildGuidePage() {
         </div>
 
         <div className="prose-guide">
-          <h2>What actually threatens Mega Staraptor?</h2>
+          <h2 id="counterplay">What actually threatens Mega Staraptor?</h2>
           <p>
             Mega Staraptor has useful physical bulk after one Close Combat, but its weaknesses mostly line up with special
             attackers. Electric, Ice, Psychic, and Fairy attacks are the most important damage types to respect. Mega Raichu
@@ -282,7 +295,7 @@ export default function MegaStaraptorBuildGuidePage() {
         <ArticleFigure figure={figures[4]} />
 
         <div className="prose-guide">
-          <h2>Best partners for Mega Staraptor</h2>
+          <h2 id="best-partners">Best partners for Mega Staraptor</h2>
           <p>
             Mega Staraptor wants partners that either boost it through Contrary or remove the Pokemon that stop Close Combat.
             Whimsicott is the cleanest support because Prankster Charm becomes +2 Attack for Mega Staraptor. Grimmsnarl can
@@ -296,7 +309,7 @@ export default function MegaStaraptorBuildGuidePage() {
             answers matter because Sylveon and Gardevoir can punish Staraptor before it stacks enough defensive boosts.
           </p>
 
-          <h2>Final verdict: is Mega Staraptor worth building?</h2>
+          <h2 id="final-verdict">Final verdict: is Mega Staraptor worth building?</h2>
           <p>
             Yes. Mega Staraptor is one of the most important Regulation Set M-B Mega Pokemon because it turns one of the
             best drawback moves in the game into a scaling defensive engine. It is not automatic, and players should expect
@@ -305,7 +318,7 @@ export default function MegaStaraptorBuildGuidePage() {
             snowball threats in Pokemon Champions.
           </p>
         </div>
-      </div>
+      </GuideArticleLayout>
     </article>
   );
 }

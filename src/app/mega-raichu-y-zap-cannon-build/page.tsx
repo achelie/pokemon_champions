@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import { GuideArticleLayout, type GuideTableOfContentsItem } from "@/components/GuideArticleLayout";
 import { JsonLd } from "@/components/JsonLd";
 import { articleJsonLd, createPageMetadata } from "@/lib/seo";
 
@@ -63,6 +64,17 @@ const figures: Figure[] = [
   }
 ];
 
+const tableOfContents: GuideTableOfContentsItem[] = [
+  { id: "why-mega-raichu-y", title: "Why Mega Raichu Y matters" },
+  { id: "no-guard-zap-cannon", title: "No Guard Zap Cannon" },
+  { id: "recommended-moveset", title: "Recommended moveset" },
+  { id: "bulk-investment", title: "Bulk investment" },
+  { id: "damage-benchmarks", title: "Damage benchmarks" },
+  { id: "lightning-rod-counterplay", title: "Lightning Rod and counterplay" },
+  { id: "best-partners", title: "Best partners" },
+  { id: "final-verdict", title: "Final verdict" }
+];
+
 export const metadata: Metadata = createPageMetadata(page);
 
 function formatDate(value: string) {
@@ -104,7 +116,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
   return (
     <article className="bg-mist">
       <JsonLd data={articleJsonLd({ ...page, datePublished: publishedAt, dateModified: publishedAt })} />
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <GuideArticleLayout currentHref={page.path} tableOfContents={tableOfContents}>
         <header className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-champion-red">Mega Raichu Y Guide</p>
@@ -149,7 +161,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
         </section>
 
         <div className="prose-guide mt-10">
-          <h2>Why Mega Raichu Y matters in Pokemon Champions</h2>
+          <h2 id="why-mega-raichu-y">Why Mega Raichu Y matters in Pokemon Champions</h2>
           <p>
             Mega Raichu Y currently sits around the second competitive tier of Regulation Set M-B. It is not as universally
             oppressive as Mega Charizard Y, and it does not define rain the way Mega Swampert does, but it is one of the
@@ -166,7 +178,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
         <ArticleFigure figure={figures[0]} priority />
 
         <div className="prose-guide">
-          <h2>No Guard Zap Cannon is the build, not a gimmick</h2>
+          <h2 id="no-guard-zap-cannon">No Guard Zap Cannon is the build, not a gimmick</h2>
           <p>
             No Guard means Mega Raichu Y and the Pokemon targeting it both have guaranteed accuracy. That second half matters:
             Mega Raichu Y is fragile, so it cannot pretend that No Guard is purely upside. The reward is still worth building
@@ -179,7 +191,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
             outspeed and clean up.
           </p>
 
-          <h2>Recommended Mega Raichu Y moveset</h2>
+          <h2 id="recommended-moveset">Recommended Mega Raichu Y moveset</h2>
           <p>
             The most stable moveset starts with Protect, Zap Cannon, and Steam Eruption. Protect is mandatory because Mega
             Raichu Y is easy to punish on the wrong turn. Zap Cannon is the main damage and control move. Steam Eruption is
@@ -198,7 +210,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
         <ArticleFigure figure={figures[1]} />
 
         <div className="prose-guide">
-          <h2>Why bulk investment beats max Special Attack</h2>
+          <h2 id="bulk-investment">Why bulk investment beats max Special Attack</h2>
           <p>
             The common ladder spread often appears as simple Special Attack plus Speed investment. That is easy to use, but
             it misses the most important Mega Raichu Y lesson: 160 base Special Attack and 120-base-power moves already give
@@ -221,7 +233,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
         <ArticleFigure figure={figures[2]} />
 
         <div className="prose-guide">
-          <h2>Damage benchmarks: what 0 Special Attack still does</h2>
+          <h2 id="damage-benchmarks">Damage benchmarks: what 0 Special Attack still does</h2>
           <p>
             The offensive chart is the reason this guide recommends a bulk-first approach. Even at 0 Special Attack
             investment, Zap Cannon still overwhelms many of its intended targets. Mega Charizard Y does not want to take it.
@@ -244,7 +256,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
         <ArticleFigure figure={figures[4]} />
 
         <div className="prose-guide">
-          <h2>Lightning Rod, Focus Sash Raichu, and counterplay</h2>
+          <h2 id="lightning-rod-counterplay">Lightning Rod, Focus Sash Raichu, and counterplay</h2>
           <p>
             Mega Raichu Y has an awkward relationship with its own base form. Before Mega Evolution, regular Raichu can use
             Lightning Rod, which redirects Electric moves and can shut down opposing Raichu plans. That means Focus Sash
@@ -267,7 +279,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
         <ArticleFigure figure={figures[3]} />
 
         <div className="prose-guide">
-          <h2>Best partners for Mega Raichu Y</h2>
+          <h2 id="best-partners">Best partners for Mega Raichu Y</h2>
           <p>
             Mega Raichu Y works best with teammates that punish Ground types and convert paralysis into KOs. Alolan Ninetales
             style Ice pressure is useful because it threatens Ground Pokemon that block Electric damage. Rain cores can work
@@ -286,7 +298,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
             on the board can hand free turns to Garchomp and other Ground attackers.
           </p>
 
-          <h2>Final verdict: should you build Mega Raichu Y?</h2>
+          <h2 id="final-verdict">Final verdict: should you build Mega Raichu Y?</h2>
           <p>
             Yes, Mega Raichu Y is worth building, but it should be treated as a speed-control attacker rather than a pure
             special sweeper. The best version is usually not max Special Attack. The best version is fast enough, bulky enough,
@@ -299,7 +311,7 @@ export default function MegaRaichuYZapCannonBuildPage() {
             do far more than its usage rank suggests.
           </p>
         </div>
-      </div>
+      </GuideArticleLayout>
     </article>
   );
 }

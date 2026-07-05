@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import { GuideArticleLayout, type GuideTableOfContentsItem } from "@/components/GuideArticleLayout";
 import { JsonLd } from "@/components/JsonLd";
 import { articleJsonLd, createPageMetadata } from "@/lib/seo";
 
@@ -76,6 +77,18 @@ const figures: Figure[] = [
   }
 ];
 
+const tableOfContents: GuideTableOfContentsItem[] = [
+  { id: "why-garchomp-rank-one", title: "Why Garchomp is rank one" },
+  { id: "life-orb-rough-skin", title: "Life Orb plus Rough Skin" },
+  { id: "recommended-moveset", title: "Recommended moveset" },
+  { id: "regular-vs-mega", title: "Regular vs Mega Garchomp" },
+  { id: "damage-benchmarks", title: "Damage benchmarks" },
+  { id: "ev-direction", title: "EV direction" },
+  { id: "typing-coverage", title: "Typing and coverage" },
+  { id: "best-teammates", title: "Best teammates" },
+  { id: "final-verdict", title: "Final verdict" }
+];
+
 export const metadata: Metadata = createPageMetadata(page);
 
 function formatDate(value: string) {
@@ -117,7 +130,7 @@ export default function GarchompBuildGuidePage() {
   return (
     <article className="bg-mist">
       <JsonLd data={articleJsonLd({ ...page, datePublished: publishedAt, dateModified: publishedAt })} />
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <GuideArticleLayout currentHref={page.path} tableOfContents={tableOfContents}>
         <header className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-champion-red">Garchomp Guide</p>
@@ -163,7 +176,7 @@ export default function GarchompBuildGuidePage() {
         </section>
 
         <div className="prose-guide mt-10">
-          <h2>Why Garchomp is rank one in Pokemon Champions</h2>
+          <h2 id="why-garchomp-rank-one">Why Garchomp is rank one in Pokemon Champions</h2>
           <p>
             Garchomp has been one of the most stable Pokemon Champions picks across the first three seasons. The usage trend
             is the main reason this guide treats it as a top-tier ranked staple: second in season one, second in season two,
@@ -180,7 +193,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[0]} priority />
 
         <div className="prose-guide">
-          <h2>The best Garchomp build: Life Orb plus Rough Skin</h2>
+          <h2 id="life-orb-rough-skin">The best Garchomp build: Life Orb plus Rough Skin</h2>
           <p>
             The current M3 season data is direct: Life Orb is the dominant item, Rough Skin is the default ability, and
             Jolly is the preferred nature. That combination is not random. Garchomp needs the Life Orb boost because its
@@ -199,7 +212,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[1]} />
 
         <div className="prose-guide">
-          <h2>Recommended Garchomp moveset</h2>
+          <h2 id="recommended-moveset">Recommended Garchomp moveset</h2>
           <p>
             The safest ranked Garchomp moveset is Protect, Dragon Claw, Earthquake, and Rock Slide. Protect is necessary
             because Garchomp draws Ice, Fairy, and Dragon attacks immediately. Dragon Claw is the stable Dragon STAB and
@@ -218,7 +231,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[2]} />
 
         <div className="prose-guide">
-          <h2>Why regular Garchomp is usually better than Mega Garchomp</h2>
+          <h2 id="regular-vs-mega">Why regular Garchomp is usually better than Mega Garchomp</h2>
           <p>
             Mega Garchomp looks attractive because the stat total jumps and the Attack number rises, but Pokemon Champions
             ranked games care about what the Mega Stone costs. Regular Garchomp can hold Life Orb, which gives immediate
@@ -235,7 +248,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[6]} />
 
         <div className="prose-guide">
-          <h2>Important damage benchmarks</h2>
+          <h2 id="damage-benchmarks">Important damage benchmarks</h2>
           <p>
             Life Orb matters most in two matchups. First, Garchomp mirrors become much cleaner: Jolly Dragon Claw from a
             Life Orb Garchomp is the kind of damage that can remove opposing Garchomp instead of leaving it barely alive.
@@ -253,7 +266,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[3]} />
 
         <div className="prose-guide">
-          <h2>EV direction and defensive benchmarks</h2>
+          <h2 id="ev-direction">EV direction and defensive benchmarks</h2>
           <p>
             The cleanest starting point is Jolly with enough Speed to win relevant Garchomp mirrors and enough Attack to
             reach the Life Orb benchmarks your team needs. The source material uses 32 Attack EVs as a common offensive
@@ -271,7 +284,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[4]} />
 
         <div className="prose-guide">
-          <h2>Typing, coverage, and what Garchomp cannot hit cleanly</h2>
+          <h2 id="typing-coverage">Typing, coverage, and what Garchomp cannot hit cleanly</h2>
           <p>
             Dragon plus Ground is one of the strongest coverage packages in Pokemon Champions. Garchomp pressures Fire,
             Electric, Poison, Rock, Dragon, and Steel targets while resisting Fire, Poison, and Rock and ignoring Electric
@@ -287,7 +300,7 @@ export default function GarchompBuildGuidePage() {
         <ArticleFigure figure={figures[5]} />
 
         <div className="prose-guide">
-          <h2>Best teammates for Garchomp</h2>
+          <h2 id="best-teammates">Best teammates for Garchomp</h2>
           <p>
             Garchomp teams should start with one rule: include at least one Flying or Levitate partner. Earthquake is too
             important to make every turn depend on your own partner clicking Protect. Charizard-style Flying Megas,
@@ -301,7 +314,7 @@ export default function GarchompBuildGuidePage() {
             the ranked game becomes much easier.
           </p>
 
-          <h2>Final verdict: should you build Garchomp?</h2>
+          <h2 id="final-verdict">Final verdict: should you build Garchomp?</h2>
           <p>
             Yes. If you play ranked Regulation Set M-B, your box should have a serious Garchomp build. It is not flawless:
             the move power is lower than the usage ranking suggests, Mega Garchomp is usually a trap, and Ice, Fairy, and
@@ -310,7 +323,7 @@ export default function GarchompBuildGuidePage() {
             into one slot.
           </p>
         </div>
-      </div>
+      </GuideArticleLayout>
     </article>
   );
 }

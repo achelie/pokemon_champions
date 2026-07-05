@@ -42,6 +42,7 @@ a {
 
 .prose-guide h2 {
   margin-top: 2rem;
+  scroll-margin-top: 6rem;
   font-size: clamp(1.35rem, 2vw, 1.85rem);
   line-height: 1.15;
   font-weight: 800;

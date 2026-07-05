@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import { GuideArticleLayout, type GuideTableOfContentsItem } from "@/components/GuideArticleLayout";
 import { JsonLd } from "@/components/JsonLd";
 import { articleJsonLd, createPageMetadata } from "@/lib/seo";
 
@@ -88,6 +89,19 @@ const supportingFigures: Figure[] = [
   }
 ];
 
+const tableOfContents: GuideTableOfContentsItem[] = [
+  { id: "what-changes", title: "What Regulation Set M-B changes" },
+  { id: "item-pool", title: "Item pool shift" },
+  { id: "mega-raichu", title: "Mega Raichu X and Y" },
+  { id: "mega-eelektross", title: "Mega Eelektross", depth: 3 },
+  { id: "hoenn-starters", title: "Hoenn starter Megas" },
+  { id: "mega-metagross", title: "Mega Metagross" },
+  { id: "mega-staraptor", title: "Mega Staraptor", depth: 3 },
+  { id: "mega-mawile", title: "Mega Mawile", depth: 3 },
+  { id: "early-ranking", title: "Early Mega ranking" },
+  { id: "additional-notes", title: "Additional M-B Mega notes" }
+];
+
 export const metadata: Metadata = createPageMetadata(page);
 
 function formatDate(value: string) {
@@ -129,7 +143,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
   return (
     <article className="bg-mist">
       <JsonLd data={articleJsonLd({ ...page, datePublished: publishedAt, dateModified: publishedAt })} />
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <GuideArticleLayout currentHref={page.path} tableOfContents={tableOfContents}>
         <header className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-champion-red">Regulation Set M-B</p>
@@ -165,7 +179,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         </section>
 
         <div className="prose-guide mt-10">
-          <h2>What Regulation Set M-B changes</h2>
+          <h2 id="what-changes">What Regulation Set M-B changes</h2>
           <p>
             Regulation Set M-B is not a full reset of Pokemon Champions. The source material counts 235 in-game icons and
             roughly 200 final-form options after duplicates and alternate forms are removed. The new competitive question is
@@ -183,7 +197,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         <ArticleFigure figure={primaryFigures[0]} priority />
 
         <div className="prose-guide">
-          <h2>The item pool may be the biggest M-B shift</h2>
+          <h2 id="item-pool">The item pool may be the biggest M-B shift</h2>
           <p>
             The most important early lesson from Set M-B is that items can move the metagame as much as new Pokemon. Life
             Orb is the headline. It turns many neutral hits into real damage checks, and Garchomp benefits immediately because
@@ -202,7 +216,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         <ArticleFigure figure={primaryFigures[1]} />
 
         <div className="prose-guide">
-          <h2>Mega Raichu X and Mega Raichu Y: high profile, real flaws</h2>
+          <h2 id="mega-raichu">Mega Raichu X and Mega Raichu Y: high profile, real flaws</h2>
           <p>
             Mega Raichu is the face of the rule set, but it is not automatically the best Pokemon in Regulation Set M-B. Mega
             Raichu X is the physical direction. It gets meaningful offensive stats and, most importantly, an Electric Terrain
@@ -221,7 +235,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
             ask Mega Raichu to spam Electric attacks will lose to Ground types and Lightning Rod answers.
           </p>
 
-          <h2>Mega Eelektross: the ability is better than the Pokemon</h2>
+          <h2 id="mega-eelektross">Mega Eelektross: the ability is better than the Pokemon</h2>
           <p>
             Mega Eelektross is the clearest example of a Set M-B trap. Its custom ability combines Ground immunity with a
             Beast Boost-style stat rise after a knockout, which sounds elite. The problem is the rest of the profile. Pure
@@ -238,7 +252,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         <ArticleFigure figure={primaryFigures[2]} />
 
         <div className="prose-guide">
-          <h2>Mega Sceptile, Mega Blaziken, and Mega Swampert</h2>
+          <h2 id="hoenn-starters">Mega Sceptile, Mega Blaziken, and Mega Swampert</h2>
           <p>
             The Hoenn starter Megas show three different versions of offensive risk. Mega Sceptile is extremely fast by the
             current Pokemon Champions standard. Its Grass/Dragon typing, Lightning Rod, and Earth Power access give it a much
@@ -264,7 +278,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         <ArticleFigure figure={primaryFigures[3]} />
 
         <div className="prose-guide">
-          <h2>Mega Metagross: still strong, but missing its best button</h2>
+          <h2 id="mega-metagross">Mega Metagross: still strong, but missing its best button</h2>
           <p>
             Mega Metagross looks absurd on paper. Its effective stat total is enormous, Steel/Psychic gives many resistances,
             and Tough Claws improves a large portion of its physical move pool. It should be one of the cleanest Regulation
@@ -283,7 +297,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
             unstoppable one-button attacker.
           </p>
 
-          <h2>Mega Staraptor: Contrary makes Close Combat a setup move</h2>
+          <h2 id="mega-staraptor">Mega Staraptor: Contrary makes Close Combat a setup move</h2>
           <p>
             Mega Staraptor is one of the most explosive new additions because Contrary turns Close Combat into both offense
             and defense. Instead of dropping defenses, Staraptor raises them while attacking. Fighting/Flying coverage is also
@@ -297,7 +311,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
             stacking defensive boosts while dealing real damage.
           </p>
 
-          <h2>Mega Mawile: low stats, elite ability, elite typing</h2>
+          <h2 id="mega-mawile">Mega Mawile: low stats, elite ability, elite typing</h2>
           <p>
             Mega Mawile remains a classic contradiction. Its raw stat total is low for a Mega, but Huge Power effectively
             doubles its Attack, and Steel/Fairy is still one of the best defensive typings in Pokemon. Intimidate and Hyper
@@ -316,7 +330,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         <ArticleFigure figure={primaryFigures[4]} />
 
         <div className="prose-guide">
-          <h2>Early Regulation Set M-B Mega ranking</h2>
+          <h2 id="early-ranking">Early Regulation Set M-B Mega ranking</h2>
           <p>
             The safest early tier is not based on novelty. It is based on how easily a Mega converts one turn into a winning
             board state. Mega Swampert, Mega Staraptor, Mega Mawile, and Mega Metagross are the most important names to test
@@ -333,7 +347,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
         </div>
 
         <section className="mt-10" aria-label="Additional Regulation Set M-B Mega analysis images">
-          <h2 className="text-2xl font-black text-champion-navy">Additional M-B Mega notes</h2>
+          <h2 id="additional-notes" className="scroll-mt-24 text-2xl font-black text-champion-navy">Additional M-B Mega notes</h2>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
             The remaining source images are included below for players who want the full visual reference set while comparing
             secondary Mega picks and niche matchup roles.
@@ -344,7 +358,7 @@ export default function RegulationSetMbMegaAnalysisPage() {
             ))}
           </div>
         </section>
-      </div>
+      </GuideArticleLayout>
     </article>
   );
 }
