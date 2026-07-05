@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import BeginnerGuidePage from "../beginner-guide/page";
 import BestTeamsPage from "../best-teams/page";
 import GarchompBuildGuidePage from "../garchomp-build-guide/page";
+import KingambitBuildGuidePage from "../kingambit-build-guide/page";
 import MegaRaichuPage from "../mega-raichu/page";
 import MegaRaichuYZapCannonBuildPage from "../mega-raichu-y-zap-cannon-build/page";
 import MegaStaraptorBuildGuidePage from "../mega-staraptor-build-guide/page";
@@ -18,6 +19,7 @@ const guidePages = [
   ["beginner guide", BeginnerGuidePage],
   ["best teams", BestTeamsPage],
   ["garchomp build guide", GarchompBuildGuidePage],
+  ["kingambit build guide", KingambitBuildGuidePage],
   ["mega raichu", MegaRaichuPage],
   ["mega raichu y zap cannon", MegaRaichuYZapCannonBuildPage],
   ["mega staraptor", MegaStaraptorBuildGuidePage],

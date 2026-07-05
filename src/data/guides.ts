@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Kingambit Build Guide - Defiant Sucker Punch",
+    href: "/kingambit-build-guide",
+    description:
+      "Complete Pokemon Champions Kingambit build guide for Regulation Set M-B, covering Defiant, Sucker Punch, Kowtow Cleave, Iron Head, Low Kick, Black Glasses, Chople Berry, Focus Sash, EVs, teammates, counters, and damage benchmarks.",
+    publishedAt: "2026-07-05",
+    image: {
+      src: "/images/guides/kingambit-build-guide/cover.png",
+      alt: "Pokemon Champions Kingambit Build Guide - Defiant Sucker Punch cover image"
+    },
+    keywords: [
+      "Pokemon Champions Kingambit Build",
+      "Pokemon Champions Kingambit Guide",
+      "Kingambit Defiant Sucker Punch",
+      "Pokemon Champions Regulation Set M-B Kingambit",
+      "Pokemon Champions Kingambit EVs"
+    ]
+  },
+  {
     title: "Pokemon Champions Mega Staraptor Build Guide - Contrary Close Combat",
     href: "/mega-staraptor-build-guide",
     description:
