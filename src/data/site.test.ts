@@ -15,6 +15,7 @@ describe("Pokemon Champions Guide data", () => {
 
   it("defines guide routes used by homepage cards and sitemap", () => {
     expect(guides.map((guide) => guide.href)).toEqual([
+      "/sinistcha-build-guide",
       "/kingambit-build-guide",
       "/mega-staraptor-build-guide",
       "/garchomp-build-guide",
@@ -32,7 +33,7 @@ describe("Pokemon Champions Guide data", () => {
 
   it("provides publication dates and index images for every guide article", () => {
     for (const guide of guides) {
-      expect(guide.publishedAt).toMatch(/^2026-(06-(09|30)|07-0[1235])$/);
+      expect(guide.publishedAt).toMatch(/^2026-(06-(09|30)|07-(0[1235]|11))$/);
       expect(guide.image.src).toMatch(/^\/(?:images\/pokemon\/|images\/guides\/|logo\.png|icon-192x192\.png)/);
       expect(guide.image.alt).toContain(guide.title);
     }

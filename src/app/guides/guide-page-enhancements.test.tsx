@@ -6,6 +6,7 @@ import BeginnerGuidePage from "../beginner-guide/page";
 import BestTeamsPage from "../best-teams/page";
 import GarchompBuildGuidePage from "../garchomp-build-guide/page";
 import KingambitBuildGuidePage from "../kingambit-build-guide/page";
+import SinistchaBuildGuidePage from "../sinistcha-build-guide/page";
 import MegaRaichuPage from "../mega-raichu/page";
 import MegaRaichuYZapCannonBuildPage from "../mega-raichu-y-zap-cannon-build/page";
 import MegaStaraptorBuildGuidePage from "../mega-staraptor-build-guide/page";
@@ -20,6 +21,7 @@ const guidePages = [
   ["best teams", BestTeamsPage],
   ["garchomp build guide", GarchompBuildGuidePage],
   ["kingambit build guide", KingambitBuildGuidePage],
+  ["sinistcha build guide", SinistchaBuildGuidePage],
   ["mega raichu", MegaRaichuPage],
   ["mega raichu y zap cannon", MegaRaichuYZapCannonBuildPage],
   ["mega staraptor", MegaStaraptorBuildGuidePage],

@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Sinistcha Build Guide - Matcha Gotcha Support",
+    href: "/sinistcha-build-guide",
+    description:
+      "Complete Pokemon Champions Sinistcha build guide for Regulation Set M-B, covering Hospitality, Rage Powder, Matcha Gotcha, Life Dew, Trick Room, EVs, resist berries, matchups, and Shell Smash Blastoise teams.",
+    publishedAt: "2026-07-11",
+    image: {
+      src: "/images/guides/sinistcha-build-guide/cover.png",
+      alt: "Pokemon Champions Sinistcha Build Guide - Matcha Gotcha Support cover image"
+    },
+    keywords: [
+      "Pokemon Champions Sinistcha Build",
+      "Pokemon Champions Sinistcha Guide",
+      "Sinistcha Matcha Gotcha",
+      "Sinistcha Rage Powder",
+      "Sinistcha Hospitality"
+    ]
+  },
+  {
     title: "Pokemon Champions Kingambit Build Guide - Defiant Sucker Punch",
     href: "/kingambit-build-guide",
     description:
