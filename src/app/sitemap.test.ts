@@ -16,6 +16,7 @@ describe("sitemap", () => {
     expect(urls).toContain("https://www.pokemetahub.com/garchomp-build-guide");
     expect(urls).toContain("https://www.pokemetahub.com/kingambit-build-guide");
     expect(urls).toContain("https://www.pokemetahub.com/sinistcha-build-guide");
+    expect(urls).toContain("https://www.pokemetahub.com/mega-aerodactyl-build-guide");
     expect(urls).toContain("https://www.pokemetahub.com/mega-raichu-y-zap-cannon-build");
     expect(urls).toContain("https://www.pokemetahub.com/regulation-set-mb-mega-analysis");
     expect(urls).toContain("https://www.pokemetahub.com/pokemon");
@@ -24,7 +25,7 @@ describe("sitemap", () => {
     expect(urls).toContain("https://www.pokemetahub.com/items");
     expect(urls).toContain("https://www.pokemetahub.com/pokemon/basculegion");
     expect(urls).toContain("https://www.pokemetahub.com/pokemon/blastoise-mega");
-    expect(entries).toHaveLength(1 + 1 + 13 + 4 + pokemonAssets.length);
+    expect(entries).toHaveLength(1 + 1 + 14 + 4 + pokemonAssets.length);
     expect(urls.every((url) => url.startsWith("https://www.pokemetahub.com"))).toBe(true);
   });
 });

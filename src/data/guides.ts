@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Mega Aerodactyl Build Guide - Tailwind and Rock Slide",
+    href: "/mega-aerodactyl-build-guide",
+    description:
+      "Complete Pokemon Champions Mega Aerodactyl build guide for Regulation Set M-B, covering Tailwind, Rock Slide, Dual Wingbeat, Ice Fang, Wide Guard, EVs, damage benchmarks, partners, and counterplay.",
+    publishedAt: "2026-07-15",
+    image: {
+      src: "/images/guides/mega-aerodactyl-build-guide/cover.png",
+      alt: "Pokemon Champions Mega Aerodactyl Build Guide - Tailwind and Rock Slide cover image"
+    },
+    keywords: [
+      "Pokemon Champions Mega Aerodactyl Build",
+      "Pokemon Champions Mega Aerodactyl Guide",
+      "Mega Aerodactyl Tailwind Rock Slide",
+      "Mega Aerodactyl EVs",
+      "Mega Aerodactyl Moveset"
+    ]
+  },
+  {
     title: "Pokemon Champions Sinistcha Build Guide - Matcha Gotcha Support",
     href: "/sinistcha-build-guide",
     description:
