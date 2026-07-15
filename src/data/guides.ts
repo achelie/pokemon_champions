@@ -2,6 +2,60 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Mega Aerodactyl Build Guide - Tailwind and Rock Slide",
+    href: "/mega-aerodactyl-build-guide",
+    description:
+      "Complete Pokemon Champions Mega Aerodactyl build guide for Regulation Set M-B, covering Tailwind, Rock Slide, Dual Wingbeat, Ice Fang, Wide Guard, EVs, damage benchmarks, partners, and counterplay.",
+    publishedAt: "2026-07-15",
+    image: {
+      src: "/images/guides/mega-aerodactyl-build-guide/cover.png",
+      alt: "Pokemon Champions Mega Aerodactyl Build Guide - Tailwind and Rock Slide cover image"
+    },
+    keywords: [
+      "Pokemon Champions Mega Aerodactyl Build",
+      "Pokemon Champions Mega Aerodactyl Guide",
+      "Mega Aerodactyl Tailwind Rock Slide",
+      "Mega Aerodactyl EVs",
+      "Mega Aerodactyl Moveset"
+    ]
+  },
+  {
+    title: "Pokemon Champions Sinistcha Build Guide - Matcha Gotcha Support",
+    href: "/sinistcha-build-guide",
+    description:
+      "Complete Pokemon Champions Sinistcha build guide for Regulation Set M-B, covering Hospitality, Rage Powder, Matcha Gotcha, Life Dew, Trick Room, EVs, resist berries, matchups, and Shell Smash Blastoise teams.",
+    publishedAt: "2026-07-11",
+    image: {
+      src: "/images/guides/sinistcha-build-guide/cover.png",
+      alt: "Pokemon Champions Sinistcha Build Guide - Matcha Gotcha Support cover image"
+    },
+    keywords: [
+      "Pokemon Champions Sinistcha Build",
+      "Pokemon Champions Sinistcha Guide",
+      "Sinistcha Matcha Gotcha",
+      "Sinistcha Rage Powder",
+      "Sinistcha Hospitality"
+    ]
+  },
+  {
+    title: "Pokemon Champions Kingambit Build Guide - Defiant Sucker Punch",
+    href: "/kingambit-build-guide",
+    description:
+      "Complete Pokemon Champions Kingambit build guide for Regulation Set M-B, covering Defiant, Sucker Punch, Kowtow Cleave, Iron Head, Low Kick, Black Glasses, Chople Berry, Focus Sash, EVs, teammates, counters, and damage benchmarks.",
+    publishedAt: "2026-07-05",
+    image: {
+      src: "/images/guides/kingambit-build-guide/cover.png",
+      alt: "Pokemon Champions Kingambit Build Guide - Defiant Sucker Punch cover image"
+    },
+    keywords: [
+      "Pokemon Champions Kingambit Build",
+      "Pokemon Champions Kingambit Guide",
+      "Kingambit Defiant Sucker Punch",
+      "Pokemon Champions Regulation Set M-B Kingambit",
+      "Pokemon Champions Kingambit EVs"
+    ]
+  },
+  {
     title: "Pokemon Champions Mega Staraptor Build Guide - Contrary Close Combat",
     href: "/mega-staraptor-build-guide",
     description:
