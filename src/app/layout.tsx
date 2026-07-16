@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { site } from "@/lib/site";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <meta name="twitter:image" content="https://www.pokemetahub.com/og-image.png" />
       </head>
       <body>
+        <NextTopLoader showSpinner={false} />
         <Header />
         <main className="pb-24 md:pb-0">{children}</main>
         <Footer />
