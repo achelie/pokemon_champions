@@ -14,6 +14,7 @@ import MegaStaraptorBuildGuidePage from "../mega-staraptor-build-guide/page";
 import MobileReleasePage from "../mobile-release/page";
 import PokemonHomePage from "../pokemon-home/page";
 import RegulationSetMBMegaAnalysisPage from "../regulation-set-mb-mega-analysis/page";
+import SableyeBuildGuidePage from "../sableye-build-guide/page";
 import TierListPage from "../tier-list/page";
 import UsefulPokemonPage from "../useful-pokemon/page";
 
@@ -30,6 +31,7 @@ const guidePages = [
   ["mobile release", MobileReleasePage],
   ["pokemon home", PokemonHomePage],
   ["regulation set mb mega analysis", RegulationSetMBMegaAnalysisPage],
+  ["sableye build guide", SableyeBuildGuidePage],
   ["tier list", TierListPage],
   ["useful pokemon", UsefulPokemonPage]
 ] as const;

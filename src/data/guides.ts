@@ -2,6 +2,24 @@ import type { Guide } from "@/types/content";
 
 export const guides: Guide[] = [
   {
+    title: "Pokemon Champions Sableye Build Guide - Prankster Support",
+    href: "/sableye-build-guide",
+    description:
+      "Complete Pokemon Champions Sableye build guide for Regulation Set M-B, covering Prankster, Light Clay screens, Rain Dance, Encore, Disable, Will-O-Wisp, EVs, partners, and counters.",
+    publishedAt: "2026-07-26",
+    image: {
+      src: "/images/guides/sableye-build-guide/cover.png",
+      alt: "Pokemon Champions Sableye Build Guide - Prankster Support cover image"
+    },
+    keywords: [
+      "Pokemon Champions Sableye Build",
+      "Pokemon Champions Sableye Guide",
+      "Sableye Prankster Moveset",
+      "Sableye Light Clay Screens",
+      "Sableye Rain Dance Build"
+    ]
+  },
+  {
     title: "Pokemon Champions Mega Aerodactyl Build Guide - Tailwind and Rock Slide",
     href: "/mega-aerodactyl-build-guide",
     description:
